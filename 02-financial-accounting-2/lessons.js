@@ -1,3 +1,4 @@
+(function() {
 // การบัญชี 2 (Financial Accounting 2) — CPA Interactive Learning Data
 // ครอบคลุมหัวข้อหลัก: ห้างหุ้นส่วน, บริษัทจำกัด, TFRS 16/15 พื้นฐาน
 
@@ -231,3 +232,9 @@ PV Annuity Factor (3 ปี, 6%) ≈ 2.6730
     <code>หนี้สินตามสัญญาเช่าเริ่มแรก = [ตัวเลข]</code>`
   }
 ];
+
+  window.LESSONS = LESSONS;
+  window.COURSE_CONFIG = COURSE_CONFIG;
+  window.CPA_SUBJECTS = window.CPA_SUBJECTS || {};
+  window.CPA_SUBJECTS['facc2'] = { subjectId: 'facc2', subjectTitle: 'การบัญชี 2', folder: '02-financial-accounting-2', config: COURSE_CONFIG, lessons: LESSONS };
+})();

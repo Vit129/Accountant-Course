@@ -1,3 +1,4 @@
+(function() {
 // ภาษีอากร (Taxation) — CPA Interactive Learning Data
 // ครอบคลุมหัวข้อหลัก: VAT, ภาษีเงินได้บุคคลธรรมดา, ภาษีเงินได้นิติบุคคล, ภาษีหัก ณ ที่จ่าย, ภาษีธุรกิจเฉพาะ, อากรแสตมป์
 
@@ -238,3 +239,9 @@ const LESSONS = [
     <code>อากรแสตมป์ = [ตัวเลข]</code>`
   }
 ];
+
+  window.LESSONS = LESSONS;
+  window.COURSE_CONFIG = COURSE_CONFIG;
+  window.CPA_SUBJECTS = window.CPA_SUBJECTS || {};
+  window.CPA_SUBJECTS['tax'] = { subjectId: 'tax', subjectTitle: 'ภาษีอากร', folder: '06-taxation', config: COURSE_CONFIG, lessons: LESSONS };
+})();

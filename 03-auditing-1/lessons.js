@@ -1,3 +1,4 @@
+(function() {
 // การสอบบัญชี 1 (Auditing 1) — CPA Interactive Learning Data
 // ครอบคลุมหัวข้อหลัก: Audit Risk Model, Materiality, จรรยาบรรณ, COSO, หลักฐานการสอบบัญชี, Audit Sampling
 
@@ -206,3 +207,9 @@ Sampling Interval = 2,400,000 ÷ 60 = 40,000
     <code>ช่วงการสุ่มตัวอย่าง (Sampling Interval) = [ตัวเลข]</code>`
   }
 ];
+
+  window.LESSONS = LESSONS;
+  window.COURSE_CONFIG = COURSE_CONFIG;
+  window.CPA_SUBJECTS = window.CPA_SUBJECTS || {};
+  window.CPA_SUBJECTS['audit1'] = { subjectId: 'audit1', subjectTitle: 'การสอบบัญชี 1', folder: '03-auditing-1', config: COURSE_CONFIG, lessons: LESSONS };
+})();

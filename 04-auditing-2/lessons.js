@@ -1,3 +1,4 @@
+(function() {
 // การสอบบัญชี 2 (Auditing 2) — CPA Interactive Learning Data
 // ครอบคลุมหัวข้อหลัก: ประเภทความเห็น, เหตุการณ์ภายหลังวันที่ในงบการเงิน, Going Concern, Assertions, กระดาษทำการ, ความรับผิด
 
@@ -213,3 +214,9 @@ const LESSONS = [
     <code>ประเภทความรับผิด = [ประเภทความรับผิด]</code>`
   }
 ];
+
+  window.LESSONS = LESSONS;
+  window.COURSE_CONFIG = COURSE_CONFIG;
+  window.CPA_SUBJECTS = window.CPA_SUBJECTS || {};
+  window.CPA_SUBJECTS['audit2'] = { subjectId: 'audit2', subjectTitle: 'การสอบบัญชี 2', folder: '04-auditing-2', config: COURSE_CONFIG, lessons: LESSONS };
+})();

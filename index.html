@@ -74,6 +74,32 @@
       line-height: 1.6;
     }
 
+    .exam-cta {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      max-width: 780px;
+      margin: 0 auto 40px;
+      padding: 20px 28px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(244, 63, 94, 0.12), rgba(245, 158, 11, 0.08));
+      border: 1px solid rgba(244, 63, 94, 0.3);
+      text-decoration: none;
+      color: var(--text-primary);
+      transition: all 0.2s ease;
+      text-align: left;
+    }
+    .exam-cta:hover {
+      border-color: var(--accent-rose);
+      box-shadow: 0 0 20px rgba(244, 63, 94, 0.15);
+      transform: translateY(-2px);
+    }
+    .exam-cta-icon { font-size: 1.8rem; flex-shrink: 0; }
+    .exam-cta-text { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+    .exam-cta-text strong { font-size: 1.05rem; }
+    .exam-cta-text span:last-child { font-size: 0.82rem; color: var(--text-secondary); }
+    .exam-cta-arrow { font-size: 1.3rem; color: var(--accent-rose); flex-shrink: 0; }
+
     .courses-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -195,6 +221,15 @@
     <p class="roadmap-note">
       📍 สถานะปัจจุบัน: ครบทั้ง 6 วิชา รวม 43 บทเรียน แบบฝึกหัดโต้ตอบพร้อมทฤษฎี ตัวอย่าง และเฉลย — หัวข้อขั้นสูงเชิงลึกเพิ่มเติมของแต่ละวิชาจะทยอยเพิ่มต่อไป
     </p>
+
+    <a href="./exam/index.html" class="exam-cta">
+      <span class="exam-cta-icon">🧪⏱</span>
+      <span class="exam-cta-text">
+        <strong>ข้อสอบจำลองแบบผสม (Mixed Mock Exam)</strong>
+        <span>รวมโจทย์ข้ามวิชา จับเวลาจริง ให้คะแนนอัตโนมัติพร้อมเฉลย</span>
+      </span>
+      <span class="exam-cta-arrow">→</span>
+    </a>
 
     <div class="courses-grid">
 

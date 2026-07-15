@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ข้อสอบจำลองแบบผสม (Mixed Mock Exam) — CPA Interactive Learning</title>
+  <meta name="description" content="ข้อสอบจำลองแบบผสมข้ามวิชา จับเวลา สำหรับเตรียมสอบ CPA">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared/style.css">
+  <style>
+    body { display: block; overflow-y: auto; min-height: 100vh; }
+
+    .exam-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .exam-topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .exam-topbar h1 {
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+
+    .screen { display: none; }
+    .screen.show { display: block; }
+
+    /* Start screen */
+    .config-card {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 32px;
+    }
+
+    .config-section { margin-bottom: 28px; }
+    .config-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    #subject-checklist {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 10px;
+    }
+
+    .subject-option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+
+    select {
+      background-color: var(--bg-tertiary);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 0.9rem;
+      font-family: var(--font-sans);
+    }
+
+    .start-exam-btn {
+      width: 100%;
+      padding: 16px;
+      font-size: 1rem;
+      justify-content: center;
+      margin-top: 8px;
+    }
+
+    /* Exam screen */
+    .exam-header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 14px 20px;
+      margin-bottom: 16px;
+    }
+
+    #exam-timer {
+      font-family: var(--font-mono);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--accent-emerald);
+    }
+    #exam-timer.timer-warning { color: var(--accent-rose); }
+
+    #question-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+
+    .nav-dot {
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.75rem;
+      cursor: pointer;
+    }
+    .nav-dot.answered { border-color: var(--accent-emerald); color: var(--accent-emerald); }
+    .nav-dot.active { background-color: var(--accent-blue); color: white; border-color: var(--accent-blue); }
+
+    .question-card {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
+    #exam-subject-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--accent-blue);
+      margin-bottom: 12px;
+    }
+
+    #exam-answer {
+      width: 100%;
+      min-height: 140px;
+      background-color: #0b0f17;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      color: var(--text-primary);
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      padding: 14px;
+      resize: vertical;
+    }
+
+    .exam-nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    /* Results screen */
+    .score-summary {
+      text-align: center;
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color-glow);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+    .score-big { font-size: 3rem; font-weight: 800; color: var(--accent-emerald); }
+    .score-percent { font-size: 1.2rem; color: var(--text-secondary); margin-top: 4px; }
+    .score-note { font-size: 0.8rem; color: var(--text-muted); margin-top: 16px; max-width: 500px; margin-left: auto; margin-right: auto; }
+    .time-up-note { color: var(--accent-rose); font-weight: 700; margin-bottom: 12px; }
+
+    .result-item {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-left-width: 4px;
+      border-radius: 8px;
+      padding: 18px;
+      margin-bottom: 12px;
+    }
+    .result-item.result-correct { border-left-color: var(--accent-emerald); }
+    .result-item.result-wrong { border-left-color: var(--accent-rose); }
+    .result-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; font-size: 0.8rem; }
+    .result-correct .result-icon { color: var(--accent-emerald); font-weight: 800; }
+    .result-wrong .result-icon { color: var(--accent-rose); font-weight: 800; }
+    .result-subject { color: var(--text-secondary); text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.05em; }
+    .result-task { font-size: 0.9rem; margin-bottom: 12px; line-height: 1.6; }
+    .result-task code { font-family: var(--font-mono); background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px; color: var(--accent-amber); }
+    .result-answer-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 0.8rem; }
+    .result-answer-row pre { background: #080c14; padding: 10px; border-radius: 6px; white-space: pre-wrap; word-break: break-word; margin-top: 4px; }
+
+    @media (max-width: 640px) {
+      .result-answer-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="exam-container">
+    <div class="exam-topbar">
+      <h1>🧪 ข้อสอบจำลองแบบผสม (Mixed Mock Exam)</h1>
+      <a href="../index.html" class="btn btn-secondary">← กลับหน้ารวมวิชา</a>
+    </div>
+
+    <!-- Start Screen -->
+    <section id="start-screen" class="screen show">
+      <div class="config-card">
+        <div class="config-section">
+          <span class="config-label">เลือกวิชาที่จะรวมในข้อสอบ</span>
+          <div id="subject-checklist"><!-- populated by exam-engine.js --></div>
+        </div>
+        <div class="config-section">
+          <span class="config-label">จำนวนข้อ</span>
+          <select id="question-count"></select>
+        </div>
+        <div class="config-section">
+          <span class="config-label">เวลาสอบ</span>
+          <select id="exam-minutes">
+            <option value="20">20 นาที</option>
+            <option value="40">40 นาที</option>
+            <option value="60" selected>60 นาที</option>
+            <option value="90">90 นาที</option>
+          </select>
+        </div>
+        <button class="btn btn-run start-exam-btn" onclick="startExam()">▶ เริ่มสอบ</button>
+      </div>
+    </section>
+
+    <!-- Exam Screen -->
+    <section id="exam-screen" class="screen">
+      <div class="exam-header-bar">
+        <span id="exam-progress-label">ข้อ 1 / 1</span>
+        <span id="exam-timer">00:00</span>
+      </div>
+
+      <div id="question-nav"></div>
+
+      <div class="question-card">
+        <span id="exam-subject-tag"></span>
+        <div id="exam-question-body" class="content-text"></div>
+        <textarea id="exam-answer" spellcheck="false" placeholder="พิมพ์คำตอบที่นี่..."></textarea>
+      </div>
+
+      <div class="exam-nav-buttons">
+        <button id="prev-btn" class="btn btn-secondary" onclick="goPrev()">← ข้อก่อนหน้า</button>
+        <div style="display:flex; gap:12px;">
+          <button id="next-btn" class="btn btn-secondary" onclick="goNext()">ข้อถัดไป →</button>
+          <button id="finish-btn" class="btn btn-run" style="display:none;" onclick="confirmSubmitExam()">✔ ส่งคำตอบ</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Screen -->
+    <section id="results-screen" class="screen">
+      <div id="score-summary" class="score-summary"></div>
+      <div id="results-breakdown"></div>
+      <button class="btn btn-secondary start-exam-btn" onclick="resetExam()">🔄 สอบใหม่</button>
+    </section>
+  </div>
+
+  <script src="../01-financial-accounting-1/lessons.js"></script>
+  <script src="../02-financial-accounting-2/lessons.js"></script>
+  <script src="../03-auditing-1/lessons.js"></script>
+  <script src="../04-auditing-2/lessons.js"></script>
+  <script src="../05-law/lessons.js"></script>
+  <script src="../06-taxation/lessons.js"></script>
+  <script src="../shared/exam-engine.js"></script>
+</body>
+</html>
