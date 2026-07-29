@@ -1,12 +1,17 @@
-# Graph Report - /Users/supavit.cho/Git/Personal/Accountant-Learning  (2026-07-24)
+# Graph Report - /Users/supavit.cho/Git/Personal/Accountant-Learning  (2026-07-29)
 
 ## Corpus Check
-- Corpus is ~23,897 words - fits in a single context window. You may not need a graph.
+- cluster-only mode — file stats not available
 
 ## Summary
 - 324 nodes · 344 edges · 23 communities (20 shown, 3 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 5 edges (avg confidence: 0.55)
-- Token cost: 61,205 input · 0 output
+- Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `d774f67f`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## God Nodes (most connected - your core abstractions)
 1. `initApp()` - 8 edges
@@ -19,6 +24,14 @@
 8. `handleTextareaKeydown()` - 4 edges
 9. `renderLessonList()` - 4 edges
 10. `saveCurrentAnswer()` - 4 edges
+
+## Cross-Cutting Nodes (span the most distinct areas of the codebase)
+A high-degree node isn't always architecturally central - a widely-used
+utility/config file can rack up more edges than a real coupler while only
+ever touching one area. This ranks by how many DIFFERENT communities a
+node's neighbors span, not by raw edge count.
+1. `@media (max-width: 768px)` - bridges 1 areas (5 edges)
+2. `@media (max-width: 1100px)` - bridges 1 areas (3 edges)
 
 ## Surprising Connections (you probably didn't know these)
 - `Agent Memory Index` --conceptually_related_to--> `Agent Memory Playbook`  [INFERRED]
