@@ -242,7 +242,7 @@ function updateProgressBar() {
   const label = document.getElementById('progress-label');
 
   if (fill) fill.style.width = percent + '%';
-  if (label) label.innerText = `${completedCount} / ${LESSONS.length} บทเรียน`;
+  if (label) label.innerText = `${completedCount} / ${LESSONS.length} บทเรียน (${percent}%)`;
 }
 
 function runSandboxCode() {
