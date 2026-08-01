@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "tag": "v0.6.0",
+  "tag": "v0.6.1",
   "updated": "2026-08-01",
-  "summary": "สลับไอคอน Export/Import ให้ตรงกับ QA course, ย้าย Export/Import และ Final Project ขึ้นด้านบน, เพิ่ม % ข้างแถบความคืบหน้า"
+  "summary": "เพิ่ม mini progress bar ต่อวิชาบนหน้าแรก (X/Y บทเรียน %) และเอา tag เก่าที่ตกค้างออก"
 }
