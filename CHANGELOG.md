@@ -3,6 +3,18 @@
 All notable changes to Accountant-Learning are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and Accountant-Learning follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [0.6.0] - 2026-08-01
+
+### Added
+- Show completion percent next to progress bar label ([`a2b2e87`](https://github.com/Vit129/Accountant-Course/commit/a2b2e873bd66b12ddb1673706605b0e5bb7a47fd))
+
+### Changed
+- Move export/import progress buttons to top of page ([`7e21c53`](https://github.com/Vit129/Accountant-Course/commit/7e21c53fbd97422c8232b0e3d5299d38ca49071d))
+- Promote Final Project to a top banner, out of the course grid ([`4d94654`](https://github.com/Vit129/Accountant-Course/commit/4d94654f9031029ffa8362dfac877503f8b1a855))
+
+### Fixed
+- Swap export/import icons to match QA course convention (📤/📥) ([`88dbed8`](https://github.com/Vit129/Accountant-Course/commit/88dbed8b40067ffb8d34b69e4ae9cc8c68e9344a))
+
 ## [0.5.1] - 2026-08-01
 
 ### Added
