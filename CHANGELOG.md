@@ -3,7 +3,7 @@
 All notable changes to Accountant-Learning are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and Accountant-Learning follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-## [Unreleased]
+## [0.7.0] - 2026-08-01
 
 ### Added
 - CPA exam prep portal — 6-subject skeleton, การบัญชี 1 deep-dive ([`c36aefc`](https://github.com/Vit129/Accountant-Course/commit/c36aefce03c69b4ea9887da6bafff4404934b5ce))
@@ -13,7 +13,9 @@ All notable changes to Accountant-Learning are documented here. The format is ba
 - Deepen subjects 2-6 with 14 more lessons (43 → 57 total) ([`974f4d2`](https://github.com/Vit129/Accountant-Course/commit/974f4d2022b9c9a0b28a32d11cca866b1898395c))
 - Deepen 5 subjects further via Agy (57 → 72 lessons) ([`e268538`](https://github.com/Vit129/Accountant-Course/commit/e26853808627d87ae25b70f98ac9d016901c2861))
 - Add ขั้นสูง (advanced) hard-tier lessons to all 6 subjects ([`60dfced`](https://github.com/Vit129/Accountant-Course/commit/60dfceddbd8543888f43d06c985ef4571e4032d1))
-- Add ขั้นสูง 3 (CPA Case Study) multi-step complex scenario lessons to all 6 subjects (84 → 90 lessons total)
+- Add make start as standard release entry point ([`d774f67`](https://github.com/Vit129/Accountant-Course/commit/d774f67f8c3baa1c2c9e2e8879953e5f2ba88568))
+- Add real community labels to the code+content graph ([`fe1c494`](https://github.com/Vit129/Accountant-Course/commit/fe1c494af26634e6b3ad2fb146fc0dd5c8b56a51))
+- Add hard-tier CPA case study lessons across 6 subjects (96 lessons total) ([`3f43cea`](https://github.com/Vit129/Accountant-Course/commit/3f43ceadfbd600cdfc91ffd7fc5791a8c65714aa))
 
 ### Documentation
 - Add honest-limitations note to hub page ([`9a42650`](https://github.com/Vit129/Accountant-Course/commit/9a42650d2bd33a7afc2b66459069993da8e22b7e))
