@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>โหมดซ้อมทำข้อสอบอัตนัยฉบับเต็ม (CPA Subjective Essay Simulator)</title>
+  <meta name="description" content="ระบบฝึกทำข้อสอบอัตนัยฉบับเต็ม ซ้อมเขียนบรรยาย อ้างอิงมาตรฐาน และบันทึกสมุดรายวันทั่วไป สำหรับเตรียมสอบ CPA">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared/style.css">
+  <style>
+    body {
+      display: block;
+      overflow-y: auto;
+      min-height: 100vh;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      padding: 30px 20px;
+    }
+
+    .sub-container {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .top-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .top-header h1 {
+      font-size: 1.6rem;
+      font-weight: 800;
+    }
+
+    .case-selector-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .case-card-btn {
+      background: var(--bg-secondary);
+      border: 2px solid var(--border-color);
+      border-radius: 12px;
+      padding: 16px 20px;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .case-card-btn:hover {
+      border-color: var(--accent-blue);
+      transform: translateY(-2px);
+    }
+
+    .case-card-btn.active {
+      border-color: var(--accent-emerald);
+      background: rgba(16, 185, 129, 0.08);
+    }
+
+    .case-card-btn strong {
+      display: block;
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+
+    .case-card-btn span {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+    }
+
+    .main-workspace {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 28px;
+    }
+
+    .problem-box {
+      background: rgba(43, 38, 32, 0.04);
+      border-left: 4px solid var(--accent-amber);
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    .problem-box h3 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: var(--accent-amber);
+    }
+
+    .section-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .essay-textarea {
+      width: 100%;
+      min-height: 160px;
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      resize: vertical;
+      margin-bottom: 24px;
+    }
+
+    .journal-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 16px;
+    }
+
+    .journal-table th, .journal-table td {
+      border: 1px solid var(--border-color);
+      padding: 10px 12px;
+      text-align: left;
+    }
+
+    .journal-table th {
+      background: var(--bg-tertiary);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+
+    .journal-table input {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+    }
+
+    .journal-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .balance-status {
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 20px;
+    }
+
+    .balance-status.balanced {
+      background: rgba(16, 185, 129, 0.15);
+      color: #059669;
+    }
+
+    .balance-status.unbalanced {
+      background: rgba(244, 63, 94, 0.15);
+      color: #e11d48;
+    }
+
+    .rubric-card {
+      display: none;
+      background: var(--bg-primary);
+      border: 2px dashed var(--accent-blue);
+      border-radius: 14px;
+      padding: 24px;
+      margin-top: 24px;
+      line-height: 1.6;
+    }
+
+    .rubric-card.show {
+      display: block;
+    }
+
+    .rubric-card h4 {
+      color: var(--accent-blue);
+      font-size: 1.1rem;
+      margin-bottom: 14px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary { background-color: var(--accent-blue); color: white; }
+    .btn-emerald { background-color: var(--accent-emerald); color: white; }
+    .btn-secondary { background-color: var(--bg-tertiary); color: var(--text-primary); }
+  </style>
+</head>
+<body>
+
+  <div class="sub-container">
+    <div class="top-header">
+      <div>
+        <h1>🏛️ โหมดซ้อมทำข้อสอบอัตนัยฉบับเต็ม (CPA Subjective Essay Simulator)</h1>
+        <p style="color: var(--text-secondary); font-size: 0.88rem; margin-top: 4px;">
+          ฝึกเขียนบรรยาย อ้างอิงมาตรฐานวิชาชีพ/ข้อกฎหมาย และบันทึกสมุดรายวันทั่วไปแบบรายบรรทัดสำหรับเตรียมสอบอัตนัย 60%
+        </p>
+      </div>
+      <a href="../index.html" class="btn btn-secondary">← กลับหน้ารวมวิชา</a>
+    </div>
+
+    <!-- Case Selector -->
+    <div class="case-selector-grid" id="case-selector">
+      <button class="case-card-btn active" onclick="loadCase(0)">
+        <strong>เคสที่ 1: บัญชี 1 & 2</strong>
+        <span>TFRS 15 รายได้ + ปรับปรุงงบการเงิน</span>
+      </button>
+      <button class="case-card-btn" onclick="loadCase(1)">
+        <strong>เคสที่ 2: สอบบัญชี 1 & 2</strong>
+        <span>ลูกหนี้ล้มละลาย vs เพลิงไหม้คลังสินค้า</span>
+      </button>
+      <button class="case-card-btn" onclick="loadCase(2)">
+        <strong>เคสที่ 3: กฎหมายวิชาชีพ</strong>
+        <span>การลดทุน 40M + องค์ประชุมมติพิเศษ</span>
+      </button>
+      <button class="case-card-btn" onclick="loadCase(3)">
+        <strong>เคสที่ 4: ภาษีอากร</strong>
+        <span>คำนวณกำไรสุทธิทางภาษี 8M (ม.65 ตรี)</span>
+      </button>
+    </div>
+
+    <!-- Main Workspace -->
+    <div class="main-workspace">
+      <!-- Problem Display -->
+      <div id="problem-box" class="problem-box"></div>
+
+      <!-- Essay / Explanation Section -->
+      <div class="section-title">✍️ ส่วนที่ 1: การเขียนบรรยายแสดงวิธีคิด และการอ้างอิงมาตรฐาน/ข้อกฎหมาย</div>
+      <textarea id="essay-input" class="essay-textarea" placeholder="พิมพ์การคำนวณ แสดงวิธีทำ การอธิบายเหตุผล และอ้างอิงมาตรฐาน/ข้อกฎหมายที่นี่..." oninput="autoSave()"></textarea>
+
+      <!-- Journal Entry Section -->
+      <div class="section-title">📘 ส่วนที่ 2: ตารางบันทึกรายการในสมุดรายวันทั่วไป (General Journal)</div>
+      <table class="journal-table" id="journal-table">
+        <thead>
+          <tr>
+            <th style="width: 120px;">วันที่</th>
+            <th>ชื่อบัญชีและคำอธิบายรายการ</th>
+            <th style="width: 160px; text-align: right;">เดบิต (Dr.)</th>
+            <th style="width: 160px; text-align: right;">เครดิต (Cr.)</th>
+            <th style="width: 60px; text-align: center;">จัดการ</th>
+          </tr>
+        </thead>
+        <tbody id="journal-body"></tbody>
+      </table>
+
+      <div class="journal-actions">
+        <button class="btn btn-secondary" onclick="addJournalRow()">+ เพิ่มรายการบัญชี</button>
+        <div id="balance-status" class="balance-status unbalanced">ยอดเดบิต (0) ≠ เครดิต (0)</div>
+      </div>
+
+      <!-- Actions -->
+      <div style="display: flex; gap: 12px; margin-top: 20px;">
+        <button class="btn btn-emerald" onclick="toggleRubric()">🔍 ตรวจเฉลยละเอียดและเกณฑ์การให้คะแนน (Marking Scheme)</button>
+        <button class="btn btn-secondary" onclick="clearWorkspace()">🔄 ล้างข้อมูลซ้อมใหม่</button>
+      </div>
+
+      <!-- Rubric & Model Answer -->
+      <div id="rubric-card" class="rubric-card"></div>
+    </div>
+  </div>
+
+  <script>
+    const CASES = [
+      {
+        title: "ข้อที่ 1: [การบัญชี 1 & 2] การปันส่วนรายได้ TFRS 15 และรายการปรับปรุงงบการเงิน (25 คะแนน)",
+        problem: `<strong>สถานการณ์:</strong><br/>บริษัท อุตสาหกรรมนวัตกรรม จำกัด มีรายการค้าเกิดขึ้น ณ วันสิ้นปี 2568 ดังนี้:<br/>
+        1. ขายเครื่องจักรพร้อมสัญญาบริการบำรุงรักษา 2 ปี ราคารวม <strong>5,000,000 บาท</strong> (ราคาแยกต่างหาก: เครื่องจักร 4.5M ส่งมอบแล้ว / บริการ 1.5M เริ่มปีหน้า)<br/>
+        2. ซื้อรถยนต์นั่งส่วนบุคคลราคา <strong>3,200,000 บาท</strong> บันทึกค่าเสื่อมราคาทางบัญชี 20% = 640,000 บาท (ทางภาษีจำกัดฐานไม่เกิน 1,000,000 บาท)<br/>
+        3. ลืมบันทึกดอกเบี้ยค้างจ่ายตั๋วเงินจ่าย 2,000,000 บาท ดอกเบี้ย 6% ต่อปี อายุ 90 วัน (ผ่านไป 60 วันนับถึงสิ้นปี ฐาน 360 วัน/ปี)<br/><br/>
+        <strong>คำสั่ง:</strong> จงเขียนแสดงการคำนวณ บันทึกรายการปรับปรุงบัญชีในสมุดรายวันทั่วไป และคำนวณจำนวนเงินบวกกลับทางภาษีให้ครบถ้วน`,
+        initialJournal: [
+          { date: "31 ธ.ค. 68", title: "Dr. เงินสด", dr: 5000000, cr: 0 },
+          { date: "", title: "   Cr. รายได้จากการขายเครื่องจักร", dr: 0, cr: 3750000 },
+          { date: "", title: "   Cr. รายได้ค่าบริการรับล่วงหน้า", dr: 0, cr: 1250000 },
+          { date: "31 ธ.ค. 68", title: "Dr. ดอกเบี้ยจ่าย", dr: 20000, cr: 0 },
+          { date: "", title: "   Cr. ดอกเบี้ยค้างจ่าย", dr: 0, cr: 20000 }
+        ],
+        rubric: `<h4>💡 เฉลยละเอียดและเกณฑ์การให้คะแนน (Marking Scheme - 25 คะแนนเต็ม)</h4>
+        <strong>1. การคำนวณปันส่วนรายได้ตาม TFRS 15 (10 คะแนน):</strong><br/>
+        - ผลรวมราคาขายแยกต่างหาก = 4.5M + 1.5M = 6.0M บาท<br/>
+        - รายได้เครื่องจักร = 5,000,000 × (4.5M / 6.0M) = <strong>3,750,000 บาท</strong><br/>
+        - รายได้ค่าบริการรับล่วงหน้า = 5,000,000 × (1.5M / 6.0M) = <strong>1,250,000 บาท</strong><br/><br/>
+        <strong>2. ค่าเสื่อมราคารถยนต์นั่งบวกกลับทางภาษี (ม.65 ตรี) (8 คะแนน):</strong><br/>
+        - ค่าเสื่อมทางบัญชี = 3.2M × 20% = 640,000 บาท<br/>
+        - ค่าเสื่อมทางภาษี (ฐานไม่เกิน 1M) = 1M × 20% = 200,000 บาท<br/>
+        - จำนวนเงินบวกกลับทางภาษี = 640,000 - 200,000 = <strong>440,000 บาท</strong><br/><br/>
+        <strong>3. รายการปรับปรุงดอกเบี้ยค้างจ่าย (7 คะแนน):</strong><br/>
+        - ดอกเบี้ย = 2,000,000 × 6% × (60/360) = <strong>20,000 บาท</strong><br/>
+        - บันทึก: Dr. ดอกเบี้ยจ่าย 20,000 / Cr. ดอกเบี้ยค้างจ่าย 20,000`
+      },
+      {
+        title: "ข้อที่ 2: [การสอบบัญชี 1 & 2] การประเมินความเสี่ยงและรายงานผู้สอบบัญชี (25 คะแนน)",
+        problem: `<strong>สถานการณ์:</strong><br/>ผู้สอบบัญชีตรวจสอบงบการเงินบริษัท มหาชัยการค้า จำกัด พบประเด็นสำคัญ 2 กรณี:<br/>
+        * <strong>กรณี ก:</strong> ลูกหนี้รายใหญ่ยอด 18,000,000 บาท (45% ของลูกหนี้รวม) ล้มละลาย ผู้บริหารปฏิเสธการตั้งค่าเผื่อหนี้เสีย ผู้สอบบัญชีประเมินว่ามีสาระสำคัญแต่ไม่แพร่กระจาย (Material, Not Pervasive)<br/>
+        * <strong>กรณี ข:</strong> ไม่สามารถเข้าตรวจนับสินค้าคงเหลือ 30,000,000 บาท (60% ของสินทรัพย์รวม) ได้เนื่องจากเพลิงไหม้ และหาวิธีการอื่นทดแทนไม่ได้ (Material and Pervasive Scope Limitation)<br/><br/>
+        <strong>คำสั่ง:</strong> จงระบุประเภทรายงานผู้สอบบัญชีของทั้ง 2 กรณี พร้อมอธิบายเหตุผลตามมาตรฐาน TSA 705`,
+        initialJournal: [],
+        rubric: `<h4>💡 เฉลยละเอียดและเกณฑ์การให้คะแนน (Marking Scheme - 25 คะแนนเต็ม)</h4>
+        <strong>1. กรณี ก (10 คะแนน):</strong> เสนอ <strong>"ความเห็นแบบมีเงื่อนไข (Qualified Opinion)"</strong><br/>
+        - เหตุผล: ตรวจพบข้อผิดพลาดการแสดงข้อมูลขัดต่อข้อเท็จจริง (Misstatement) มีสาระสำคัญแต่จำกัดเฉพาะรายการลูกหนี้รายนี้ ไม่แพร่กระจายต่องบการเงินโดยรวม<br/><br/>
+        <strong>2. กรณี ข (10 คะแนน):</strong> เสนอ <strong>"การไม่แสดงความเห็น (Disclaimer of Opinion)"</strong><br/>
+        - เหตุผล: ถูกจำกัดขอบเขตการตรวจสอบ (Scope Limitation) และผลกระทบขัดต่อข้อเท็จจริงที่อาจเกิดขึ้นมีสาระสำคัญและแพร่กระจาย (Material and Pervasive)<br/><br/>
+        <strong>3. ความแตกต่างระหว่าง Adverse กับ Disclaimer (5 คะแนน):</strong><br/>
+        - Adverse: ตรวจพบหลักฐานและทราบตัวเลขข้อผิดพลาดชัดเจนว่าผิดอย่างแพร่กระจาย<br/>
+        - Disclaimer: ไม่สามารถหาหลักฐานได้เลย (ถูกจำกัดขอบเขต) จึงประเมินไม่ได้ว่างบถูกหรือผิด`
+      },
+      {
+        title: "ข้อที่ 3: [กฎหมายวิชาชีพบัญชี] องค์ประชุม มติพิเศษ และการลดทุนบริษัท (25 คะแนน)",
+        problem: `<strong>สถานการณ์:</strong><br/>บริษัท มหาชนจำกัด มีทุนชำระแล้ว 40,000,000 บาท (400,000 หุ้น มูลค่าหุ้นละ 100 บาท) เสนอขอลดทุนลง 32,000,000 บาท ให้เหลือ 8,000,000 บาทในการประชุมวิสามัญผู้ถือหุ้น<br/>
+        มีผู้เข้าร่วมประชุมถือหุ้นรวม 120,000 หุ้น และมีมติเห็นชอบการลดทุน 100,000 เสียง<br/><br/>
+        <strong>คำสั่ง:</strong> จงพิจารณาความชอบด้วยกฎหมายของการลดทุน การตรวจองค์ประชุม (Quorum) และผลของมติพิเศษตามข้อกฎหมาย`,
+        initialJournal: [],
+        rubric: `<h4>💡 เฉลยละเอียดและเกณฑ์การให้คะแนน (Marking Scheme - 25 คะแนนเต็ม)</h4>
+        <strong>1. ความชอบด้วยกฎหมายของการลดทุน (10 คะแนน):</strong><br/>
+        - ตาม ป.พ.พ. มาตรา 1224 ห้ามลดทุนลงต่ำกว่า 1 ใน 4 (25%) ของทุนเดิม<br/>
+        - ทุนเดิม 40,000,000 × 25% = 10,000,000 บาท<br/>
+        - การลดทุนเหลือ 8,000,000 บาท ต่ำกว่า 10,000,000 บาท $\rightarrow$ <strong>ไม่ชอบด้วยกฎหมาย ห้ามลดทุน</strong><br/><br/>
+        <strong>2. การตรวจองค์ประชุม (7 คะแนน):</strong><br/>
+        - เกณฑ์ 1 ใน 4 ของ 400,000 หุ้น = 100,000 หุ้น<br/>
+        - มาประชุม 120,000 หุ้น (มากกว่า 100,000) $\rightarrow$ <strong>ครบองค์ประชุม</strong><br/><br/>
+        <strong>3. การตรวจมติพิเศษ (8 คะแนน):</strong><br/>
+        - เกณฑ์มติพิเศษ 3 ใน 4 ของผู้มาประชุม = 120,000 × (3/4) = 90,000 เสียง<br/>
+        - เห็นชอบ 100,000 เสียง $\rightarrow$ <strong>ผ่านเกณฑ์มติพิเศษ</strong>`
+      },
+      {
+        title: "ข้อที่ 4: [ภาษีอากร] การคำนวณกำไรสุทธิเพื่อเสียภาษีเงินได้นิติบุคคล (25 คะแนน)",
+        problem: `<strong>สถานการณ์:</strong><br/>บริษัทนิติบุคคลขนาดใหญ่ มีกำไรสุทธิตามงบการเงิน 8,000,000 บาท มีรายการปรับปรุงดังนี้:<br/>
+        1. ตั้งสำรองประกันสินค้า 350,000 บาท (ยังไม่จ่ายจริง)<br/>
+        2. ค่ารับรองลูกค้า 120,000 บาท (รายได้รวม 50 ล้านบาท สิทธิ 0.3% = 150,000 บาท)<br/>
+        3. เงินปันผลรับจากบริษัทไทย 400,000 บาท (ถือหุ้น 20% เกิน 3 เดือน ได้รับยกเว้น 50%)<br/><br/>
+        <strong>คำสั่ง:</strong> จงคำนวณกำไรสุทธิทางภาษี (Net Taxable Profit) และภาษีเงินได้นิติบุคคลที่ต้องชำระ (อัตรา 20%)`,
+        initialJournal: [],
+        rubric: `<h4>💡 เฉลยละเอียดและเกณฑ์การให้คะแนน (Marking Scheme - 25 คะแนนเต็ม)</h4>
+        <strong>1. กำไรสุทธิเพื่อเสียภาษี (15 คะแนน):</strong><br/>
+        - กำไรสุทธิตามงบการเงิน = 8,000,000 บาท<br/>
+        - สำรองประกันสินค้า (ยังไม่จ่ายจริง) = +350,000 บาท (บวกกลับตาม ม.65 ตรี (1))<br/>
+        - ค่ารับรองลูกค้า 120,000 บาท (ไม่เกิน 0.3% ของ 50M = 150k) = 0 บาท (ไม่ต้องบวกกลับ)<br/>
+        - เงินปันผลรับยกเว้น 50% = -200,000 บาท (หักออกตาม ม.65 บิส (10))<br/>
+        - <strong>กำไรสุทธิทางภาษี = 8,000,000 + 350,000 - 200,000 = 8,150,000 บาท</strong><br/><br/>
+        <strong>2. ภาษีเงินได้นิติบุคคลที่ต้องชำระ (10 คะแนน):</strong><br/>
+        - ภาษี = 8,150,000 × 20% = <strong>1,630,000 บาท</strong>`
+      }
+    ];
+
+    let currentCaseIndex = 0;
+
+    function loadCase(index) {
+      currentCaseIndex = index;
+      document.querySelectorAll('.case-card-btn').forEach((btn, i) => {
+        btn.classList.toggle('active', i === index);
+      });
+
+      const c = CASES[index];
+      document.getElementById('problem-box').innerHTML = `<h3>${c.title}</h3>${c.problem}`;
+      document.getElementById('rubric-card').innerHTML = c.rubric;
+      document.getElementById('rubric-card').classList.remove('show');
+
+      // Load saved essay or clear
+      const savedEssay = localStorage.getItem('essay_case_' + index) || '';
+      document.getElementById('essay-input').value = savedEssay;
+
+      // Load initial journal
+      const body = document.getElementById('journal-body');
+      body.innerHTML = '';
+      const journalData = c.initialJournal && c.initialJournal.length > 0 ? c.initialJournal : [
+        { date: "", title: "", dr: 0, cr: 0 },
+        { date: "", title: "", dr: 0, cr: 0 }
+      ];
+
+      journalData.forEach(row => addJournalRow(row.date, row.title, row.dr, row.cr));
+      calculateBalance();
+    }
+
+    function addJournalRow(date = '', title = '', dr = 0, cr = 0) {
+      const body = document.getElementById('journal-body');
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td><input type="text" value="${date}" placeholder="31 ธ.ค." oninput="calculateBalance()"></td>
+        <td><input type="text" value="${title}" placeholder="ชื่อบัญชี (Dr. / Cr.)" oninput="calculateBalance()"></td>
+        <td><input type="number" value="${dr || ''}" placeholder="0" style="text-align: right;" oninput="calculateBalance()"></td>
+        <td><input type="number" value="${cr || ''}" placeholder="0" style="text-align: right;" oninput="calculateBalance()"></td>
+        <td style="text-align: center;"><button onclick="this.closest('tr').remove(); calculateBalance();" style="color:red; background:none; border:none; cursor:pointer;">✖</button></td>
+      `;
+      body.appendChild(tr);
+      calculateBalance();
+    }
+
+    function calculateBalance() {
+      let totalDr = 0;
+      let totalCr = 0;
+      const rows = document.querySelectorAll('#journal-body tr');
+      rows.forEach(tr => {
+        const inputs = tr.querySelectorAll('input');
+        const dr = parseFloat(inputs[2].value) || 0;
+        const cr = parseFloat(inputs[3].value) || 0;
+        totalDr += dr;
+        totalCr += cr;
+      });
+
+      const status = document.getElementById('balance-status');
+      if (totalDr === totalCr && totalDr > 0) {
+        status.className = 'balance-status balanced';
+        status.innerHTML = `✓ ดุลเดบิต-เครดิตเท่ากัน (${totalDr.toLocaleString()} บาท)`;
+      } else {
+        status.className = 'balance-status unbalanced';
+        status.innerHTML = `ยอดเดบิต (${totalDr.toLocaleString()}) ≠ เครดิต (${totalCr.toLocaleString()})`;
+      }
+
+      autoSave();
+    }
+
+    function autoSave() {
+      const essay = document.getElementById('essay-input').value;
+      localStorage.setItem('essay_case_' + currentCaseIndex, essay);
+    }
+
+    function toggleRubric() {
+      document.getElementById('rubric-card').classList.toggle('show');
+    }
+
+    function clearWorkspace() {
+      if (confirm('ต้องการล้างข้อมูลซ้อมทำเคสนี้ทั้งหมดหรือไม่?')) {
+        localStorage.removeItem('essay_case_' + currentCaseIndex);
+        loadCase(currentCaseIndex);
+      }
+    }
+
+    // Initialize
+    loadCase(0);
+  </script>
+</body>
+</html>
