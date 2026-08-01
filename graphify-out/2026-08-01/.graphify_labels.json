@@ -31,17 +31,5 @@
   "29": "CPA Exam Study Portal (Product Vision)",
   "30": "Timed Mixed Mock Exam Engine (shared/exam-engine.js)",
   "31": "Honest-Limitations / Not-Real-Past-Papers Note",
-  "32": "Lesson Runner Engine (shared/engine.js)",
-  "33": "subjective.html",
-  "34": "LESSONS",
-  "35": "index.html",
-  "36": "📝 ชุดข้อสอบจำลองและเฉลยละเอียดเตรียมสอบ CPA (CPA Mock Exam Set 1)",
-  "37": "package.json",
-  "38": "Design System",
-  "39": "เตรียมสอบ CPA — Accountant Learning Portal",
-  "40": "selftest.mjs",
-  "41": "checkin.js",
-  "42": "@media (max-width: 768px)",
-  "43": "gamification.js",
-  "44": "@media (max-width: 1100px)"
+  "32": "Lesson Runner Engine (shared/engine.js)"
 }

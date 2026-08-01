@@ -62,6 +62,18 @@
       line-height: 1.6;
     }
 
+    .roadmap-note {
+      max-width: 780px;
+      margin: 24px auto 40px;
+      padding: 14px 20px;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      background: rgba(16, 185, 129, 0.08);
+      color: #047857;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+
     .exam-cta {
       display: flex;
       align-items: center;
@@ -268,30 +280,6 @@
       flex: 1;
     }
 
-    .track-progress { margin-bottom: 20px; }
-    .track-progress-bar {
-      width: 100%;
-      height: 6px;
-      border-radius: 9999px;
-      background-color: rgba(43, 38, 32, 0.08);
-      overflow: hidden;
-      margin-bottom: 6px;
-    }
-    .track-progress-fill {
-      height: 100%;
-      width: 0%;
-      border-radius: 9999px;
-      background-color: currentColor;
-      transition: width 0.4s ease;
-    }
-    .track-progress-text { font-size: 0.75rem; color: var(--text-secondary); }
-    .card-1 .track-progress-fill { background-color: var(--accent-emerald); }
-    .card-2 .track-progress-fill { background-color: var(--accent-blue); }
-    .card-3 .track-progress-fill { background-color: var(--accent-amber); }
-    .card-4 .track-progress-fill { background-color: var(--accent-rose); }
-    .card-5 .track-progress-fill { background-color: var(--accent-violet); }
-    .card-6 .track-progress-fill { background-color: var(--accent-teal); }
-
     .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
 
     .tag {
@@ -355,28 +343,35 @@
 
     <div id="checkin-banner" class="checkin-banner"></div>
 
-    <div class="progress-io-actions">
-      <button class="btn-io" onclick="exportProgress()">📤 Export ความคืบหน้า</button>
-      <label class="btn-io" for="import-progress-input">📥 Import ความคืบหน้า</label>
-      <input type="file" id="import-progress-input" accept="application/json" style="display:none" onchange="importProgress(event)">
-    </div>
-
-    <a href="./Final-Project/index.html" class="exam-cta">
-      <span class="exam-cta-icon">🏆</span>
-      <span class="exam-cta-text">
-        <strong>Final Project — กรณีศึกษาบูรณาการ (Capstone)</strong>
-        <span>บูรณาการทั้ง 8 วิชา ตั้งแต่บันทึกบัญชี ค่าเสื่อมราคา ความเสี่ยงสอบบัญชี ภาษี อัตราส่วนการเงิน Going Concern จนถึงความเห็นผู้สอบบัญชี — 15 บทเรียน</span>
-      </span>
-      <span class="exam-cta-arrow">→</span>
-    </a>
+    <p class="roadmap-note">
+      📍 สถานะปัจจุบัน: ครบทั้ง 6 วิชา รวม 96 บทเรียน แบบฝึกหัดโต้ตอบพร้อมทฤษฎี ตัวอย่าง และเฉลย — เพิ่มโจทย์เคสซับซ้อนหลายขั้นตอน "ขั้นสูง 3 & 4 (CPA Case Study)" ครบทุกวิชาแล้ว
+    </p>
 
     <a href="./exam/index.html" class="exam-cta">
       <span class="exam-cta-icon">🧪⏱</span>
       <span class="exam-cta-text">
         <strong>ข้อสอบจำลองแบบผสม (Mixed Mock Exam)</strong>
-        <span>รวมโจทย์ข้ามวิชา จับเวลาจริง ให้คะแนนอัตโนมัติพร้อมเฉลย</span>
+        <span>รวมโจทย์ข้ามวิชา จับเวลาจริง ให้คะแนนอัตโนมัติพร้อมเฉลย (รวมโจทย์ CPA Mock Exam Set 1 ครบทั้ง 100 บทเรียน)</span>
       </span>
       <span class="exam-cta-arrow">→</span>
+    </a>
+
+    <a href="./exam/subjective.html" class="exam-cta" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(59, 130, 246, 0.1)); border-color: rgba(16, 185, 129, 0.35);">
+      <span class="exam-cta-icon">🏛️✍️</span>
+      <span class="exam-cta-text">
+        <strong>โหมดซ้อมทำข้อสอบอัตนัยฉบับเต็ม (CPA Subjective Essay Simulator)</strong>
+        <span>ฝึกเขียนบรรยาย แสดงวิธีทำ อ้างอิงข้อกฎหมาย/มาตรฐาน และบันทึกสมุดรายวันทั่วไปเดบิต-เครดิตแบบรายบรรทัดสำหรับสัดส่วนสอบอัตนัย 60%</span>
+      </span>
+      <span class="exam-cta-arrow" style="color: var(--accent-emerald);">→</span>
+    </a>
+
+    <a href="./exam/CPA_MOCK_EXAM_SET1.md" class="exam-cta" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(16, 185, 129, 0.08)); border-color: rgba(59, 130, 246, 0.3);">
+      <span class="exam-cta-icon">📝💡</span>
+      <span class="exam-cta-text">
+        <strong>คลังโจทย์อัตนัยและเฉลยละเอียด CPA Mock Exam Set 1</strong>
+        <span>เปิดอ่านชุดโจทย์เคสอัตนัย 4 ข้อหลัก พร้อมเฉลยละเอียดแสดงวิธีคิดทุกขั้นตอน</span>
+      </span>
+      <span class="exam-cta-arrow" style="color: var(--accent-blue);">→</span>
     </a>
 
     <p class="honesty-note">
@@ -385,7 +380,7 @@
 
     <div class="courses-grid">
 
-      <div class="course-card card-1" id="card-facc1">
+      <div class="course-card card-1">
         <span class="course-icon">📗</span>
         <div class="course-meta">วิชาที่ 1</div>
         <h2 class="course-title">การบัญชี 1</h2>
@@ -396,15 +391,12 @@
           <span class="tag">Double-Entry</span>
           <span class="tag">งบการเงิน</span>
           <span class="tag">15 บทเรียน</span>
-        </div>
-        <div class="track-progress" id="progress-facc1">
-          <div class="track-progress-bar"><div class="track-progress-fill"></div></div>
-          <span class="track-progress-text">0/15 บทเรียน (0%)</span>
+          <span class="tag">ลงลึกแล้ว ✓</span>
         </div>
         <a href="./01-financial-accounting-1/index.html" class="btn btn-1">เข้าสู่บทเรียน →</a>
       </div>
 
-      <div class="course-card card-2" id="card-facc2">
+      <div class="course-card card-2">
         <span class="course-icon">📘</span>
         <div class="course-meta">วิชาที่ 2</div>
         <h2 class="course-title">การบัญชี 2</h2>
@@ -416,14 +408,10 @@
           <span class="tag">TFRS 16</span>
           <span class="tag">14 บทเรียน</span>
         </div>
-        <div class="track-progress" id="progress-facc2">
-          <div class="track-progress-bar"><div class="track-progress-fill"></div></div>
-          <span class="track-progress-text">0/14 บทเรียน (0%)</span>
-        </div>
         <a href="./02-financial-accounting-2/index.html" class="btn btn-2">เข้าสู่บทเรียน →</a>
       </div>
 
-      <div class="course-card card-3" id="card-audit1">
+      <div class="course-card card-3">
         <span class="course-icon">🔍</span>
         <div class="course-meta">วิชาที่ 3</div>
         <h2 class="course-title">การสอบบัญชี 1</h2>
@@ -435,14 +423,10 @@
           <span class="tag">COSO</span>
           <span class="tag">14 บทเรียน</span>
         </div>
-        <div class="track-progress" id="progress-audit1">
-          <div class="track-progress-bar"><div class="track-progress-fill"></div></div>
-          <span class="track-progress-text">0/14 บทเรียน (0%)</span>
-        </div>
         <a href="./03-auditing-1/index.html" class="btn btn-3">เข้าสู่บทเรียน →</a>
       </div>
 
-      <div class="course-card card-4" id="card-audit2">
+      <div class="course-card card-4">
         <span class="course-icon">📋</span>
         <div class="course-meta">วิชาที่ 4</div>
         <h2 class="course-title">การสอบบัญชี 2</h2>
@@ -454,14 +438,10 @@
           <span class="tag">Going Concern</span>
           <span class="tag">14 บทเรียน</span>
         </div>
-        <div class="track-progress" id="progress-audit2">
-          <div class="track-progress-bar"><div class="track-progress-fill"></div></div>
-          <span class="track-progress-text">0/14 บทเรียน (0%)</span>
-        </div>
         <a href="./04-auditing-2/index.html" class="btn btn-4">เข้าสู่บทเรียน →</a>
       </div>
 
-      <div class="course-card card-5" id="card-law">
+      <div class="course-card card-5">
         <span class="course-icon">⚖️</span>
         <div class="course-meta">วิชาที่ 5</div>
         <h2 class="course-title">กฎหมายที่เกี่ยวข้องกับการประกอบวิชาชีพสอบบัญชี</h2>
@@ -473,14 +453,10 @@
           <span class="tag">พ.ร.บ.วิชาชีพบัญชี</span>
           <span class="tag">13 บทเรียน</span>
         </div>
-        <div class="track-progress" id="progress-law">
-          <div class="track-progress-bar"><div class="track-progress-fill"></div></div>
-          <span class="track-progress-text">0/13 บทเรียน (0%)</span>
-        </div>
         <a href="./05-law/index.html" class="btn btn-5">เข้าสู่บทเรียน →</a>
       </div>
 
-      <div class="course-card card-6" id="card-tax">
+      <div class="course-card card-6">
         <span class="course-icon">🧾</span>
         <div class="course-meta">วิชาที่ 6</div>
         <h2 class="course-title">ภาษีอากร</h2>
@@ -492,14 +468,10 @@
           <span class="tag">ประมวลรัษฎากร</span>
           <span class="tag">14 บทเรียน</span>
         </div>
-        <div class="track-progress" id="progress-tax">
-          <div class="track-progress-bar"><div class="track-progress-fill"></div></div>
-          <span class="track-progress-text">0/14 บทเรียน (0%)</span>
-        </div>
         <a href="./06-taxation/index.html" class="btn btn-6">เข้าสู่บทเรียน →</a>
       </div>
 
-      <div class="course-card card-1" id="card-cost">
+      <div class="course-card card-1">
         <span class="course-icon">📐</span>
         <div class="course-meta">วิชาที่ 7</div>
         <h2 class="course-title">บัญชีต้นทุน</h2>
@@ -511,14 +483,10 @@
           <span class="tag">Standard Costing</span>
           <span class="tag">27 บทเรียน</span>
         </div>
-        <div class="track-progress" id="progress-cost">
-          <div class="track-progress-bar"><div class="track-progress-fill"></div></div>
-          <span class="track-progress-text">0/27 บทเรียน (0%)</span>
-        </div>
         <a href="./07-cost-accounting/index.html" class="btn btn-1">เข้าสู่บทเรียน →</a>
       </div>
 
-      <div class="course-card card-2" id="card-finmgmt">
+      <div class="course-card card-2">
         <span class="course-icon">💰</span>
         <div class="course-meta">วิชาที่ 8</div>
         <h2 class="course-title">การบริหารการเงิน</h2>
@@ -530,47 +498,39 @@
           <span class="tag">Financial Ratios</span>
           <span class="tag">25 บทเรียน</span>
         </div>
-        <div class="track-progress" id="progress-finmgmt">
-          <div class="track-progress-bar"><div class="track-progress-fill"></div></div>
-          <span class="track-progress-text">0/25 บทเรียน (0%)</span>
-        </div>
         <a href="./08-financial-management/index.html" class="btn btn-2">เข้าสู่บทเรียน →</a>
+      </div>
+
+      <div class="course-card card-3">
+        <span class="course-icon">🏆</span>
+        <div class="course-meta">Capstone</div>
+        <h2 class="course-title">Final Project — กรณีศึกษาบูรณาการ</h2>
+        <p class="course-desc">
+          กรณีศึกษาต่อเนื่องเรื่องเดียว บูรณาการทั้ง 8 วิชา ตั้งแต่บันทึกบัญชี ค่าเสื่อมราคา ความเสี่ยงสอบบัญชี ภาษี อัตราส่วนการเงิน Going Concern จนถึงความเห็นผู้สอบบัญชี
+        </p>
+        <div class="tags">
+          <span class="tag">Integrated Case</span>
+          <span class="tag">Audit Opinion</span>
+          <span class="tag">15 บทเรียน</span>
+        </div>
+        <a href="./Final-Project/index.html" class="btn btn-3">เข้าสู่บทเรียน →</a>
       </div>
 
     </div>
 
+    <div class="progress-io-actions">
+      <button class="btn-io" onclick="exportProgress()">⬇️ Export ความคืบหน้า</button>
+      <label class="btn-io" for="import-progress-input">⬆️ Import ความคืบหน้า</label>
+      <input type="file" id="import-progress-input" accept="application/json" style="display:none" onchange="importProgress(event)">
+    </div>
+
     <footer>
-      <p>© 2026 Supavit Choenthanomwong · Built with Claude Code <span id="footer-version">· v0.6.1</span></p>
+      <p>© 2026 Supavit Choenthanomwong · Built with Claude Code <span id="footer-version">· v0.5.0</span></p>
     </footer>
   </div>
 
-  <!-- Loaded purely so this landing page can read real per-subject completion counts
-       from localStorage instead of hardcoding lesson totals (each file just registers
-       into window.CPA_SUBJECTS, no DOM access at load — same pattern exam/index.html uses). -->
-  <script src="01-financial-accounting-1/lessons.js"></script>
-  <script src="02-financial-accounting-2/lessons.js"></script>
-  <script src="03-auditing-1/lessons.js"></script>
-  <script src="04-auditing-2/lessons.js"></script>
-  <script src="05-law/lessons.js"></script>
-  <script src="06-taxation/lessons.js"></script>
-  <script src="07-cost-accounting/lessons.js"></script>
-  <script src="08-financial-management/lessons.js"></script>
   <script src="shared/checkin.js"></script>
   <script>
-    (function renderTrackProgress() {
-      window.CPA_SUBJECTS = window.CPA_SUBJECTS || {};
-      Object.values(window.CPA_SUBJECTS).forEach(subject => {
-        const panel = document.getElementById('progress-' + subject.subjectId);
-        if (!panel) return;
-        const total = subject.lessons.length;
-        const prefix = subject.config.storagePrefix;
-        const completed = subject.lessons.filter(l => localStorage.getItem(`${prefix}completed_${l.id}`) === 'true').length;
-        const pct = Math.round((completed / total) * 100);
-        panel.querySelector('.track-progress-fill').style.width = pct + '%';
-        panel.querySelector('.track-progress-text').textContent = `${completed}/${total} บทเรียน (${pct}%)`;
-      });
-    })();
-
     // Update-available check for people who cloned the repo (read-only, no push back)
     // instead of using the always-fresh GitHub Pages URL. Bump this alongside version.json
     // whenever new content ships.

@@ -12,7 +12,7 @@ Thai CPA exam candidates studying the 6 official subjects.
 - Free/lightweight study tools for the Thai CPA exam are scarce
 
 ## Core Features
-- 6 subject tracks, ~84 lessons total: Financial Accounting 1 & 2, Auditing 1 & 2, Law, Taxation
+- 6 subject tracks, 96 lessons total: Financial Accounting 1 & 2, Auditing 1 & 2, Law, Taxation
 - Lesson runner (`shared/engine.js`) — per-subject `index.html` + `lessons.js`
 - Timed mixed mock exam (`exam/`, `shared/exam-engine.js`)
 - Deployed static at `vit129.github.io/Accountant-Course`
