@@ -9,8 +9,12 @@ function getCheckInState() {
   };
 }
 
+function localDateStr(d) {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
 function recordDailyCheckIn() {
-  const todayStr = new Date().toISOString().slice(0, 10);
+  const todayStr = localDateStr(new Date());
   const lastStr = localStorage.getItem('cpa_checkin_last');
   let { streak, bestStreak } = getCheckInState();
 

@@ -14,6 +14,7 @@ function getFirstIncompleteIndex() {
 }
 
 function isLessonLocked(idx) {
+  if (isLessonCompleted(LESSONS[idx].id)) return false;
   const allDone = LESSONS.every(l => isLessonCompleted(l.id));
   return !allDone && idx > getFirstIncompleteIndex();
 }

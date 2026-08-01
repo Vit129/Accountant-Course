@@ -36,7 +36,7 @@ Final-Project เป็นกรณีศึกษาต่อเนื่อง
 
 ## เทคโนโลยี
 
-Static site — HTML, CSS, Vanilla JS ล้วน ไม่มี build step, เปิด `index.html` ได้ตรงๆ หรือ clone แล้วเปิดผ่าน local server ก็ได้
+Static site — HTML, CSS, Vanilla JS ล้วน ไม่มี build step ทดสอบแล้วบน Chrome เปิด `index.html` ได้ตรงๆ (browser อื่นบางตัวอาจบล็อค script ข้ามโฟลเดอร์เมื่อเปิดผ่าน `file://` — ถ้าไม่ขึ้นเนื้อหา ให้ clone แล้วเปิดผ่าน local server แทน)
 
 ## License
 
