@@ -1,13 +1,13 @@
 :root {
-  --bg-primary: #0a0d14;
-  --bg-secondary: #121824;
-  --bg-tertiary: #1a2332;
-  --border-color: rgba(255, 255, 255, 0.08);
-  --border-color-glow: rgba(16, 185, 129, 0.3);
+  --bg-primary: #F5F0E6;
+  --bg-secondary: #FAF4E7;
+  --bg-tertiary: #EDE6D8;
+  --border-color: rgba(43, 38, 32, 0.12);
+  --border-color-glow: rgba(16, 185, 129, 0.35);
 
-  --text-primary: #f3f4f6;
-  --text-secondary: #9ca3af;
-  --text-muted: #4e5666;
+  --text-primary: #2B2620;
+  --text-secondary: #6B6259;
+  --text-muted: #9C9284;
 
   --accent-blue: #3b82f6;
   --accent-emerald: #10b981;
@@ -43,11 +43,11 @@ body {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(43, 38, 32, 0.15);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(43, 38, 32, 0.25);
 }
 
 /* Sidebar Styling */
@@ -113,7 +113,7 @@ body {
 }
 
 .lesson-item:hover {
-  background-color: rgba(255, 255, 255, 0.03);
+  background-color: rgba(43, 38, 32, 0.04);
   color: var(--text-primary);
 }
 
@@ -125,6 +125,15 @@ body {
 
 .lesson-item.completed {
   border-left: 3px solid var(--accent-emerald);
+}
+
+.lesson-item.locked {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.lesson-item.locked .lesson-item-title {
+  color: var(--text-muted);
 }
 
 .lesson-item-meta {
@@ -156,7 +165,7 @@ body {
 .sidebar-footer {
   padding: 20px;
   border-top: 1px solid var(--border-color);
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(43, 38, 32, 0.04);
 }
 
 .progress-container {
@@ -187,6 +196,15 @@ body {
   transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.checkin-mini {
+  margin-top: 12px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+.checkin-mini strong {
+  color: var(--accent-amber);
+}
+
 /* Main Content Styling */
 .main-content {
   flex: 1;
@@ -204,7 +222,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 32px;
-  background-color: rgba(18, 24, 36, 0.5);
+  background-color: rgba(250, 244, 231, 0.75);
   backdrop-filter: blur(8px);
 }
 
@@ -279,7 +297,7 @@ body {
 }
 
 .panel-right {
-  background-color: #0b0f17;
+  background-color: #FBF8F1;
 }
 
 .panel-header {
@@ -288,7 +306,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(18, 24, 36, 0.3);
+  background-color: rgba(43, 38, 32, 0.03);
 }
 
 .panel-title {
@@ -333,7 +351,7 @@ body {
 
 .content-text p {
   margin-bottom: 16px;
-  color: #d1d5db;
+  color: #44403A;
 }
 
 .content-text ul, .content-text ol {
@@ -343,16 +361,16 @@ body {
 
 .content-text li {
   margin-bottom: 8px;
-  color: #d1d5db;
+  color: #44403A;
 }
 
 .content-text code {
   font-family: var(--font-mono);
-  background-color: rgba(255, 255, 255, 0.06);
+  background-color: rgba(43, 38, 32, 0.06);
   padding: 2px 6px;
   border-radius: 4px;
   font-size: 0.9em;
-  color: var(--accent-amber);
+  color: #B45309;
 }
 
 .content-text table {
@@ -369,7 +387,7 @@ body {
 }
 
 .content-text th {
-  background-color: rgba(255, 255, 255, 0.02);
+  background-color: rgba(43, 38, 32, 0.03);
   font-weight: 700;
   color: var(--text-primary);
 }
@@ -388,12 +406,12 @@ body {
 
 .content-text blockquote p {
   margin-bottom: 0;
-  color: #a7f3d0;
+  color: #047857;
   font-weight: 500;
 }
 
 .content-text pre {
-  background-color: #080c14;
+  background-color: #F3ECDD;
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 16px;
@@ -404,14 +422,14 @@ body {
 .content-text pre code {
   background-color: transparent;
   padding: 0;
-  color: #e6edf3;
+  color: #2B2620;
   font-size: 0.85rem;
 }
 
 /* Interactive Answer Editor (Execute Program Style) */
 .editor-header {
   height: 48px;
-  background-color: #121824;
+  background-color: #EDE6D8;
   border-bottom: 1px solid var(--border-color);
   display: flex;
   justify-content: space-between;
@@ -439,7 +457,7 @@ body {
 }
 
 .editor-tab.active {
-  background-color: #0b0f17;
+  background-color: #FBF8F1;
   color: var(--text-primary);
   border-bottom: 2px solid var(--accent-blue);
   font-weight: 600;
@@ -469,13 +487,13 @@ body {
   flex: 1;
   display: flex;
   overflow: hidden;
-  background-color: #0b0f17;
+  background-color: #FBF8F1;
   position: relative;
 }
 
 .editor-gutter {
   width: 48px;
-  background-color: #080c12;
+  background-color: #F0E9DA;
   border-right: 1px solid var(--border-color);
   padding: 16px 0;
   display: flex;
@@ -509,7 +527,7 @@ body {
 /* Terminal Area */
 .terminal-panel {
   height: 240px;
-  background-color: #07090e;
+  background-color: #F0E9DA;
   border-top: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
@@ -517,7 +535,7 @@ body {
 
 .terminal-header {
   padding: 8px 16px;
-  background-color: #0a0d14;
+  background-color: #EDE6D8;
   border-bottom: 1px solid var(--border-color);
   font-size: 0.725rem;
   font-weight: 700;
@@ -569,7 +587,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(10, 13, 20, 0.85);
+  background-color: rgba(43, 38, 32, 0.45);
   backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
@@ -661,12 +679,12 @@ body {
 
 /* Content blocks for structured learning */
 .content-block {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(43, 38, 32, 0.025);
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 24px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(43, 38, 32, 0.06);
 }
 .content-block.theory {
   border-left: 4px solid var(--accent-blue);
@@ -686,7 +704,7 @@ body {
   align-items: center;
   gap: 8px;
   color: var(--text-primary);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(43, 38, 32, 0.1);
   padding-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -703,13 +721,13 @@ body {
 }
 
 .btn-hint:hover {
-  background-color: rgba(255, 255, 255, 0.1) !important;
+  background-color: rgba(43, 38, 32, 0.06) !important;
   color: var(--text-primary) !important;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 8px rgba(43, 38, 32, 0.08);
 }
 
 .btn-solution:hover {
-  background-color: rgba(255, 255, 255, 0.1) !important;
+  background-color: rgba(43, 38, 32, 0.06) !important;
   color: var(--text-primary) !important;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 8px rgba(43, 38, 32, 0.08);
 }

@@ -10,11 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-primary: #080b11;
-      --bg-secondary: #111622;
-      --border-color: rgba(255, 255, 255, 0.08);
-      --text-primary: #f3f4f6;
-      --text-secondary: #9ca3af;
+      --bg-primary: #F5F0E6;
+      --bg-secondary: #FAF4E7;
+      --border-color: rgba(43, 38, 32, 0.12);
+      --text-primary: #2B2620;
+      --text-secondary: #6B6259;
       --accent-emerald: #10b981;
       --accent-blue: #3b82f6;
       --accent-amber: #f59e0b;
@@ -49,7 +49,7 @@
       font-weight: 800;
       letter-spacing: -0.02em;
       margin-bottom: 16px;
-      background: linear-gradient(135deg, #fff 30%, var(--text-secondary));
+      background: linear-gradient(135deg, var(--text-primary) 30%, var(--text-secondary));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -68,8 +68,8 @@
       padding: 14px 20px;
       border: 1px solid var(--border-color);
       border-radius: 10px;
-      background: rgba(16, 185, 129, 0.06);
-      color: #a7f3d0;
+      background: rgba(16, 185, 129, 0.08);
+      color: #047857;
       font-size: 0.85rem;
       line-height: 1.6;
     }
@@ -100,14 +100,119 @@
     .exam-cta-text span:last-child { font-size: 0.82rem; color: var(--text-secondary); }
     .exam-cta-arrow { font-size: 1.3rem; color: var(--accent-rose); flex-shrink: 0; }
 
+    .github-star-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+      padding: 8px 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      background: rgba(43, 38, 32, 0.05);
+      border: 1px solid var(--border-color);
+      border-radius: 9999px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .github-star-btn:hover {
+      background: rgba(234, 179, 8, 0.15);
+      border-color: rgba(234, 179, 8, 0.4);
+      color: #92400e;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(234, 179, 8, 0.2);
+    }
+
+    /* Update-available banner */
+    .update-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background-color: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 12px;
+      padding: 14px 20px;
+      margin: 0 auto 24px;
+      max-width: 780px;
+      text-align: left;
+      font-size: 0.9rem;
+      color: var(--text-primary);
+      animation: banner-pop 0.4s ease;
+    }
+    .update-banner a { color: var(--accent-blue); font-weight: 600; }
+    .update-banner-close {
+      background: none;
+      border: none;
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 4px 8px;
+      flex-shrink: 0;
+    }
+    .update-banner-close:hover { color: var(--text-primary); }
+    @media (max-width: 640px) {
+      .update-banner { flex-direction: column; align-items: flex-start; }
+    }
+    @keyframes banner-pop {
+      from { opacity: 0; transform: scale(0.95) translateY(10px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    footer #footer-version a { color: inherit; text-decoration: none; }
+    footer #footer-version a:hover { color: var(--text-primary); text-decoration: underline; }
+
+    .progress-io-actions {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 0 auto 8px;
+    }
+    .btn-io {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      background: rgba(43, 38, 32, 0.04);
+      border: 1px solid var(--border-color);
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .btn-io:hover {
+      color: var(--text-primary);
+      border-color: var(--text-secondary);
+    }
+
+    .checkin-banner {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      max-width: 780px;
+      margin: 0 auto 24px;
+      padding: 14px 20px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(16, 185, 129, 0.08));
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+    .checkin-icon { font-size: 1.6rem; flex-shrink: 0; }
+    .checkin-text { display: flex; flex-direction: column; gap: 2px; }
+    .checkin-text strong { font-size: 0.95rem; }
+    .checkin-text span:last-child { font-size: 0.78rem; color: var(--text-secondary); }
+    .checkin-new { color: var(--accent-emerald); font-weight: 600; }
+
     .honesty-note {
       max-width: 780px;
       margin: 0 auto 40px;
       padding: 14px 20px;
       border: 1px solid rgba(245, 158, 11, 0.35);
       border-radius: 10px;
-      background: rgba(245, 158, 11, 0.06);
-      color: #fcd9a8;
+      background: rgba(245, 158, 11, 0.08);
+      color: #92400E;
       font-size: 0.82rem;
       line-height: 1.6;
       text-align: left;
@@ -143,8 +248,8 @@
 
     .course-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
-      border-color: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 20px 40px -15px rgba(43, 38, 32, 0.15);
+      border-color: rgba(43, 38, 32, 0.15);
     }
 
     .card-1:hover::before { background: var(--accent-emerald); }
@@ -182,7 +287,7 @@
       font-weight: 600;
       padding: 4px 10px;
       border-radius: 9999px;
-      background-color: rgba(255, 255, 255, 0.05);
+      background-color: rgba(43, 38, 32, 0.05);
       color: var(--text-secondary);
       border: 1px solid var(--border-color);
     }
@@ -212,7 +317,7 @@
     .btn-6 { background-color: var(--accent-teal); color: white; }
     .btn-6:hover { background-color: #0d9488; box-shadow: 0 0 16px rgba(20, 184, 166, 0.4); }
 
-    footer { font-size: 0.8rem; color: #4b5563; margin-top: 24px; }
+    footer { font-size: 0.8rem; color: var(--text-secondary); margin-top: 24px; }
 
     @media (max-width: 1000px) { .courses-grid { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 640px) {
@@ -229,7 +334,14 @@
       <p class="subtitle">
         หลักสูตรเตรียมสอบ CPA (สภาวิชาชีพบัญชี) ครบทั้ง 6 วิชา ตั้งแต่พื้นฐานถึงระดับพร้อมสอบ ผ่านระบบฝึกหัดโต้ตอบ (Interactive Sandbox) ในเบราว์เซอร์ พร้อมทฤษฎี ตัวอย่าง และโจทย์ตรวจคำตอบอัตโนมัติ
       </p>
+      <a href="https://github.com/Vit129/Accountant-Course" target="_blank" rel="noopener noreferrer" class="github-star-btn">
+        ⭐ Star on GitHub
+      </a>
     </header>
+
+    <div id="update-banner-slot"></div>
+
+    <div id="checkin-banner" class="checkin-banner"></div>
 
     <p class="roadmap-note">
       📍 สถานะปัจจุบัน: ครบทั้ง 6 วิชา รวม 84 บทเรียน แบบฝึกหัดโต้ตอบพร้อมทฤษฎี ตัวอย่าง และเฉลย — ทุกวิชามีชั้นบท "ขั้นสูง" (โจทย์ผสมหลายขั้นตอน ยากระดับสอบจริง) เพิ่มเข้ามาแล้ว
@@ -341,13 +453,162 @@
         <a href="./06-taxation/index.html" class="btn btn-6">เข้าสู่บทเรียน →</a>
       </div>
 
+      <div class="course-card card-1">
+        <span class="course-icon">📐</span>
+        <div class="course-meta">วิชาที่ 7</div>
+        <h2 class="course-title">บัญชีต้นทุน</h2>
+        <p class="course-desc">
+          การจำแนกต้นทุน ต้นทุนงานสั่งทำ ต้นทุนช่วงการผลิต (FIFO/ของเสีย) การปันส่วนต้นทุนร่วม (NRV) CVP ผลต่างต้นทุนมาตรฐาน 4 ทาง การตัดสินใจต้นทุนที่เกี่ยวข้อง และ ABC — รวมแนวข้อสอบ CPA จำลอง
+        </p>
+        <div class="tags">
+          <span class="tag">Job Order Costing</span>
+          <span class="tag">Standard Costing</span>
+          <span class="tag">27 บทเรียน</span>
+        </div>
+        <a href="./07-cost-accounting/index.html" class="btn btn-1">เข้าสู่บทเรียน →</a>
+      </div>
+
+      <div class="course-card card-2">
+        <span class="course-icon">💰</span>
+        <div class="course-meta">วิชาที่ 8</div>
+        <h2 class="course-title">การบริหารการเงิน</h2>
+        <p class="course-desc">
+          มูลค่าเงินตามเวลา NPV/IRR/Payback ต้นทุนเงินทุน (WACC/CAPM) DFL/DCL วงจรเงินสด (CCC) DuPont 3 ขั้น และการประเมินมูลค่าหุ้นกู้ — รวมแนวข้อสอบ CPA จำลอง
+        </p>
+        <div class="tags">
+          <span class="tag">NPV / WACC / CAPM</span>
+          <span class="tag">Financial Ratios</span>
+          <span class="tag">25 บทเรียน</span>
+        </div>
+        <a href="./08-financial-management/index.html" class="btn btn-2">เข้าสู่บทเรียน →</a>
+      </div>
+
+      <div class="course-card card-3">
+        <span class="course-icon">🏆</span>
+        <div class="course-meta">Capstone</div>
+        <h2 class="course-title">Final Project — กรณีศึกษาบูรณาการ</h2>
+        <p class="course-desc">
+          กรณีศึกษาต่อเนื่องเรื่องเดียว บูรณาการทั้ง 8 วิชา ตั้งแต่บันทึกบัญชี ค่าเสื่อมราคา ความเสี่ยงสอบบัญชี ภาษี อัตราส่วนการเงิน Going Concern จนถึงความเห็นผู้สอบบัญชี
+        </p>
+        <div class="tags">
+          <span class="tag">Integrated Case</span>
+          <span class="tag">Audit Opinion</span>
+          <span class="tag">15 บทเรียน</span>
+        </div>
+        <a href="./Final-Project/index.html" class="btn btn-3">เข้าสู่บทเรียน →</a>
+      </div>
+
+    </div>
+
+    <div class="progress-io-actions">
+      <button class="btn-io" onclick="exportProgress()">⬇️ Export ความคืบหน้า</button>
+      <label class="btn-io" for="import-progress-input">⬆️ Import ความคืบหน้า</label>
+      <input type="file" id="import-progress-input" accept="application/json" style="display:none" onchange="importProgress(event)">
     </div>
 
     <footer>
-      <p>© 2026 Personal CPA Exam Prep Portal. Built with HTML, CSS, and Vanilla JS.</p>
-      <p>© 2026 Supavit Choenthanomwong · Powered by Claude Code</p>
+      <p>© 2026 Supavit Choenthanomwong · Built with Claude Code <span id="footer-version">· v0.5.0</span></p>
     </footer>
   </div>
 
+  <script src="shared/checkin.js"></script>
+  <script>
+    // Update-available check for people who cloned the repo (read-only, no push back)
+    // instead of using the always-fresh GitHub Pages URL. Bump this alongside version.json
+    // whenever new content ships.
+    const CURRENT_VERSION = 1;
+    const VERSION_CHECK_URL = 'https://raw.githubusercontent.com/Vit129/Accountant-Course/main/version.json';
+    const PAGES_URL = 'https://vit129.github.io/Accountant-Course/';
+    const DISMISS_KEY = 'cpa_course_update_dismissed_version';
+
+    async function checkForUpdates() {
+      try {
+        const res = await fetch(VERSION_CHECK_URL, { cache: 'no-store' });
+        if (!res.ok) return;
+        const remote = await res.json();
+        if (typeof remote.version !== 'number' || remote.version <= CURRENT_VERSION) return;
+
+        const dismissed = Number(localStorage.getItem(DISMISS_KEY) || '0');
+        if (dismissed >= remote.version) return;
+
+        showUpdateBanner(remote);
+      } catch (e) {
+        // Offline, blocked, or rate-limited - this is a non-critical enhancement, fail silently.
+      }
+    }
+
+    function showUpdateBanner(remote) {
+      const slot = document.getElementById('update-banner-slot');
+      const banner = document.createElement('div');
+      banner.className = 'update-banner';
+      banner.innerHTML = `
+        <span>🔔 มีอัพเดตใหม่ (v${remote.version}, ${remote.updated}): ${remote.summary} —
+          รัน <code>git pull origin main</code> เพื่ออัพเดต หรือดูล่าสุดที่
+          <a href="${PAGES_URL}" target="_blank" rel="noopener">GitHub Pages</a> แทนการ clone</span>
+        <button class="update-banner-close" aria-label="ปิด">✕</button>
+      `;
+      banner.querySelector('.update-banner-close').onclick = () => {
+        localStorage.setItem(DISMISS_KEY, String(remote.version));
+        banner.remove();
+      };
+      slot.appendChild(banner);
+    }
+
+    checkForUpdates();
+
+    // Footer version tag - pulled from the latest GitHub Release at runtime, never
+    // hand-edited, so it can't go stale the way manual lesson-count tags do.
+    async function loadFooterVersion() {
+      try {
+        const res = await fetch('https://api.github.com/repos/Vit129/Accountant-Course/releases/latest', { cache: 'no-store' });
+        if (!res.ok) return;
+        const release = await res.json();
+        if (!release.tag_name) return;
+        const el = document.getElementById('footer-version');
+        if (el) el.innerHTML = `· <a href="${release.html_url}" target="_blank" rel="noopener">${release.tag_name}</a>`;
+      } catch (e) {
+        // Offline, blocked, or rate-limited - non-critical, fail silently.
+      }
+    }
+    loadFooterVersion();
+
+    // Export/import all course progress (lesson completions, saved answers, streak) as a JSON file.
+    // Generic over every localStorage key — works across all 9 subject folders' different storagePrefix values.
+    function exportProgress() {
+      const data = {};
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        data[key] = localStorage.getItem(key);
+      }
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'cpa-course-progress.json';
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function importProgress(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        let data;
+        try {
+          data = JSON.parse(reader.result);
+        } catch (err) {
+          alert('ไฟล์ไม่ถูกต้อง: ' + err.message);
+          return;
+        }
+        if (!confirm('นำเข้าความคืบหน้าจะเขียนทับของเดิมทั้งหมด ต้องการดำเนินการต่อหรือไม่?')) return;
+        Object.entries(data).forEach(([key, value]) => localStorage.setItem(key, value));
+        alert('นำเข้าความคืบหน้าสำเร็จ');
+        location.reload();
+      };
+      reader.readAsText(file);
+      event.target.value = '';
+    }
+  </script>
 </body>
 </html>
