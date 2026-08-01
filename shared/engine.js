@@ -4,7 +4,22 @@
 
 let currentLessonIndex = 0;
 
+// Sequential lock: a lesson can only be opened once every lesson before it has passed
+// its own check (each lesson's task/validate() IS its "exam" — no skipping ahead).
+function getFirstIncompleteIndex() {
+  for (let i = 0; i < LESSONS.length; i++) {
+    if (!isLessonCompleted(LESSONS[i].id)) return i;
+  }
+  return LESSONS.length - 1;
+}
+
+function isLessonLocked(idx) {
+  const allDone = LESSONS.every(l => isLessonCompleted(l.id));
+  return !allDone && idx > getFirstIncompleteIndex();
+}
+
 function initApp() {
+  currentLessonIndex = getFirstIncompleteIndex();
   renderLessonList();
   loadLesson(currentLessonIndex);
   updateProgressBar();
@@ -65,14 +80,17 @@ function renderLessonList() {
 
   listContainer.innerHTML = LESSONS.map((lesson, idx) => {
     const isCompleted = isLessonCompleted(lesson.id);
+    const locked = isLessonLocked(idx);
     const activeClass = idx === currentLessonIndex ? 'active' : '';
     const completedClass = isCompleted ? 'completed' : '';
+    const lockedClass = locked ? 'locked' : '';
 
     return `
-      <button class="lesson-item ${activeClass} ${completedClass}" onclick="selectLesson(${idx})">
+      <button class="lesson-item ${activeClass} ${completedClass} ${lockedClass}" ${locked ? 'disabled' : `onclick="selectLesson(${idx})"`}>
         <div class="lesson-item-meta">
           <span>${lesson.meta}</span>
           <span class="check-icon">✓ ผ่านการประเมิน</span>
+          ${locked ? '<span class="lock-icon">🔒</span>' : ''}
         </div>
         <div class="lesson-item-title">${lesson.title}</div>
       </button>
@@ -81,6 +99,11 @@ function renderLessonList() {
 }
 
 function selectLesson(idx) {
+  if (isLessonLocked(idx)) {
+    alert('ต้องทำบทเรียนก่อนหน้าให้ผ่านก่อน ถึงจะปลดล็อคบทนี้ได้');
+    return;
+  }
+
   currentLessonIndex = idx;
   renderLessonList();
   loadLesson(idx);
@@ -203,6 +226,11 @@ function setLessonCompleted(lessonId) {
   localStorage.setItem(`${COURSE_CONFIG.storagePrefix}completed_${lessonId}`, 'true');
   renderLessonList();
   updateProgressBar();
+  if (typeof checkMilestones === 'function') checkMilestones();
+  if (typeof recordDailyCheckIn === 'function') {
+    recordDailyCheckIn();
+    if (typeof renderCheckInMini === 'function') renderCheckInMini('checkin-mini');
+  }
 }
 
 function updateProgressBar() {
@@ -307,6 +335,10 @@ function showGraduationMessage() {
     <div class="terminal-line text-muted">${COURSE_CONFIG.graduationBody || ''}</div>
   `;
   terminal.scrollTop = terminal.scrollHeight;
+
+  if (totalCorrect === LESSONS.length && typeof showTrackCertificate === 'function') {
+    showTrackCertificate(document.title);
+  }
 }
 
 window.onload = initApp;

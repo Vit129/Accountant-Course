@@ -31,4 +31,4 @@ MIT — ดู [LICENSE](LICENSE)
 
 ---
 
-© 2026 Supavit Choenthanomwong · Powered by Claude Code
+© 2026 Supavit Choenthanomwong · Built with Claude Code

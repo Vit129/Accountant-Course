@@ -23,6 +23,7 @@
         <div class="progress-header"><span>ความคืบหน้าภาพรวม</span><span id="progress-label">0 / 0</span></div>
         <div class="progress-bar-bg"><div class="progress-bar-fill" id="progress-bar-fill"></div></div>
       </div>
+      <div id="checkin-mini" class="checkin-mini"></div>
     </div>
   </aside>
 
@@ -74,7 +75,7 @@
         <div class="lesson-overlay" id="dialog-overlay">
           <div class="overlay-card" style="max-width: 520px; text-align: left;">
             <h2 class="overlay-title" id="dialog-title" style="color: var(--text-primary); margin-bottom: 16px; font-size: 1.25rem; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">หัวข้อ</h2>
-            <div id="dialog-content" style="color: #d1d5db; font-size: 0.9rem; line-height: 1.6; margin-bottom: 24px; white-space: pre-line; max-height: 300px; overflow-y: auto; font-family: var(--font-mono); background: rgba(0,0,0,0.2); padding: 12px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.05);">เนื้อหา...</div>
+            <div id="dialog-content" style="color: #44403A; font-size: 0.9rem; line-height: 1.6; margin-bottom: 24px; white-space: pre-line; max-height: 300px; overflow-y: auto; font-family: var(--font-mono); background: rgba(43,38,32,0.04); padding: 12px; border-radius: 6px; border: 1px solid rgba(43,38,32,0.08);">เนื้อหา...</div>
             <div style="display: flex; justify-content: flex-end; gap: 12px;">
               <button class="btn btn-secondary" onclick="closeDialog()">ปิดหน้าต่าง</button>
               <button class="btn btn-primary" id="dialog-action-btn" style="display: none;">ใช้เฉลยในช่องคำตอบ</button>
@@ -86,6 +87,8 @@
   </main>
 
   <script src="lessons.js"></script>
+  <script src="../shared/gamification.js"></script>
+  <script src="../shared/checkin.js"></script>
   <script src="../shared/engine.js"></script>
 </body>
 </html>
