@@ -6,5 +6,5 @@
     "test": "node shared/selftest.mjs",
     "start": "bash scripts/release.sh"
   },
-  "version": "0.5.1"
+  "version": "0.6.0"
 }
