@@ -3,28 +3,28 @@ _Auto-generated from GRAPH_REPORT.md · do not edit manually_
 _Regen: `graphify update .`_
 
 ## Summary
-- 324 nodes · 344 edges · 23 communities (20 shown, 3 thin omitted)
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 5 edges (avg confidence: 0.55)
+- 445 nodes · 450 edges · 33 communities (23 shown, 10 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 
 ## Graph Freshness
-- Built from commit: `d774f67f`
+- Built from commit: `fe1c494a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 
 ## God Nodes (most connected - your core abstractions)
-1. `initApp()` - 8 edges
-2. `startExam()` - 6 edges
-3. `goToQuestion()` - 6 edges
-4. `updateGutter()` - 5 edges
-5. `loadLesson()` - 5 edges
-6. `@media (max-width: 768px)` - 5 edges
-7. `Honest-Limitations / Not-Real-Past-Papers Note` - 5 edges
-8. `handleTextareaKeydown()` - 4 edges
-9. `renderLessonList()` - 4 edges
-10. `saveCurrentAnswer()` - 4 edges
+1. `LESSONS` - 16 edges
+2. `LESSONS` - 15 edges
+3. `LESSONS` - 15 edges
+4. `LESSONS` - 15 edges
+5. `LESSONS` - 15 edges
+6. `LESSONS` - 14 edges
+7. `initApp()` - 8 edges
+8. `Product` - 7 edges
+9. `startExam()` - 6 edges
+10. `goToQuestion()` - 6 edges
 
 
 ## Cross-Cutting Nodes (span the most distinct areas of the codebase)
@@ -37,8 +37,7 @@ node's neighbors span, not by raw edge count.
 
 
 ## Surprising Connections (you probably didn't know these)
-- `Agent Memory Index` --conceptually_related_to--> `Agent Memory Playbook`  [INFERRED]
-  agent-memory/INDEX.md → agent-memory/PLAYBOOK.md
+- None detected - all connections are within the same source files.
 
 
 _Full map → GRAPH_REPORT.md · query: `graphify query "..."`_

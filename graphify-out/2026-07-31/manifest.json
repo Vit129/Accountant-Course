@@ -1,0 +1,127 @@
+{
+  "01-financial-accounting-1/index.html": {
+    "mtime": 1784122205.0032406,
+    "ast_hash": "8333382b1bee0802cfcfea01cc51bd9d",
+    "semantic_hash": "8333382b1bee0802cfcfea01cc51bd9d"
+  },
+  "01-financial-accounting-1/lessons.js": {
+    "mtime": 1784219752.1708279,
+    "ast_hash": "092c87930c9c114aa870b0ba4bdd9044",
+    "semantic_hash": "092c87930c9c114aa870b0ba4bdd9044"
+  },
+  "02-financial-accounting-2/index.html": {
+    "mtime": 1784122446.1177275,
+    "ast_hash": "742f2a43e87ce26078304f652a503430",
+    "semantic_hash": "742f2a43e87ce26078304f652a503430"
+  },
+  "02-financial-accounting-2/lessons.js": {
+    "mtime": 1784219752.1725888,
+    "ast_hash": "2f2f2e36d4d1937d8b8854d5cceb575d",
+    "semantic_hash": "2f2f2e36d4d1937d8b8854d5cceb575d"
+  },
+  "03-auditing-1/index.html": {
+    "mtime": 1784122471.190552,
+    "ast_hash": "7d3fcdf55ef34033ab130742a14294f0",
+    "semantic_hash": "7d3fcdf55ef34033ab130742a14294f0"
+  },
+  "03-auditing-1/lessons.js": {
+    "mtime": 1784219752.1747513,
+    "ast_hash": "5e2e1c2567436496030bd68aa9acb242",
+    "semantic_hash": "5e2e1c2567436496030bd68aa9acb242"
+  },
+  "04-auditing-2/index.html": {
+    "mtime": 1784122471.2261374,
+    "ast_hash": "63e77468cfa29e8cdcc174f1d8c01372",
+    "semantic_hash": "63e77468cfa29e8cdcc174f1d8c01372"
+  },
+  "04-auditing-2/lessons.js": {
+    "mtime": 1784219752.1768086,
+    "ast_hash": "a79700f5ddb50b051aca93f751cf6681",
+    "semantic_hash": "a79700f5ddb50b051aca93f751cf6681"
+  },
+  "05-law/index.html": {
+    "mtime": 1784122471.2694955,
+    "ast_hash": "696bd960d581333ab58bfb83182f9178",
+    "semantic_hash": "696bd960d581333ab58bfb83182f9178"
+  },
+  "05-law/lessons.js": {
+    "mtime": 1784219752.1780446,
+    "ast_hash": "25439622485ba22fe302431c577abde1",
+    "semantic_hash": "25439622485ba22fe302431c577abde1"
+  },
+  "06-taxation/index.html": {
+    "mtime": 1784122471.3148105,
+    "ast_hash": "37c6470ef6f09514deefe772ea9048a1",
+    "semantic_hash": "37c6470ef6f09514deefe772ea9048a1"
+  },
+  "06-taxation/lessons.js": {
+    "mtime": 1784219752.179324,
+    "ast_hash": "3fb482e6af276b4942a10a7d9e032465",
+    "semantic_hash": "3fb482e6af276b4942a10a7d9e032465"
+  },
+  "cliff.toml": {
+    "mtime": 1784474040.8380132,
+    "ast_hash": "36ea0a18480cda9029abe9d94869fde3",
+    "semantic_hash": "36ea0a18480cda9029abe9d94869fde3"
+  },
+  "exam/index.html": {
+    "mtime": 1784125686.7261975,
+    "ast_hash": "7c73d0427343182a4c03389193026461",
+    "semantic_hash": "7c73d0427343182a4c03389193026461"
+  },
+  "index.html": {
+    "mtime": 1784219752.1804748,
+    "ast_hash": "0a18f0cb4e5803b135bbe038f787ecc3",
+    "semantic_hash": "0a18f0cb4e5803b135bbe038f787ecc3"
+  },
+  "scripts/release.sh": {
+    "mtime": 1784474057.4757545,
+    "ast_hash": "3de76589db13466624ff26224d810cdd",
+    "semantic_hash": "3de76589db13466624ff26224d810cdd"
+  },
+  "shared/engine.js": {
+    "mtime": 1784122110.0976179,
+    "ast_hash": "e566583181cddc91bd975d57126a0baf",
+    "semantic_hash": "e566583181cddc91bd975d57126a0baf"
+  },
+  "shared/exam-engine.js": {
+    "mtime": 1784125686.7277932,
+    "ast_hash": "66af4b13e9c9ae804eef1352517ea07f",
+    "semantic_hash": "66af4b13e9c9ae804eef1352517ea07f"
+  },
+  "shared/style.css": {
+    "mtime": 1784122074.2656143,
+    "ast_hash": "1b992c95b776c8b12d70ca0ec7aef8f9",
+    "semantic_hash": "1b992c95b776c8b12d70ca0ec7aef8f9"
+  },
+  "CHANGELOG.md": {
+    "mtime": 1784474126.292493,
+    "ast_hash": "72fb45002f7b98b206e5d3474b9749d6",
+    "semantic_hash": "72fb45002f7b98b206e5d3474b9749d6"
+  },
+  "DESIGN.md": {
+    "mtime": 1784381757.6830807,
+    "ast_hash": "b9703b2027c062a6d32fab5651e168f6",
+    "semantic_hash": "b9703b2027c062a6d32fab5651e168f6"
+  },
+  "PRODUCT.md": {
+    "mtime": 1784381684.8162696,
+    "ast_hash": "ad8ed63cf874d04f275d5b573275ea61",
+    "semantic_hash": "ad8ed63cf874d04f275d5b573275ea61"
+  },
+  "README.md": {
+    "mtime": 1784163128.8147473,
+    "ast_hash": "86f1ca3a25fe5b20e7a08d6e58f9c3b8",
+    "semantic_hash": "86f1ca3a25fe5b20e7a08d6e58f9c3b8"
+  },
+  "agent-memory/INDEX.md": {
+    "mtime": 1784880070.8553066,
+    "ast_hash": "408e45a7dbf242b9140daabb0eac62a7",
+    "semantic_hash": "408e45a7dbf242b9140daabb0eac62a7"
+  },
+  "agent-memory/PLAYBOOK.md": {
+    "mtime": 1784880070.847197,
+    "ast_hash": "0679d1a65c0147e26c2927202fd1144c",
+    "semantic_hash": "0679d1a65c0147e26c2927202fd1144c"
+  }
+}
