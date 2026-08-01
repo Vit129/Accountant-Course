@@ -3,7 +3,7 @@
 All notable changes to Accountant-Learning are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and Accountant-Learning follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-## [Unreleased]
+## [0.5.1] - 2026-08-01
 
 ### Added
 - CPA exam prep portal — 6-subject skeleton, การบัญชี 1 deep-dive ([`c36aefc`](https://github.com/Vit129/Accountant-Course/commit/c36aefce03c69b4ea9887da6bafff4404934b5ce))
@@ -13,6 +13,9 @@ All notable changes to Accountant-Learning are documented here. The format is ba
 - Deepen subjects 2-6 with 14 more lessons (43 → 57 total) ([`974f4d2`](https://github.com/Vit129/Accountant-Course/commit/974f4d2022b9c9a0b28a32d11cca866b1898395c))
 - Deepen 5 subjects further via Agy (57 → 72 lessons) ([`e268538`](https://github.com/Vit129/Accountant-Course/commit/e26853808627d87ae25b70f98ac9d016901c2861))
 - Add ขั้นสูง (advanced) hard-tier lessons to all 6 subjects ([`60dfced`](https://github.com/Vit129/Accountant-Course/commit/60dfceddbd8543888f43d06c985ef4571e4032d1))
+- Add make start as standard release entry point ([`d774f67`](https://github.com/Vit129/Accountant-Course/commit/d774f67f8c3baa1c2c9e2e8879953e5f2ba88568))
+- Add real community labels to the code+content graph ([`fe1c494`](https://github.com/Vit129/Accountant-Course/commit/fe1c494af26634e6b3ad2fb146fc0dd5c8b56a51))
+- Add cost accounting & financial management tracks, capstone overhaul, light theme ([`2782d3e`](https://github.com/Vit129/Accountant-Course/commit/2782d3e1afe96da852969a2ea7d19b5f1f4a9824))
 
 ### Documentation
 - Add honest-limitations note to hub page ([`9a42650`](https://github.com/Vit129/Accountant-Course/commit/9a42650d2bd33a7afc2b66459069993da8e22b7e))
@@ -21,4 +24,10 @@ All notable changes to Accountant-Learning are documented here. The format is ba
 - Add README, gitignore local .claude dir ([`46db104`](https://github.com/Vit129/Accountant-Course/commit/46db104d72651826d44db1faf59a8ce3ecdee9b2))
 - Update hub lesson-count tags (57 -> 72) ([`4ab8662`](https://github.com/Vit129/Accountant-Course/commit/4ab866289d28953c55a1cbf435dd43c4b11ced79))
 - Add PRODUCT.md and DESIGN.md ([`08c14ba`](https://github.com/Vit129/Accountant-Course/commit/08c14ba7586498935ec11e4741b2fb35e09c4844))
+- Update README for 8 subjects + capstone, drop stale 6-subject count ([`f04a640`](https://github.com/Vit129/Accountant-Course/commit/f04a640ff2a0db9fc81145fe42e6eb20bc49a6dd))
+
+### Fixed
+- Locked lessons show the warning alert instead of doing nothing ([`bb61054`](https://github.com/Vit129/Accountant-Course/commit/bb61054e517486291133efd14f78150aa062479b))
+- Negation-substring bug lets wrong audit-judgment answers pass ([`3be92fb`](https://github.com/Vit129/Accountant-Course/commit/3be92fb6400d421824b07ae46130426a39583d87))
+- Remaining advisor findings — lock state, timezone, negation, gitignore ([`f8b7f34`](https://github.com/Vit129/Accountant-Course/commit/f8b7f34fb5e83f0a2f8e7d284d1a8a32cc6520a3))
 
