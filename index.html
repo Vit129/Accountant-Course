@@ -331,6 +331,12 @@
 
     <div id="checkin-banner" class="checkin-banner"></div>
 
+    <div class="progress-io-actions">
+      <button class="btn-io" onclick="exportProgress()">📤 Export ความคืบหน้า</button>
+      <label class="btn-io" for="import-progress-input">📥 Import ความคืบหน้า</label>
+      <input type="file" id="import-progress-input" accept="application/json" style="display:none" onchange="importProgress(event)">
+    </div>
+
     <a href="./exam/index.html" class="exam-cta">
       <span class="exam-cta-icon">🧪⏱</span>
       <span class="exam-cta-text">
@@ -482,12 +488,6 @@
         <a href="./Final-Project/index.html" class="btn btn-3">เข้าสู่บทเรียน →</a>
       </div>
 
-    </div>
-
-    <div class="progress-io-actions">
-      <button class="btn-io" onclick="exportProgress()">📤 Export ความคืบหน้า</button>
-      <label class="btn-io" for="import-progress-input">📥 Import ความคืบหน้า</label>
-      <input type="file" id="import-progress-input" accept="application/json" style="display:none" onchange="importProgress(event)">
     </div>
 
     <footer>
