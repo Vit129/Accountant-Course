@@ -1,26 +1,26 @@
-# Graph Summary — Accountant-Learning
+# Graph Summary — feat-cost-finmgmt-capstone-and-light-theme-1
 _Auto-generated from GRAPH_REPORT.md · do not edit manually_
 _Regen: `graphify update .`_
 
 ## Summary
-- 445 nodes · 450 edges · 33 communities (23 shown, 10 thin omitted)
+- 451 nodes · 456 edges · 33 communities (23 shown, 10 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 
 ## Graph Freshness
-- Built from commit: `fe1c494a`
+- Built from commit: `801be3cb`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 
 ## God Nodes (most connected - your core abstractions)
-1. `LESSONS` - 16 edges
-2. `LESSONS` - 15 edges
-3. `LESSONS` - 15 edges
-4. `LESSONS` - 15 edges
-5. `LESSONS` - 15 edges
-6. `LESSONS` - 14 edges
+1. `LESSONS` - 17 edges
+2. `LESSONS` - 16 edges
+3. `LESSONS` - 16 edges
+4. `LESSONS` - 16 edges
+5. `LESSONS` - 16 edges
+6. `LESSONS` - 15 edges
 7. `initApp()` - 8 edges
 8. `Product` - 7 edges
 9. `startExam()` - 6 edges

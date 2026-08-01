@@ -13,6 +13,7 @@ All notable changes to Accountant-Learning are documented here. The format is ba
 - Deepen subjects 2-6 with 14 more lessons (43 → 57 total) ([`974f4d2`](https://github.com/Vit129/Accountant-Course/commit/974f4d2022b9c9a0b28a32d11cca866b1898395c))
 - Deepen 5 subjects further via Agy (57 → 72 lessons) ([`e268538`](https://github.com/Vit129/Accountant-Course/commit/e26853808627d87ae25b70f98ac9d016901c2861))
 - Add ขั้นสูง (advanced) hard-tier lessons to all 6 subjects ([`60dfced`](https://github.com/Vit129/Accountant-Course/commit/60dfceddbd8543888f43d06c985ef4571e4032d1))
+- Add ขั้นสูง 3 (CPA Case Study) multi-step complex scenario lessons to all 6 subjects (84 → 90 lessons total)
 
 ### Documentation
 - Add honest-limitations note to hub page ([`9a42650`](https://github.com/Vit129/Accountant-Course/commit/9a42650d2bd33a7afc2b66459069993da8e22b7e))
