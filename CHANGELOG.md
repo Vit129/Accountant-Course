@@ -3,6 +3,11 @@
 All notable changes to Accountant-Learning are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and Accountant-Learning follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [0.6.1] - 2026-08-01
+
+### Added
+- Per-subject mini progress bar on homepage course cards ([`6d2c0bd`](https://github.com/Vit129/Accountant-Course/commit/6d2c0bd9b9c11b1201c8d35bb1053f949820542d))
+
 ## [0.6.0] - 2026-08-01
 
 ### Added
