@@ -3,6 +3,11 @@
 All notable changes to Accountant-Learning are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and Accountant-Learning follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [0.7.3] - 2026-08-02
+
+### Fixed
+- Restore export/import position + icons, restore checkin-banner div ([`8cb03a9`](https://github.com/Vit129/Accountant-Course/commit/8cb03a9a8fd76bdc9d7037b5fb340c8634db3463))
+
 ## [0.7.2] - 2026-08-02
 
 ### Added
