@@ -14,9 +14,9 @@ const COURSE_CONFIG = {
 };
 
 function parseNumberAfterEquals(text) {
-  const match = text.match(/=\s*([\d.]+)/);
+  const match = text.match(/=\s*(-?[\d,]+(?:\.\d+)?)/);
   if (!match) return null;
-  return parseFloat(match[1]);
+  return parseFloat(match[1].replace(/,/g, ''));
 }
 
 const LESSONS = [
