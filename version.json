@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "tag": "v0.6.1",
-  "updated": "2026-08-01",
-  "summary": "เพิ่ม mini progress bar ต่อวิชาบนหน้าแรก (X/Y บทเรียน %) และเอา tag เก่าที่ตกค้างออก"
+  "tag": "v0.7.2",
+  "updated": "2026-08-02",
+  "summary": "เอา sequential lock ออก (เลือกบทไหนก็ได้, resume อัตโนมัติเหมือนเดิม), แก้บั๊ก parseNumberAfterEquals ตัดเลขที่มี comma ผิดใน 05-law/04-auditing-2"
 }
