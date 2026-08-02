@@ -22,7 +22,7 @@ Source: `shared/style.css` (canonical), duplicated with minor drift in `index.ht
 - Cards: `border: 1px solid` subtle warm-black 12% opacity (was white 8% on dark), colored top-border accent revealed on hover
 - Glassmorphism (`backdrop-filter: blur`) on overlays — frosted surface now `rgba(250,244,231,0.75)` (cream-tinted, was dark `rgba(18,24,36,0.5)`)
 - Daily check-in banner/mini badge (`shared/checkin.js`, 2026-08-01): warm amber/emerald gradient banner on home page, compact `🔥 N วัน` text in each track's sidebar footer
-- Sequential lesson lock (`shared/engine.js`, 2026-08-01): lessons after the first incomplete one render `.lesson-item.locked` (45% opacity, `cursor: not-allowed`, 🔒 icon) and are unclickable until every prior lesson passes its own validate()
+- Sequential lesson lock removed (2026-08-02) — every lesson in the sidebar is clickable regardless of completion order; `getFirstIncompleteIndex()` still resumes to the first unfinished lesson on page load, it just no longer blocks manual navigation
 
 ## Avoid
 - Letting `--font-mono` and accent tokens drift further between `shared/style.css` and `index.html` — consolidate into one file when touched next
