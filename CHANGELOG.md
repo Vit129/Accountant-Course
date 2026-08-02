@@ -3,6 +3,11 @@
 All notable changes to Accountant-Learning are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and Accountant-Learning follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [0.8.1] - 2026-08-02
+
+### Fixed
+- Correct wrong legal citations in essay simulator Case 3/4 ([`d73f8f0`](https://github.com/Vit129/Accountant-Course/commit/d73f8f070f506ca2e1124014fad6e47ef01ce6ed))
+
 ## [0.8.0] - 2026-08-02
 
 ### Added
