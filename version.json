@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "tag": "v0.7.3",
+  "tag": "v0.8.0",
   "updated": "2026-08-02",
-  "summary": "แก้ regression จาก redesign หน้าแรก: export/import ย้ายกลับขึ้นบน, ไอคอนกลับเป็น 📤/📥, คืน checkin-banner div ที่หายไป"
+  "summary": "แก้ label 05-law/06-taxation ให้ตรงโครงสร้างสอบจริง (05-law=กฎหมาย1, 06-taxation=กฎหมาย2) + เพิ่ม 19 บทเรียนใหม่ครอบคลุมหัวข้อสอบจริงที่ขาด (เลิกห้างหุ้นส่วน, ภาษีรอตัดบัญชี, TSA210/300, audit procedure หลายรายการ ฯลฯ)"
 }
