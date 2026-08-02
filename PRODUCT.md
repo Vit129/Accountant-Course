@@ -12,7 +12,7 @@ Thai CPA exam candidates studying the 6 official subjects.
 - Free/lightweight study tools for the Thai CPA exam are scarce
 
 ## Core Features
-- 6 subject tracks, 96 lessons total: Financial Accounting 1 & 2, Auditing 1 & 2, Law, Taxation
+- 8 tracks total: the 6 real TFAC exam subjects (Financial Accounting 1 & 2, Auditing 1 & 2, Law — merges the real Law 1 & 2 papers into one track) plus 3 supplementary knowledge tracks (Taxation, Cost Accounting, Financial Management) that are not standalone TFAC exam subjects — their real content lives inside Financial Accounting/Auditing and Law 2 (ประมวลรัษฎากร)
 - Lesson runner (`shared/engine.js`) — per-subject `index.html` + `lessons.js`
 - Timed mixed mock exam (`exam/`, `shared/exam-engine.js`)
 - Deployed static at `vit129.github.io/Accountant-Course`
@@ -23,7 +23,7 @@ Thai CPA exam candidates studying the 6 official subjects.
 - Backend, accounts, progress persistence across devices (no build step, no framework, no server)
 
 ## Success Metrics
-- Learner completes all 6 subject tracks
+- Learner completes all 8 tracks (6 real exam subjects + 3 supplementary)
 - Mock exam score reflects readiness for the real CPA exam structure/timing
 
 ---
