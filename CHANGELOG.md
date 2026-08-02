@@ -3,6 +3,11 @@
 All notable changes to Accountant-Learning are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and Accountant-Learning follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [0.8.0] - 2026-08-02
+
+### Added
+- Add 19 real-exam lessons + fix mislabeled 05-law/06-taxation split ([`e14bd1f`](https://github.com/Vit129/Accountant-Course/commit/e14bd1fdab045b6f7b40371b8ab8352a3b5874c4))
+
 ## [0.7.3] - 2026-08-02
 
 ### Fixed
