@@ -1,6 +1,6 @@
 # เตรียมสอบ CPA — Accountant Learning Portal
 
-เว็บเรียนแบบ interactive สำหรับเตรียมสอบ **ผู้สอบบัญชีรับอนุญาต (CPA)** ของไทย ครอบคลุม 8 วิชา + capstone รวม 151 บทเรียน พร้อมข้อสอบจำลองแบบจับเวลา
+เว็บเรียนแบบ interactive สำหรับเตรียมสอบ **ผู้สอบบัญชีรับอนุญาต (CPA)** ของไทย ครอบคลุม 8 วิชา + capstone รวม 208 บทเรียน พร้อมข้อสอบจำลองแบบจับเวลา
 
 🔗 **Live site:** https://vit129.github.io/Accountant-Course/
 
@@ -8,12 +8,12 @@
 
 | วิชา | หัวข้อ | บทเรียน |
 |---|---|---|
-| 1. การบัญชีการเงิน 1 | [`01-financial-accounting-1`](01-financial-accounting-1/) | 15 |
-| 2. การบัญชีการเงิน 2 | [`02-financial-accounting-2`](02-financial-accounting-2/) | 14 |
-| 3. การสอบบัญชี 1 | [`03-auditing-1`](03-auditing-1/) | 14 |
-| 4. การสอบบัญชี 2 | [`04-auditing-2`](04-auditing-2/) | 14 |
-| 5. กฎหมาย | [`05-law`](05-law/) | 13 |
-| 6. ภาษีอากร | [`06-taxation`](06-taxation/) | 14 |
+| 1. การบัญชีการเงิน 1 | [`01-financial-accounting-1`](01-financial-accounting-1/) | 19 |
+| 2. การบัญชีการเงิน 2 | [`02-financial-accounting-2`](02-financial-accounting-2/) | 23 |
+| 3. การสอบบัญชี 1 | [`03-auditing-1`](03-auditing-1/) | 22 |
+| 4. การสอบบัญชี 2 | [`04-auditing-2`](04-auditing-2/) | 27 |
+| 5. กฎหมาย | [`05-law`](05-law/) | 21 |
+| 6. ภาษีอากร | [`06-taxation`](06-taxation/) | 29 |
 | 7. บัญชีต้นทุน | [`07-cost-accounting`](07-cost-accounting/) | 27 |
 | 8. การบริหารการเงิน | [`08-financial-management`](08-financial-management/) | 25 |
 | Capstone. Final Project | [`Final-Project`](Final-Project/) | 15 |
