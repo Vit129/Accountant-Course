@@ -3,6 +3,14 @@
 All notable changes to Accountant-Learning are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and Accountant-Learning follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [0.9.0] - 2026-08-09
+
+### Added
+- Add 15 lessons across law/tax/audit/accounting + 2 mock exam sets ([`7bdf6f6`](https://github.com/Vit129/Accountant-Course/commit/7bdf6f6409cea1df0f6705afe9d4bdbbfefa70fa))
+
+### Documentation
+- Add deep-dive CPA exam summaries for chapters 1-8 ([`596d481`](https://github.com/Vit129/Accountant-Course/commit/596d481647d3aa9e9a5b02733ea5a99e8136df2a))
+
 ## [0.8.1] - 2026-08-02
 
 ### Fixed

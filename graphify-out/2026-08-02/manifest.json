@@ -1,191 +1,191 @@
 {
   "01-financial-accounting-1/index.html": {
-    "mtime": 1785594413.3683543,
+    "mtime": 1785598942.389262,
     "ast_hash": "d6487d602f9337bbdbb5f1a89799d643",
     "semantic_hash": ""
   },
   "01-financial-accounting-1/lessons.js": {
-    "mtime": 1785651299.7186613,
-    "ast_hash": "13663d28cfa9b8b3c8b1d54c6770fe6c",
+    "mtime": 1785598942.4753785,
+    "ast_hash": "a6c167981ac7b1917c25549de51eeff1",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/index.html": {
-    "mtime": 1785594413.3699734,
+    "mtime": 1785598942.3909872,
     "ast_hash": "5175c790412c755510328339c38999b8",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons.js": {
-    "mtime": 1785651393.6762192,
-    "ast_hash": "b98b0623d24af383e4156ae855292970",
+    "mtime": 1785599351.2859914,
+    "ast_hash": "268e4f40daefbd258dfb042bb34f8d03",
     "semantic_hash": ""
   },
   "03-auditing-1/index.html": {
-    "mtime": 1785594413.370584,
+    "mtime": 1785598942.3926473,
     "ast_hash": "00898b066d4ba324a0331a3eeabd3bed",
     "semantic_hash": ""
   },
   "03-auditing-1/lessons.js": {
-    "mtime": 1785651359.2611842,
-    "ast_hash": "2a1780a9c10a705f435b304201f632a8",
+    "mtime": 1785598942.4796188,
+    "ast_hash": "ac8ab8e2b05d9f5a2088c7f6fe85076c",
     "semantic_hash": ""
   },
   "04-auditing-2/index.html": {
-    "mtime": 1785594413.3720467,
+    "mtime": 1785598942.3946474,
     "ast_hash": "f5f5304ed5fa6d005380da951752392e",
     "semantic_hash": ""
   },
   "04-auditing-2/lessons.js": {
-    "mtime": 1785651436.4708753,
-    "ast_hash": "9120f31ad05a5bfb09b9bbcc63454692",
+    "mtime": 1785599354.4288063,
+    "ast_hash": "ee68b16498832c35450f4f66d9df4ab5",
     "semantic_hash": ""
   },
   "05-law/index.html": {
-    "mtime": 1785594413.3724923,
+    "mtime": 1785598942.3966446,
     "ast_hash": "0ff29ad4bd81d7963cb800e6af68a09e",
     "semantic_hash": ""
   },
   "05-law/lessons.js": {
-    "mtime": 1785652560.569577,
-    "ast_hash": "b47f147734a7c85cab9f5fd0495635e1",
+    "mtime": 1785599357.8529332,
+    "ast_hash": "00ddb33508614f671037bbb5a93610e9",
     "semantic_hash": ""
   },
   "06-taxation/index.html": {
-    "mtime": 1785594413.37286,
+    "mtime": 1785598942.3974483,
     "ast_hash": "ce10bd8e7a133586af290da009c7558a",
     "semantic_hash": ""
   },
   "06-taxation/lessons.js": {
-    "mtime": 1785651349.3052359,
-    "ast_hash": "2601e9497447a28af811ae6cfd21ca6e",
+    "mtime": 1785599361.123709,
+    "ast_hash": "feab469458be77afe1fcae56a487ceba",
     "semantic_hash": ""
   },
   "cliff.toml": {
-    "mtime": 1784474040.8380132,
+    "mtime": 1785592804.943442,
     "ast_hash": "36ea0a18480cda9029abe9d94869fde3",
     "semantic_hash": "36ea0a18480cda9029abe9d94869fde3"
   },
   "exam/index.html": {
-    "mtime": 1785599977.3926196,
-    "ast_hash": "694e85141d8923ed66e1e4aebe18d1ec",
+    "mtime": 1785599727.9175436,
+    "ast_hash": "f3526633e7f1237a4b9e2d14023508b0",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1785652242.6694186,
-    "ast_hash": "854c214c3c0e14f70741176cbc43a14c",
+    "mtime": 1785599734.1546655,
+    "ast_hash": "0d924814251c87c9938e5c592edd5098",
     "semantic_hash": ""
   },
   "scripts/release.sh": {
-    "mtime": 1784474057.4757545,
+    "mtime": 1785592804.9530675,
     "ast_hash": "3de76589db13466624ff26224d810cdd",
     "semantic_hash": "3de76589db13466624ff26224d810cdd"
   },
   "shared/engine.js": {
-    "mtime": 1785632657.8208704,
-    "ast_hash": "bfb372f9488d8ed15cb561fbcfdb4c23",
+    "mtime": 1785598942.4324474,
+    "ast_hash": "650ef04c343550691ad84e9936f35691",
     "semantic_hash": ""
   },
   "shared/exam-engine.js": {
-    "mtime": 1784125686.7277932,
+    "mtime": 1785592804.9534326,
     "ast_hash": "66af4b13e9c9ae804eef1352517ea07f",
     "semantic_hash": "66af4b13e9c9ae804eef1352517ea07f"
   },
   "shared/style.css": {
-    "mtime": 1785632663.5368047,
-    "ast_hash": "a678c1a349dce1aa0f2f94224fb40c12",
+    "mtime": 1785598942.4338293,
+    "ast_hash": "17daaaec297000cbdecb976b4b818acc",
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1785633113.24076,
-    "ast_hash": "04fdc0934dbd49b25f6db169982c9d3c",
+    "mtime": 1785598942.5699694,
+    "ast_hash": "8bc2bdc8c37f83fd2cbb86116e3a1dd6",
     "semantic_hash": ""
   },
   "DESIGN.md": {
-    "mtime": 1785632672.7951775,
-    "ast_hash": "770a25a2d384aadd32b60a9fa5b7c3f0",
+    "mtime": 1785598942.4037955,
+    "ast_hash": "e2b89f6bb6c6398c0573413a53ca3f63",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
-    "mtime": 1785648947.675684,
-    "ast_hash": "1fb252857a0aa8a6153bd50dd3134ff6",
+    "mtime": 1785598942.494028,
+    "ast_hash": "d9b9e64ca010320c7f26eff5d7966004",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1785632678.923699,
-    "ast_hash": "aa8f9194d130f9c39c26c0b5241f47c5",
+    "mtime": 1785598942.410065,
+    "ast_hash": "d219a23e1b58a3fcf6fd386cd0ebb7f9",
     "semantic_hash": ""
   },
   "agent-memory/INDEX.md": {
-    "mtime": 1784880070.8553066,
+    "mtime": 1785592804.9432044,
     "ast_hash": "408e45a7dbf242b9140daabb0eac62a7",
     "semantic_hash": "408e45a7dbf242b9140daabb0eac62a7"
   },
   "agent-memory/PLAYBOOK.md": {
-    "mtime": 1784880070.847197,
+    "mtime": 1785592804.9433355,
     "ast_hash": "0679d1a65c0147e26c2927202fd1144c",
     "semantic_hash": "0679d1a65c0147e26c2927202fd1144c"
   },
   "07-cost-accounting/index.html": {
-    "mtime": 1785594413.3734672,
+    "mtime": 1785598942.398521,
     "ast_hash": "3bb9a9270735042b5267a84db27f0973",
     "semantic_hash": ""
   },
   "07-cost-accounting/lessons.js": {
-    "mtime": 1785594413.376159,
+    "mtime": 1785598942.3994653,
     "ast_hash": "9158cb37055c87f0956283b3752400a9",
     "semantic_hash": ""
   },
   "08-financial-management/index.html": {
-    "mtime": 1785594413.3764951,
+    "mtime": 1785598942.4005344,
     "ast_hash": "7e7a8d279a8177439236c671220cd809",
     "semantic_hash": ""
   },
   "08-financial-management/lessons.js": {
-    "mtime": 1785594413.377131,
+    "mtime": 1785598942.401992,
     "ast_hash": "98b71135e743bbd9d3029da7282fbb45",
     "semantic_hash": ""
   },
   "Final-Project/index.html": {
-    "mtime": 1785594413.3777044,
+    "mtime": 1785598942.4042826,
     "ast_hash": "9c33fcec6e7d8dac55357082689df90f",
     "semantic_hash": ""
   },
   "Final-Project/lessons.js": {
-    "mtime": 1785596972.9206443,
-    "ast_hash": "e4605284d746cfeb31082c766cc1e4bb",
+    "mtime": 1785598942.4077353,
+    "ast_hash": "908f4635c669c8ebe33e4ac1b332f62b",
     "semantic_hash": ""
   },
   "exam/subjective.html": {
-    "mtime": 1785599901.3443923,
+    "mtime": 1785599714.337266,
     "ast_hash": "e8a904c32f8afa61d9a58a61a3cd3764",
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1785633094.3295777,
-    "ast_hash": "993fdec009d3e64f36c2bd358d8f9734",
+    "mtime": 1785598942.4307623,
+    "ast_hash": "1a268b55f075061a7d4d7b60ead0e9d8",
     "semantic_hash": ""
   },
   "shared/checkin.js": {
-    "mtime": 1785596666.1683273,
-    "ast_hash": "f085d414570d5a3794d087e2a8817c0c",
+    "mtime": 1785598942.4314237,
+    "ast_hash": "edc992ba20c1e044e66cdafb2985b35a",
     "semantic_hash": ""
   },
   "shared/gamification.js": {
-    "mtime": 1785594413.380538,
+    "mtime": 1785598942.4327416,
     "ast_hash": "f369d07b3dfacf2d8dffbc870b53e4ff",
     "semantic_hash": ""
   },
   "shared/selftest.mjs": {
-    "mtime": 1785594413.3807158,
+    "mtime": 1785598942.4331055,
     "ast_hash": "72ed2ad1d83952362fdfc197052e6b63",
     "semantic_hash": ""
   },
   "version.json": {
-    "mtime": 1785633100.6736598,
-    "ast_hash": "816e87e9110ca57b7e3dce661185a370",
+    "mtime": 1785598942.4341204,
+    "ast_hash": "0fd63f442338957dfc6c436b60acc6ea",
     "semantic_hash": ""
   },
   "exam/CPA_MOCK_EXAM_SET1.md": {
-    "mtime": 1785599901.3431528,
+    "mtime": 1785599181.2824512,
     "ast_hash": "7ec5b66ff36dcc38a1c4f9de5ea2e5a1",
     "semantic_hash": ""
   }
