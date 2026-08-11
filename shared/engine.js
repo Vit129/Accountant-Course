@@ -324,6 +324,10 @@ function showGraduationMessage() {
 
   if (totalCorrect === LESSONS.length && typeof showTrackCertificate === 'function') {
     showTrackCertificate(document.title);
+    if (COURSE_CONFIG.storagePrefix === 'capstone_') {
+      localStorage.setItem('final_project_completed', 'true');
+      if (typeof checkGrandCertificate === 'function') checkGrandCertificate();
+    }
   }
 }
 

@@ -197,6 +197,11 @@ function renderResults(results, correctCount, timeUp) {
     <p class="score-note">หมายเหตุ: นี่คือคะแนนจากคลังข้อสอบของเว็บนี้เท่านั้น ไม่ใช่เกณฑ์ผ่านจริงของสภาวิชาชีพบัญชี — โปรดตรวจสอบเกณฑ์สอบผ่านที่เป็นทางการแยกต่างหาก</p>
   `;
 
+  if (percent === 100) {
+    localStorage.setItem('exam_full_score_passed', 'true');
+    if (typeof checkGrandCertificate === 'function') checkGrandCertificate();
+  }
+
   document.getElementById('results-breakdown').innerHTML = results.map((r, idx) => {
     const icon = r.isCorrect ? '✓' : '✕';
     const cls = r.isCorrect ? 'result-correct' : 'result-wrong';
