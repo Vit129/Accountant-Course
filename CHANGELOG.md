@@ -3,6 +3,11 @@
 All notable changes to Accountant-Learning are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and Accountant-Learning follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [0.9.1] - 2026-08-11
+
+### Added
+- Add certificate download + composite exam+project completion certificate ([`3539b29`](https://github.com/Vit129/Accountant-Course/commit/3539b29a70ffa85cd4702a75e81617f1f49ffb4e))
+
 ## [0.9.0] - 2026-08-09
 
 ### Added
