@@ -3,6 +3,11 @@
 All notable changes to Accountant-Learning are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and Accountant-Learning follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [0.9.2] - 2026-08-11
+
+### Added
+- Give Final Project its own themed sign-off pass instead of the generic certificate ([`f82ac8d`](https://github.com/Vit129/Accountant-Course/commit/f82ac8de279efd36ce917beb8f34f7ebe988dba8))
+
 ## [0.9.1] - 2026-08-11
 
 ### Added
