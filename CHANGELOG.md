@@ -3,6 +3,11 @@
 All notable changes to Accountant-Learning are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and Accountant-Learning follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [0.9.3] - 2026-08-15
+
+### Added
+- Add 24 lessons expanding FA2/Cost with CPA-prep PDFs + 5 tracks with verified standards ([`5789762`](https://github.com/Vit129/Accountant-Course/commit/5789762d0946f5a007603b938f182a09538b6652))
+
 ## [0.9.2] - 2026-08-11
 
 ### Added
