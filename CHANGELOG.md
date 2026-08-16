@@ -3,6 +3,15 @@
 All notable changes to Accountant-Learning are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and Accountant-Learning follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [0.9.6] - 2026-08-16
+
+### Added
+- Add CPA Mock Exam Set 6 covering new Foreign Business Act / Company Act / Securities Act topics ([`095e26b`](https://github.com/Vit129/Accountant-Course/commit/095e26b96bbd6e6930d51d69d84763b4b1fa0fe1))
+- Full CPA LAW1 gap audit — 34 new lessons across Company/Securities/Accounting Acts ([`0b49aa3`](https://github.com/Vit129/Accountant-Course/commit/0b49aa39ca537edb7303ae1588cb5a07403b5ca6))
+
+### Fixed
+- Isolate FA2's split-file lesson accumulator + load it on the exam page ([`ab5c1a0`](https://github.com/Vit129/Accountant-Course/commit/ab5c1a049de59ae0f32603ef40c2e3ea1141db23))
+
 ## [0.9.5] - 2026-08-16
 
 ### Added
