@@ -28,10 +28,6 @@ const TRACKS = [
   'Final-Project',
 ];
 
-function extractLessons(src, sandbox) {
-  vm.runInContext(src, sandbox);
-  return vm.runInContext('window.LESSONS', sandbox);
-}
 
 let totalPass = 0;
 let totalFail = 0;
@@ -39,9 +35,6 @@ let totalLessons = 0;
 const failures = [];
 
 for (const track of TRACKS) {
-  const filePath = path.join(ROOT, track, 'lessons.js');
-  const src = fs.readFileSync(filePath, 'utf8');
-
   const sandbox = {
     console,
     document: { getElementById: () => null, addEventListener: () => {}, querySelector: () => null },
@@ -50,7 +43,22 @@ for (const track of TRACKS) {
   sandbox.window = sandbox;
   vm.createContext(sandbox);
 
-  const lessons = extractLessons(src, sandbox);
+  const lessonsDir = path.join(ROOT, track, 'lessons');
+  if (fs.existsSync(lessonsDir) && fs.statSync(lessonsDir).isDirectory()) {
+    const partFiles = fs.readdirSync(lessonsDir)
+      .filter(file => file.endsWith('.js'))
+      .sort();
+    for (const file of partFiles) {
+      const partSrc = fs.readFileSync(path.join(lessonsDir, file), 'utf8');
+      vm.runInContext(partSrc, sandbox);
+    }
+  }
+
+  const filePath = path.join(ROOT, track, 'lessons.js');
+  const src = fs.readFileSync(filePath, 'utf8');
+  vm.runInContext(src, sandbox);
+
+  const lessons = vm.runInContext('window.LESSONS', sandbox);
   let pass = 0;
   let fail = 0;
 
