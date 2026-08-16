@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ข้อสอบจำลองแบบผสม (Mixed Mock Exam) — CPA Interactive Learning</title>
-  <meta name="description" content="ข้อสอบจำลองแบบผสมข้ามวิชา จับเวลา สำหรับเตรียมสอบ CPA">
+  <title>ข้อสอบจำลองแบบผสม ฉบับยากที่สุด (Ultimate Mixed Mock Exam) — CPA Interactive Learning</title>
+  <meta name="description" content="ข้อสอบจำลองแบบผสมข้ามวิชา ทั้งปรนัยและอัตนัยในสนามเดียว จับเวลา สำหรับเตรียมสอบ CPA">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -200,15 +200,103 @@
     @media (max-width: 640px) {
       .result-answer-row { grid-template-columns: 1fr; }
     }
+
+    /* Essay phase (ported from the retired exam/subjective.html) */
+    .case-selector-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .case-card-btn {
+      background: var(--bg-secondary);
+      border: 2px solid var(--border-color);
+      border-radius: 12px;
+      padding: 14px 18px;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .case-card-btn:hover { border-color: var(--accent-blue); transform: translateY(-2px); }
+    .case-card-btn.active { border-color: var(--accent-emerald); background: rgba(16, 185, 129, 0.08); }
+    .case-card-btn strong { display: block; font-size: 0.9rem; margin-bottom: 4px; }
+    .case-card-btn span { font-size: 0.78rem; color: var(--text-secondary); }
+
+    .section-title { font-size: 1rem; font-weight: 700; margin-bottom: 12px; }
+
+    .problem-box {
+      background: rgba(43, 38, 32, 0.04);
+      border-left: 4px solid var(--accent-amber);
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+    .problem-box h3 { font-size: 1.05rem; margin-bottom: 10px; color: var(--accent-amber); }
+
+    .essay-textarea {
+      width: 100%;
+      min-height: 160px;
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      resize: vertical;
+      margin-bottom: 20px;
+    }
+
+    .journal-table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+    .journal-table th, .journal-table td { border: 1px solid var(--border-color); padding: 10px 12px; text-align: left; }
+    .journal-table th { background: var(--bg-tertiary); font-size: 0.8rem; font-weight: 700; }
+    .journal-table input {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 0.86rem;
+    }
+
+    .journal-actions { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+    .balance-status { font-size: 0.88rem; font-weight: 700; padding: 6px 14px; border-radius: 20px; }
+    .balance-status.balanced { background: rgba(16, 185, 129, 0.15); color: #059669; }
+    .balance-status.unbalanced { background: rgba(244, 63, 94, 0.15); color: #e11d48; }
+
+    .rubric-card {
+      display: none;
+      background: var(--bg-primary);
+      border: 2px dashed var(--accent-blue);
+      border-radius: 14px;
+      padding: 22px;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+    .rubric-card.show { display: block; }
+    .rubric-card h4 { color: var(--accent-blue); font-size: 1.05rem; margin-bottom: 12px; }
+
+    .essay-workspace {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
 
   <div class="exam-container">
     <div class="exam-topbar" style="flex-wrap: wrap; gap: 12px;">
-      <h1>🧪 ข้อสอบจำลองแบบผสม (Mixed Mock Exam)</h1>
+      <h1>🧪🏛️ ข้อสอบจำลองแบบผสม ฉบับยากที่สุด (Ultimate Mixed Mock Exam)</h1>
       <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-        <a href="./subjective.html" class="btn btn-emerald">🏛️ ซ้อมข้อสอบอัตนัย 60% (Essay Simulator)</a>
         <a href="../index.html" class="btn btn-secondary">← กลับหน้ารวมวิชา</a>
       </div>
     </div>
@@ -216,8 +304,11 @@
     <!-- Start Screen -->
     <section id="start-screen" class="screen show">
       <div class="config-card">
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin: -8px 0 24px; line-height: 1.6;">
+          สนามสอบเดียวจบ 2 ส่วนต่อกัน — <strong>ส่วนที่ 1 ปรนัย/คำนวณ</strong> (สุ่มข้ามวิชา จับเวลา ตรวจอัตโนมัติ) แล้วต่อด้วย <strong>ส่วนที่ 2 อัตนัย</strong> (4 เคสเขียนบรรยาย + บันทึกสมุดรายวันทั่วไป ตรวจเองด้วยเฉลยละเอียด) — เลือก "ทั้งหมด" + เวลานานสุดเพื่อโหมดยากที่สุด
+        </p>
         <div class="config-section">
-          <span class="config-label">เลือกวิชาที่จะรวมในข้อสอบ</span>
+          <span class="config-label">เลือกวิชาที่จะรวมในข้อสอบ (ส่วนที่ 1)</span>
           <div id="subject-checklist"><!-- populated by exam-engine.js --></div>
         </div>
         <div class="config-section">
@@ -225,7 +316,7 @@
           <select id="question-count"></select>
         </div>
         <div class="config-section">
-          <span class="config-label">เวลาสอบ</span>
+          <span class="config-label">เวลาสอบ (ส่วนที่ 1)</span>
           <select id="exam-minutes">
             <option value="20">20 นาที</option>
             <option value="40">40 นาที</option>
@@ -256,9 +347,53 @@
         <button id="prev-btn" class="btn btn-secondary" onclick="goPrev()">← ข้อก่อนหน้า</button>
         <div style="display:flex; gap:12px;">
           <button id="next-btn" class="btn btn-secondary" onclick="goNext()">ข้อถัดไป →</button>
-          <button id="finish-btn" class="btn btn-run" style="display:none;" onclick="confirmSubmitExam()">✔ ส่งคำตอบ</button>
+          <button id="finish-btn" class="btn btn-run" style="display:none;" onclick="confirmSubmitExam()">✔ ส่งคำตอบส่วนที่ 1 → ไปต่อส่วนอัตนัย</button>
         </div>
       </div>
+    </section>
+
+    <!-- Essay Screen (Part 2) -->
+    <section id="essay-screen" class="screen">
+      <div class="exam-header-bar">
+        <span>✍️ ส่วนที่ 2: อัตนัย — 4 เคส ตรวจเองด้วยเฉลยละเอียด</span>
+      </div>
+
+      <div class="case-selector-grid" id="case-selector"><!-- populated by exam-engine.js --></div>
+
+      <div class="essay-workspace">
+        <div id="problem-box" class="problem-box"></div>
+
+        <div class="section-title">✍️ การเขียนบรรยายแสดงวิธีคิด และการอ้างอิงมาตรฐาน/ข้อกฎหมาย</div>
+        <textarea id="essay-input" class="essay-textarea" placeholder="พิมพ์การคำนวณ แสดงวิธีทำ การอธิบายเหตุผล และอ้างอิงมาตรฐาน/ข้อกฎหมายที่นี่..." oninput="autoSaveEssay()"></textarea>
+
+        <div class="section-title">📘 ตารางบันทึกรายการในสมุดรายวันทั่วไป (General Journal)</div>
+        <table class="journal-table" id="journal-table">
+          <thead>
+            <tr>
+              <th style="width: 120px;">วันที่</th>
+              <th>ชื่อบัญชีและคำอธิบายรายการ</th>
+              <th style="width: 140px; text-align: right;">เดบิต (Dr.)</th>
+              <th style="width: 140px; text-align: right;">เครดิต (Cr.)</th>
+              <th style="width: 50px; text-align: center;">จัดการ</th>
+            </tr>
+          </thead>
+          <tbody id="journal-body"></tbody>
+        </table>
+
+        <div class="journal-actions">
+          <button class="btn btn-secondary" onclick="addJournalRow()">+ เพิ่มรายการบัญชี</button>
+          <div id="balance-status" class="balance-status unbalanced">ยอดเดบิต (0) ≠ เครดิต (0)</div>
+        </div>
+
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="btn btn-emerald" onclick="toggleRubric()">🔍 ตรวจเฉลยละเอียดและเกณฑ์การให้คะแนน</button>
+          <button class="btn btn-secondary" onclick="clearEssayWorkspace()">🔄 ล้างข้อมูลซ้อมเคสนี้</button>
+        </div>
+
+        <div id="rubric-card" class="rubric-card"></div>
+      </div>
+
+      <button class="btn btn-run start-exam-btn" onclick="finishEssayPhase()">🏁 เสร็จสิ้นส่วนอัตนัย → ดูผลคะแนนรวม</button>
     </section>
 
     <!-- Results Screen -->
