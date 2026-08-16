@@ -5,8 +5,8 @@
     return parseFloat(match[1].replace(/,/g, ''));
   }
 
-  window.LESSONS = window.LESSONS || [];
-  window.LESSONS.push(
+  window.LESSONS_FACC2 = window.LESSONS_FACC2 || [];
+  window.LESSONS_FACC2.push(
   {
     id: "partnership-formation",
     meta: "บทที่ 1",

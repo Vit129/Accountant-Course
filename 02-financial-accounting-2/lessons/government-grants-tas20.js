@@ -9,8 +9,8 @@
     return Math.abs(a - b) <= tolerance;
   }
 
-  window.LESSONS = window.LESSONS || [];
-  window.LESSONS.push(
+  window.LESSONS_FACC2 = window.LESSONS_FACC2 || [];
+  window.LESSONS_FACC2.push(
   {
     id: "tas20-government-grant",
     meta: "เพิ่มเติม 21",

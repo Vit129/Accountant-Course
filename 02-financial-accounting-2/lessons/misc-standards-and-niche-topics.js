@@ -9,8 +9,8 @@
     return Math.abs(a - b) <= tolerance;
   }
 
-  window.LESSONS = window.LESSONS || [];
-  window.LESSONS.push(
+  window.LESSONS_FACC2 = window.LESSONS_FACC2 || [];
+  window.LESSONS_FACC2.push(
   {
     id: "deferred-tax",
     meta: "เพิ่มเติม 3",
