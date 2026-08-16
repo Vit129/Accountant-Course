@@ -3,6 +3,17 @@
 All notable changes to Accountant-Learning are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and Accountant-Learning follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [0.9.4] - 2026-08-16
+
+### Added
+- Merge mixed mock exam + essay simulator into one two-phase exam ([`58898ef`](https://github.com/Vit129/Accountant-Course/commit/58898ef723f4829c080b4cd2f57749f8da1f67bd))
+- Fill 14 CPA gap topics in 02-financial-accounting-2 (TAS2/37/38/23/29/36/16, TFRS9/21) ([`0a6dd2f`](https://github.com/Vit129/Accountant-Course/commit/0a6dd2f4cd0e9dd59e6470b2bd7e92cc274211f2))
+- Fill 10 more CPA gap topics — consolidation cluster + TFRS15 depth ([`58882a3`](https://github.com/Vit129/Accountant-Course/commit/58882a37ec9e8d5a0208177c7668f9d3dd92fd14))
+- Add tranche 3 gap-fill lessons — TFRS16 lease depth, TFRS2/5, TAS32/34/41/20 ([`37ed291`](https://github.com/Vit129/Accountant-Course/commit/37ed291fec919f0ff229a37c94e3e45cf67c6179))
+- Add tranche 4 gap-fill lessons — TAS19 depth, TAS33 EPS depth, TAS8 framework ([`67d7384`](https://github.com/Vit129/Accountant-Course/commit/67d738427ae5be427f3b243e84398e325fb57b11))
+- Add tranche 5 gap-fill lessons — TAS7/TFRS17 and TFRS8/13/TAS24/TAS10 ([`a696f99`](https://github.com/Vit129/Accountant-Course/commit/a696f9954b54d1fc8e2e008cc2d483e6ce8e86bd))
+- Add tranche 6 gap-fill lessons — TFRS16/TFRS2/TAS32/TAS21/TAS1/TAS20 leftovers + niche standards ([`bf72a3b`](https://github.com/Vit129/Accountant-Course/commit/bf72a3b0129a838aecf691296ca55e963a342a28))
+
 ## [0.9.3] - 2026-08-15
 
 ### Added
