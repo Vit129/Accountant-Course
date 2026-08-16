@@ -3,6 +3,15 @@
 All notable changes to Accountant-Learning are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and Accountant-Learning follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [0.9.5] - 2026-08-16
+
+### Added
+- Add CPA Mock Exam Set 5 covering tranche 1-6 gap-fill topics ([`529b0a1`](https://github.com/Vit129/Accountant-Course/commit/529b0a127fd08c2aaa5a538d81c6c8ccb0e14013))
+- Add 20 gap-fill lessons to 05-law from CPA-LAW1 source research ([`1a4314d`](https://github.com/Vit129/Accountant-Course/commit/1a4314d5969a368350f5b827a69d4028af56997c))
+
+### Changed
+- Split 02-financial-accounting-2 lessons.js into 18 topic files ([`96e8031`](https://github.com/Vit129/Accountant-Course/commit/96e8031800ce94d34aca2537a6fd6c658485996a))
+
 ## [0.9.4] - 2026-08-16
 
 ### Added
