@@ -7,7 +7,7 @@
 - **Static deployment:** Pure client-side HTML/CSS/Vanilla JS with zero backend, zero database, and zero build step. Deploys to GitHub Pages.
 - **Offline & Local Execution:** Runs directly from `file://` or any local HTTP server (`npx serve`, `python3 -m http.server`).
 - **Data sovereignty:** User progress, exam attempts, and streak records are stored strictly in client-side `localStorage`.
-- **Test invariant:** `npm test` (`shared/selftest.mjs`) must pass before releasing, guaranteeing that every lesson's solution passes and initial template fails.
+- **Test invariant:** `npm test` (`tests/selftest.mjs`) must pass before releasing, guaranteeing that every lesson's solution passes and initial template fails.
 
 ## Architecture & File Organization
 
@@ -19,8 +19,7 @@
 │   ├── exam-engine.js          # Mixed timed mock exam controller
 │   ├── gamification.js         # Streak counter, certificates & milestones
 │   ├── checkin.js              # Daily active study tracker
-│   ├── style.css               # Global theme & typography
-│   └── selftest.mjs            # Automated verification test suite
+│   └── style.css               # Global theme & typography
 ├── 01-financial-accounting-1/  # Track folders: index.html + lessons.js
 ├── 02-financial-accounting-2/
 ├── 03-auditing-1/
@@ -45,6 +44,6 @@
 2. **Mock Exam Engine (`shared/exam-engine.js`):**
    - Pools questions across tracks 1–8 (Capstone is excluded due to sequential dependencies).
    - Enforces countdown timer and calculates weighted performance score.
-3. **Automated Selftest Suite (`shared/selftest.mjs`):**
+3. **Automated Selftest Suite (`tests/selftest.mjs`):**
    - Headless Node.js test runner executing before release.
    - Asserts that for all 208 lessons, the `solution` evaluates to passing and the starter `template` evaluates to non-passing, preventing silent evaluation regressions.

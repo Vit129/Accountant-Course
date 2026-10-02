@@ -6,7 +6,7 @@
 // should never pass). Guards against drift between a lesson's solution/template text and
 // its validate() regex.
 //
-// Run: npm test  (or: node shared/selftest.mjs)
+// Run: npm test  (or: node tests/selftest.mjs)
 
 import fs from 'node:fs';
 import path from 'node:path';
