@@ -8,3 +8,5 @@ CPA - LAW1/
 # not tracked per-project anymore -- see ~/.claude/CLAUDE.md Memory Lifecycle
 agent-memory/
 .claude/worktrees/
+
+.env
