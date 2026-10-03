@@ -10,3 +10,6 @@ agent-memory/
 .claude/worktrees/
 
 .env
+
+# graphify AST cache is regenerable (same convention as other projects)
+graphify-out/cache/
