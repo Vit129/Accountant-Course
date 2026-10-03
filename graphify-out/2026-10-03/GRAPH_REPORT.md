@@ -1,21 +1,21 @@
-# Graph Report - Accountant-Learning  (2026-08-16)
+# Graph Report - Accountant-Learning  (2026-08-28)
 
 ## Corpus Check
-- 68 files · ~135,209 words
+- 70 files · ~140,802 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1523 nodes · 1501 edges · 151 communities (141 shown, 10 thin omitted)
+- 1588 nodes · 1564 edges · 153 communities (143 shown, 10 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `da9e4fd6`
+- Built from commit: `06722fff`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## God Nodes (most connected - your core abstractions)
-1. `LESSONS` - 79 edges
+1. `LESSONS` - 90 edges
 2. `LESSONS` - 34 edges
 3. `LESSONS` - 33 edges
 4. `LESSONS` - 31 edges
@@ -35,7 +35,7 @@ node's neighbors span, not by raw edge count.
 2. `สรุปเจาะลึก: การสอบบัญชี 2 (Auditing 2) — ระดับข้อสอบ CPA` - bridges 21 areas (27 edges)
 3. `สรุปเจาะลึก: การสอบบัญชี 1 (Auditing 1) — ระดับข้อสอบ CPA` - bridges 16 areas (22 edges)
 4. `สรุปเจาะลึก การบัญชี 1 (Financial Accounting 1) — ระดับข้อสอบ CPA` - bridges 15 areas (20 edges)
-5. `LESSONS` - bridges 1 areas (79 edges)
+5. `LESSONS` - bridges 1 areas (90 edges)
 6. `บทที่ 15: สินทรัพย์ไม่มีตัวตน (Intangible Assets) — TAS 38` - bridges 1 areas (7 edges)
 7. `บทที่ 12: ตั๋วเงินรับและดอกเบี้ย (Notes Receivable)` - bridges 1 areas (6 edges)
 8. `บทที่ 3: จรรยาบรรณผู้ประกอบวิชาชีพบัญชี (Code of Ethics)` - bridges 1 areas (6 edges)
@@ -51,7 +51,7 @@ node's neighbors span, not by raw edge count.
 ## Hyperedges (group relationships)
 - **Project Documentation Set (Vision + Design System + Overview)** — readme, product, design [INFERRED 0.75]
 
-## Communities (151 total, 10 thin omitted)
+## Communities (153 total, 10 thin omitted)
 
 ### Community 0 - "Shared Style Tokens"
 Cohesion: 0.02
@@ -122,8 +122,8 @@ Cohesion: 0.06
 Nodes (32): COURSE_CONFIG, LESSONS, ข้อกล่าวอ้างของผู้บริหาร (Management Assertions), TSA 705: การตัดสินใจเลือกประเภทรายงานผู้สอบบัญชี กรณีข้อผิดพลาดการขัดต่อข้อเท็จจริงอันเป็นสาระสำคัญ (Material & Pervasiv, ประเภทความเห็นของผู้สอบบัญชี (Audit Opinion), โครงสร้างรายงานผู้สอบบัญชี: เรื่องสำคัญในการตรวจสอบ (Key Audit Matters), วงจรเงินสด: การขอคำยืนยันยอดธนาคารและการตรวจนับเงินสด (Cash Audit Procedures), โจทย์อัตนัย CPA Set 1 (ข้อ 2): การเสนอรายงานผู้สอบบัญชี กรณีเพลิงไหม้คลังสินค้า 30 ล้านบาท (+24 more)
 
 ### Community 18 - "Number Parsing Variant D"
-Cohesion: 0.03
-Nodes (79): LESSONS, พระราชบัญญัติการบัญชี พ.ศ. 2543: หน้าที่ของผู้มีหน้าที่จัดทำบัญชี บทลงโทษทางอาญาและการปรับรายวัน, พระราชบัญญัติการบัญชี พ.ศ. 2543: การเก็บรักษาบัญชีและเอกสาร, พ.ร.บ.การบัญชี: บทกำหนดโทษ (หมวด 5) และความรับผิดร่วมของกรรมการนิติบุคคลตามมาตรา 40, พ.ร.บ.การบัญชี: ชนิดของบัญชีที่ต้องจัดทำและรายการที่ต้องมีตามมาตรา 7(1) และ 7(2), พ.ร.บ.การบัญชี: การแจ้งบัญชีหรือเอกสารสูญหายหรือเสียหายตามมาตรา 15 (แบบ ส.บช.2), พ.ร.บ.การบัญชี: กำหนดเวลาการลงรายการในบัญชี (กฎ 15-15-60 วัน) ตามมาตรา 7(3), พ.ร.บ.การบัญชี: หลักประกันนิติบุคคลผู้รับทำบัญชี และคุณสมบัติกรรมการผู้จัดการ (+71 more)
+Cohesion: 0.02
+Nodes (90): LESSONS, พระราชบัญญัติการบัญชี พ.ศ. 2543: หน้าที่ของผู้มีหน้าที่จัดทำบัญชี บทลงโทษทางอาญาและการปรับรายวัน, พระราชบัญญัติการบัญชี พ.ศ. 2543: การเก็บรักษาบัญชีและเอกสาร, พ.ร.บ.การบัญชี พ.ศ. 2543: การขออนุมัติเปลี่ยนรอบปีบัญชี 12 เดือน (มาตรา 10), พ.ร.บ.การบัญชี พ.ศ. 2543: สารวัตรใหญ่บัญชีและสารวัตรบัญชี (มาตรา 4), พ.ร.บ.การบัญชี: บทกำหนดโทษ (หมวด 5) และความรับผิดร่วมของกรรมการนิติบุคคลตามมาตรา 40, พ.ร.บ.การบัญชี: ชนิดของบัญชีที่ต้องจัดทำและรายการที่ต้องมีตามมาตรา 7(1) และ 7(2), พ.ร.บ.การบัญชี: การแจ้งบัญชีหรือเอกสารสูญหายหรือเสียหายตามมาตรา 15 (แบบ ส.บช.2) (+82 more)
 
 ### Community 19 - "Number Parsing Variant E"
 Cohesion: 0.06
@@ -223,7 +223,7 @@ Nodes (17): 📌 ข้อที่ 1: [ภาษีอากร] ภาษี�
 
 ### Community 51 - "สรุปเจาะลึก: การสอบบัญชี 2 (Auditing 2) — ระดับข้อสอบ CPA"
 Cohesion: 0.18
-Nodes (10): จุดที่ข้อสอบชอบออก / กับดัก, จุดที่ข้อสอบชอบออก / กับดัก, ตารางเปรียบเทียบภาพรวม: กับดักที่ข้อสอบ CPA ออกซ้ำบ่อยที่สุดในวิชานี้, บทที่ 9 — ความรับผิดชอบของผู้บริหาร vs ผู้สอบบัญชี, สรุปเจาะลึก: การสอบบัญชี 2 (Auditing 2) — ระดับข้อสอบ CPA, สารบัญ, ⚠️ หมายเหตุความน่าเชื่อถือของการอ้างอิงกฎหมาย/มาตรฐานในเอกสารนี้, หลักการ/มาตรฐาน (+2 more)
+Nodes (10): จุดที่ข้อสอบชอบออก / กับดัก, จุดที่ข้อสอบชอบออก / กับดัก, ตารางเปรียบเทียบภาพรวม: กับดักที่ข้อสอบ CPA ออกซ้ำบ่อยที่สุดในวิชานี้, บทที่ 11 — TSA 520: วิธีการวิเคราะห์เปรียบเทียบ (Analytical Procedures), สรุปเจาะลึก: การสอบบัญชี 2 (Auditing 2) — ระดับข้อสอบ CPA, สารบัญ, ⚠️ หมายเหตุความน่าเชื่อถือของการอ้างอิงกฎหมาย/มาตรฐานในเอกสารนี้, หลักการ/มาตรฐาน (+2 more)
 
 ### Community 52 - "สรุปเจาะลึก การบัญชี 1 (Financial Accounting 1) — ระดับข้อสอบ CPA"
 Cohesion: 0.20
@@ -518,8 +518,8 @@ Cohesion: 0.67
 Nodes (3): ขั้นสูง 4 (CPA Case Study) — TSA 560: การลงวันที่แบบสองวัน (Dual Dating), จุดที่ข้อสอบชอบออก / กับดัก, หลักการ/มาตรฐาน: TSA 560
 
 ### Community 132 - "บทที่ 11 — TSA 520: วิธีการวิเคราะห์เปรียบเทียบ (Analytical Procedures)"
-Cohesion: 0.67
-Nodes (3): จุดที่ข้อสอบชอบออก / กับดัก, บทที่ 11 — TSA 520: วิธีการวิเคราะห์เปรียบเทียบ (Analytical Procedures), หลักการ/มาตรฐาน
+Cohesion: 0.04
+Nodes (46): ข้อ 10: คุณสมบัติของผู้ทำบัญชีที่ไม่เคยต้องโทษจำคุก บัญญัติอยู่ในมาตราอะไร และมีเงื่อนไขอย่างไร, ข้อ 11: ผู้ที่ไม่ได้มีสัญชาติไทย แต่จบวุฒิปริญญาตรีบัญชี สามารถเป็นสมาชิกสามัญสภาวิชาชีพบัญชีได้หรือไม่, ข้อ 12: นายกสภาวิชาชีพบัญชี และกรรมการสภาฯ ดำรงตำแหน่งวาระละกี่ปี, ข้อ 13: คณะกรรมการกำกับดูแลผู้ประกอบวิชาชีพบัญชี (กกบ.) ประกอบด้วยใคร และใครเป็นประธาน, ข้อ 14: รถยนต์ไม่ได้คิดค่าเสื่อมราคาในงวดก่อน จัดเป็นการเปลี่ยนแปลงทางบัญชีข้อใด, ข้อ 15: NPAEs ต้นทุนการกู้ยืม (Borrowing Costs) สามารถนำมารวมเป็นต้นทุนของสินทรัพย์ประเภทใดได้บ้าง, ข้อ 16: รายการใดภายใต้ NPAEs ไม่ถือเป็นการเปลี่ยนแปลงนโยบายการบัญชี, ข้อ 17: ลักษณะเชิงคุณภาพพื้นฐานของข้อมูลทางการเงินตามแม่บทการบัญชี / NPAEs คือข้อใด (+38 more)
 
 ### Community 133 - "บทที่ 12 — วงจรสินค้าคงเหลือ: Existence และ Cut-off"
 Cohesion: 0.67
@@ -537,8 +537,16 @@ Nodes (3): จุดที่ข้อสอบชอบออก / กับด
 Cohesion: 0.67
 Nodes (3): จุดที่ข้อสอบชอบออก / กับดัก, หลักการ/มาตรฐาน: TSA 620, เพิ่มเติม 5 — TSA 620: การใช้ผลงานของผู้เชี่ยวชาญของผู้สอบบัญชี
 
+### Community 151 - "Accountant Learning (CPA prep portal) — Claude Instructions"
+Cohesion: 0.29
+Nodes (6): Accountant Learning (CPA prep portal) — Claude Instructions, Agent memory, Before changing lesson/engine logic, graphify, Structure, What this is
+
+### Community 152 - "บทที่ 9 — ความรับผิดชอบของผู้บริหาร vs ผู้สอบบัญชี"
+Cohesion: 0.67
+Nodes (3): จุดที่ข้อสอบชอบออก / กับดัก, บทที่ 9 — ความรับผิดชอบของผู้บริหาร vs ผู้สอบบัญชี, หลักการ/มาตรฐาน
+
 ## Knowledge Gaps
-- **1153 isolated node(s):** `#sidebar`, `#lesson-list`, `#progress-label`, `#progress-bar-fill`, `#checkin-mini` (+1148 more)
+- **1211 isolated node(s):** `#sidebar`, `#lesson-list`, `#progress-label`, `#progress-bar-fill`, `#checkin-mini` (+1206 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 - **1 possibly unreachable function(s):** `__dirname`
@@ -548,13 +556,13 @@ Nodes (3): จุดที่ข้อสอบชอบออก / กับด
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `สรุปเจาะลึก บัญชีต้นทุน/บัญชีบริหาร (Cost & Managerial Accounting) — ระดับข้อสอบ CPA` connect `สรุปเจาะลึก บัญชีต้นทุน/บัญชีบริหาร (Cost & Managerial Accounting) — ระดับข้อสอบ CPA` to `บทที่ 1: การจำแนกต้นทุน (Cost Classification)`, `บทที่ 3: ระบบต้นทุนงานสั่งทำ (Job Order Costing)`, `บทที่ 4: อัตราค่าใช้จ่ายการผลิตล่วงหน้า (Predetermined Overhead Rate)`, `บทที่ 5: ต้นทุนช่วงการผลิต — EUP วิธีถัวเฉลี่ยถ่วงน้ำหนัก (Weighted Average)`, `บทที่ 6: งบต้นทุนการผลิต (Cost of Goods Manufactured - COGM)`, `บทที่ 7: CVP — จุดคุ้มทุน (Break-Even Point)`, `บทที่ 8: CVP — CM Ratio และกำไรเป้าหมาย (Target Profit)`, `บทที่ 9: ต้นทุนผันแปร vs ต้นทุนเต็ม (Variable vs Absorption Costing)`, `บทที่ 10-13: ต้นทุนมาตรฐานและผลต่าง (Standard Costing & Variance Analysis)`, `บทที่ 14: ระบบต้นทุนฐานกิจกรรม (Activity-Based Costing - ABC)`, `บทที่ 15: EUP วิธี FIFO เทียบกับถัวเฉลี่ยถ่วงน้ำหนัก`, `บทที่ 16: ของเสียปกติและของเสียผิดปกติ (Normal vs Abnormal Spoilage)`, `บทที่ 17: การปันส่วนต้นทุนร่วม — วิธี NRV (Joint Cost Allocation)`, `บทที่ 18-19: ผลต่างค่าใช้จ่ายการผลิต (Overhead Variance — Variable & Fixed)`, `บทที่ 20: ต้นทุนที่เกี่ยวข้อง — คำสั่งซื้อพิเศษ (Relevant Costing: Special Order)`, `บทที่ 21: การบันทึกบัญชีการไหลของต้นทุน (Cost Flow Journal Entries)`, `บทที่ 22: ตัดสินใจผลิตเองหรือซื้อ (Make-or-Buy Decision)`, `บทที่ 23: ตัดสินใจภายใต้ทรัพยากรจำกัด (Constrained Resource / Bottleneck)`, `บทที่ 24: การปันส่วนต้นทุนแผนกบริการ — วิธีขั้นบันได (Step-Down Method)`, `บทที่ 25: การปันส่วนผลต่างต้นทุนมาตรฐาน ณ สิ้นงวด (Standard Cost Variance Proration)`, `บทที่ 26: ต้นทุนคุณภาพ (Cost of Quality - COQ)`, `บทที่ 27: ราคาโอนระหว่างแผนก (Transfer Pricing)`, `บทที่ 2: พฤติกรรมต้นทุน — High-Low Method`?**
-  _High betweenness centrality (0.004) - this node is a cross-community bridge._
+  _High betweenness centrality (0.003) - this node is a cross-community bridge._
+- **Why does `LESSONS` connect `Number Parsing Variant D` to `lessons.js`?**
+  _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **Why does `สรุปเจาะลึก: การสอบบัญชี 1 (Auditing 1) — ระดับข้อสอบ CPA` connect `สรุปเจาะลึก: การสอบบัญชี 1 (Auditing 1) — ระดับข้อสอบ CPA` to `เพิ่มเติม 3: TSA 300 — การวางแผนงานสอบบัญชีโดยรวม`, `บทที่ 4: การควบคุมภายใน — กรอบ COSO 5 องค์ประกอบ`, `บทที่ 2: ความมีสาระสำคัญ (Materiality)`, `บทที่ 1: แบบจำลองความเสี่ยงจากการสอบบัญชี (Audit Risk Model)`, `บทที่ 5: หลักฐานการสอบบัญชี — วิธีการตรวจสอบ (Audit Procedures)`, `บทที่ 6: การสุ่มตัวอย่างทางการสอบบัญชี (Audit Sampling)`, `บทที่ 10: TSA 330 — วิธีการตรวจสอบเพิ่มเติมเพื่อตอบสนองต่อความเสี่ยงที่ประเมินไว้`, `บทที่ 11: TSA 265 — การสื่อสารข้อบกพร่องในการควบคุมภายใน`, `บทที่ 12: TSA 550 — บุคคลหรือกิจการที่เกี่ยวข้องกัน (Related Parties)`, `เพิ่มเติม 1: TSA 210 — การตกลงเงื่อนไขงานสอบบัญชี (Engagement Letter)`, `เพิ่มเติม 2: การควบคุมคุณภาพงานสอบบัญชี — ระดับสำนักงาน (ISQM 1) กับระดับงาน (TSA 220)`, `ขั้นสูง 3 (CPA Case Study): TSA 530 — Upper Misstatement Limit (UML) จาก MUS`, `บทที่ 8: TSA 240 — ความรับผิดชอบของผู้สอบบัญชีเกี่ยวกับการทุจริต`, `บทที่ 3: จรรยาบรรณผู้ประกอบวิชาชีพบัญชี (Code of Ethics)`, `บทที่ 7: TSA 315 — การระบุและประเมินความเสี่ยงที่สำคัญ (Significant Risk)`, `บทที่ 9: ทัศนคติความสงสัยเยี่ยงผู้ประกอบวิชาชีพ (Professional Skepticism)`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Why does `LESSONS` connect `Number Parsing Variant D` to `lessons.js`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `#sidebar`, `#lesson-list`, `#progress-label` to the rest of the system?**
-  _1155 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1213 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Shared Style Tokens` be split into smaller, more focused modules?**
   _Cohesion score 0.021052631578947368 - nodes in this community are weakly interconnected._
 - **Should `Financial Accounting 1 UI` be split into smaller, more focused modules?**

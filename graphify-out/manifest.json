@@ -1,882 +1,387 @@
 {
   "README.md": {
-    "mtime": 1787653859.6404037,
-    "ast_hash": "971b73cf27a1fbe289efa7a7d1ab1389",
-    "semantic_hash": ""
-  },
-  ".claude/settings.json": {
-    "mtime": 1784434370.7489512,
-    "ast_hash": "33af68f475c465f5f0ef0c1f8318505b",
-    "semantic_hash": ""
-  },
-  ".github/workflows/pages.yml": {
-    "mtime": 1784434954.200448,
-    "ast_hash": "15c4cb50d92c96c128f9db31c8d7b888",
-    "semantic_hash": ""
-  },
-  ".github/workflows/test.yml": {
-    "mtime": 1785462684.9840107,
-    "ast_hash": "5e37b1c3b45c541190ae35f8e302d35a",
-    "semantic_hash": ""
-  },
-  "API-Testing/course.js": {
-    "mtime": 1785510348.3918467,
-    "ast_hash": "cc7c69ea4abec1e778645ec5aa6159b3",
-    "semantic_hash": ""
-  },
-  "API-Testing/editor-autocomplete.js": {
-    "mtime": 1787653757.773874,
-    "ast_hash": "34d5eb9f3c67c32ce183a79885382ff6",
-    "semantic_hash": ""
-  },
-  "API-Testing/editor-enhancements.js": {
-    "mtime": 1787653757.7894883,
-    "ast_hash": "9519dd8325eb1fd1a344cd2bb6cb0392",
-    "semantic_hash": ""
-  },
-  "API-Testing/editor-highlight.js": {
-    "mtime": 1787653757.7997434,
-    "ast_hash": "123b9057d626e2c53132bd6aaa006dab",
-    "semantic_hash": ""
-  },
-  "API-Testing/engine.js": {
-    "mtime": 1787653757.764957,
-    "ast_hash": "4a87032efb4493aaf3008fe6aba13e82",
-    "semantic_hash": ""
-  },
-  "API-Testing/gamification.js": {
-    "mtime": 1787653757.7807899,
-    "ast_hash": "1f8b0eb511d06a80830d8e4358913f95",
-    "semantic_hash": ""
-  },
-  "API-Testing/index.html": {
-    "mtime": 1786438408.7376664,
-    "ast_hash": "3bfa0b027563919b7f6553d0fac1b07f",
-    "semantic_hash": ""
-  },
-  "API-Testing/style.css": {
-    "mtime": 1785595707.7588637,
-    "ast_hash": "45b19912f537667ac8a8b2fe5970532d",
-    "semantic_hash": ""
-  },
-  "Accessibility-Testing/course.js": {
-    "mtime": 1785510536.7562244,
-    "ast_hash": "d416052894ec6a1138e496084fe23dc0",
-    "semantic_hash": ""
-  },
-  "Accessibility-Testing/editor-autocomplete.js": {
-    "mtime": 1787653758.1344483,
-    "ast_hash": "34d5eb9f3c67c32ce183a79885382ff6",
-    "semantic_hash": ""
-  },
-  "Accessibility-Testing/editor-enhancements.js": {
-    "mtime": 1787653758.1550553,
-    "ast_hash": "9519dd8325eb1fd1a344cd2bb6cb0392",
-    "semantic_hash": ""
-  },
-  "Accessibility-Testing/editor-highlight.js": {
-    "mtime": 1787653758.1658015,
-    "ast_hash": "123b9057d626e2c53132bd6aaa006dab",
-    "semantic_hash": ""
-  },
-  "Accessibility-Testing/engine.js": {
-    "mtime": 1787653758.1243641,
-    "ast_hash": "4a87032efb4493aaf3008fe6aba13e82",
-    "semantic_hash": ""
-  },
-  "Accessibility-Testing/gamification.js": {
-    "mtime": 1787653758.143986,
-    "ast_hash": "1f8b0eb511d06a80830d8e4358913f95",
-    "semantic_hash": ""
-  },
-  "Accessibility-Testing/index.html": {
-    "mtime": 1786438408.871142,
-    "ast_hash": "e117247e2eda3bdf69832d73479b1627",
-    "semantic_hash": ""
-  },
-  "Accessibility-Testing/style.css": {
-    "mtime": 1785595707.7631042,
-    "ast_hash": "45b19912f537667ac8a8b2fe5970532d",
-    "semantic_hash": ""
-  },
-  "CI-CD-Pipeline/course.js": {
-    "mtime": 1785510731.0137076,
-    "ast_hash": "f9ea026aa80d85a25c0d40cf72c82e90",
-    "semantic_hash": ""
-  },
-  "CI-CD-Pipeline/editor-autocomplete.js": {
-    "mtime": 1787653758.2343347,
-    "ast_hash": "34d5eb9f3c67c32ce183a79885382ff6",
-    "semantic_hash": ""
-  },
-  "CI-CD-Pipeline/editor-enhancements.js": {
-    "mtime": 1787653758.25278,
-    "ast_hash": "9519dd8325eb1fd1a344cd2bb6cb0392",
-    "semantic_hash": ""
-  },
-  "CI-CD-Pipeline/editor-highlight.js": {
-    "mtime": 1787653758.2630026,
-    "ast_hash": "123b9057d626e2c53132bd6aaa006dab",
-    "semantic_hash": ""
-  },
-  "CI-CD-Pipeline/engine.js": {
-    "mtime": 1787653758.2221198,
-    "ast_hash": "4a87032efb4493aaf3008fe6aba13e82",
-    "semantic_hash": ""
-  },
-  "CI-CD-Pipeline/gamification.js": {
-    "mtime": 1787653758.2458851,
-    "ast_hash": "1f8b0eb511d06a80830d8e4358913f95",
-    "semantic_hash": ""
-  },
-  "CI-CD-Pipeline/index.html": {
-    "mtime": 1786438408.9001756,
-    "ast_hash": "b2df603ce5dab937f160f500764276b9",
-    "semantic_hash": ""
-  },
-  "CI-CD-Pipeline/style.css": {
-    "mtime": 1785595707.7636473,
-    "ast_hash": "45b19912f537667ac8a8b2fe5970532d",
-    "semantic_hash": ""
-  },
-  "CLI-Essentials/course.js": {
-    "mtime": 1786445578.6490366,
-    "ast_hash": "ebea4c93417792c9bf84dec3e1286707",
-    "semantic_hash": ""
-  },
-  "CLI-Essentials/editor-autocomplete.js": {
-    "mtime": 1787653757.9782524,
-    "ast_hash": "34d5eb9f3c67c32ce183a79885382ff6",
-    "semantic_hash": ""
-  },
-  "CLI-Essentials/editor-enhancements.js": {
-    "mtime": 1787653757.9978485,
-    "ast_hash": "9519dd8325eb1fd1a344cd2bb6cb0392",
-    "semantic_hash": ""
-  },
-  "CLI-Essentials/editor-highlight.js": {
-    "mtime": 1787653758.0063426,
-    "ast_hash": "123b9057d626e2c53132bd6aaa006dab",
-    "semantic_hash": ""
-  },
-  "CLI-Essentials/engine.js": {
-    "mtime": 1787653757.9659162,
-    "ast_hash": "4a87032efb4493aaf3008fe6aba13e82",
-    "semantic_hash": ""
-  },
-  "CLI-Essentials/gamification.js": {
-    "mtime": 1787653757.9851148,
-    "ast_hash": "1f8b0eb511d06a80830d8e4358913f95",
-    "semantic_hash": ""
-  },
-  "CLI-Essentials/index.html": {
-    "mtime": 1786438408.8387566,
-    "ast_hash": "47e8232b18f2d770fef111c717a4d297",
-    "semantic_hash": ""
-  },
-  "CLI-Essentials/style.css": {
-    "mtime": 1785595707.7670097,
-    "ast_hash": "45b19912f537667ac8a8b2fe5970532d",
-    "semantic_hash": ""
-  },
-  "DB-Design-SQL/course.js": {
-    "mtime": 1785510438.2224705,
-    "ast_hash": "71649656d978f1ad9de3d5fab871ee04",
-    "semantic_hash": ""
-  },
-  "DB-Design-SQL/editor-autocomplete.js": {
-    "mtime": 1787653757.9317071,
-    "ast_hash": "34d5eb9f3c67c32ce183a79885382ff6",
-    "semantic_hash": ""
-  },
-  "DB-Design-SQL/editor-enhancements.js": {
-    "mtime": 1787653757.9473586,
-    "ast_hash": "9519dd8325eb1fd1a344cd2bb6cb0392",
-    "semantic_hash": ""
-  },
-  "DB-Design-SQL/editor-highlight.js": {
-    "mtime": 1787653757.957967,
-    "ast_hash": "123b9057d626e2c53132bd6aaa006dab",
-    "semantic_hash": ""
-  },
-  "DB-Design-SQL/engine.js": {
-    "mtime": 1787653757.922758,
-    "ast_hash": "4a87032efb4493aaf3008fe6aba13e82",
-    "semantic_hash": ""
-  },
-  "DB-Design-SQL/gamification.js": {
-    "mtime": 1787653757.9406893,
-    "ast_hash": "1f8b0eb511d06a80830d8e4358913f95",
-    "semantic_hash": ""
-  },
-  "DB-Design-SQL/index.html": {
-    "mtime": 1786438408.8229208,
-    "ast_hash": "b451c68d83b32448b2088101b664e5bd",
-    "semantic_hash": ""
-  },
-  "DB-Design-SQL/style.css": {
-    "mtime": 1785595707.769012,
-    "ast_hash": "45b19912f537667ac8a8b2fe5970532d",
-    "semantic_hash": ""
-  },
-  "DB-Design-SQL/test-normal-forms.mjs": {
-    "mtime": 1784648176.6225116,
-    "ast_hash": "976dcd7c4401985f992cd3fe9e8e616b",
-    "semantic_hash": ""
-  },
-  "Data-Structures-Algorithms/course.js": {
-    "mtime": 1785316103.57753,
-    "ast_hash": "feb979920549b57d888e0bda92be7fa6",
-    "semantic_hash": ""
-  },
-  "Data-Structures-Algorithms/editor-autocomplete.js": {
-    "mtime": 1787653758.434985,
-    "ast_hash": "34d5eb9f3c67c32ce183a79885382ff6",
-    "semantic_hash": ""
-  },
-  "Data-Structures-Algorithms/editor-enhancements.js": {
-    "mtime": 1787653758.4739912,
-    "ast_hash": "9519dd8325eb1fd1a344cd2bb6cb0392",
-    "semantic_hash": ""
-  },
-  "Data-Structures-Algorithms/editor-highlight.js": {
-    "mtime": 1787653758.4905343,
-    "ast_hash": "123b9057d626e2c53132bd6aaa006dab",
-    "semantic_hash": ""
-  },
-  "Data-Structures-Algorithms/engine.js": {
-    "mtime": 1787653758.4192939,
-    "ast_hash": "4a87032efb4493aaf3008fe6aba13e82",
-    "semantic_hash": ""
-  },
-  "Data-Structures-Algorithms/gamification.js": {
-    "mtime": 1787653758.457955,
-    "ast_hash": "1f8b0eb511d06a80830d8e4358913f95",
-    "semantic_hash": ""
-  },
-  "Data-Structures-Algorithms/index.html": {
-    "mtime": 1786438408.9575698,
-    "ast_hash": "6c79d319071d905a63871358d524f7c6",
-    "semantic_hash": ""
-  },
-  "Data-Structures-Algorithms/style.css": {
-    "mtime": 1785595707.7853541,
-    "ast_hash": "45b19912f537667ac8a8b2fe5970532d",
-    "semantic_hash": ""
-  },
-  "Data-Structures-Algorithms/test-complexity-lessons.mjs": {
-    "mtime": 1784682656.8899813,
-    "ast_hash": "6d70b2d7fb57db9065d202dcbcd17a95",
-    "semantic_hash": ""
-  },
-  "Final-Project/course.js": {
-    "mtime": 1785595707.7920232,
-    "ast_hash": "7423be33d407047343a9f46df60e252c",
-    "semantic_hash": ""
-  },
-  "Final-Project/editor-autocomplete.js": {
-    "mtime": 1787653758.5304987,
-    "ast_hash": "34d5eb9f3c67c32ce183a79885382ff6",
-    "semantic_hash": ""
-  },
-  "Final-Project/editor-enhancements.js": {
-    "mtime": 1787653758.563635,
-    "ast_hash": "9519dd8325eb1fd1a344cd2bb6cb0392",
-    "semantic_hash": ""
-  },
-  "Final-Project/editor-highlight.js": {
-    "mtime": 1787653758.581411,
-    "ast_hash": "123b9057d626e2c53132bd6aaa006dab",
-    "semantic_hash": ""
-  },
-  "Final-Project/engine.js": {
-    "mtime": 1787653758.5073297,
-    "ast_hash": "4a87032efb4493aaf3008fe6aba13e82",
-    "semantic_hash": ""
-  },
-  "Final-Project/gamification.js": {
-    "mtime": 1787653758.5518672,
-    "ast_hash": "1f8b0eb511d06a80830d8e4358913f95",
+    "mtime": 1790953786.0855365,
+    "ast_hash": "0f2e4afe3ee856640be5319f2a5e4b34",
     "semantic_hash": ""
   },
   "Final-Project/index.html": {
-    "mtime": 1786438408.9716897,
-    "ast_hash": "4a59658a91d77bb1434c703b120ca32e",
-    "semantic_hash": ""
-  },
-  "Final-Project/style.css": {
-    "mtime": 1785595707.796485,
-    "ast_hash": "45b19912f537667ac8a8b2fe5970532d",
-    "semantic_hash": ""
-  },
-  "Framework-Design/course.js": {
-    "mtime": 1785510771.0744913,
-    "ast_hash": "d4e074758d9de8d4a4ab68f5d75b9a75",
-    "semantic_hash": ""
-  },
-  "Framework-Design/editor-autocomplete.js": {
-    "mtime": 1787653758.284568,
-    "ast_hash": "34d5eb9f3c67c32ce183a79885382ff6",
-    "semantic_hash": ""
-  },
-  "Framework-Design/editor-enhancements.js": {
-    "mtime": 1787653758.3026633,
-    "ast_hash": "9519dd8325eb1fd1a344cd2bb6cb0392",
-    "semantic_hash": ""
-  },
-  "Framework-Design/editor-highlight.js": {
-    "mtime": 1787653758.3178222,
-    "ast_hash": "123b9057d626e2c53132bd6aaa006dab",
-    "semantic_hash": ""
-  },
-  "Framework-Design/engine.js": {
-    "mtime": 1787653758.2730994,
-    "ast_hash": "4a87032efb4493aaf3008fe6aba13e82",
-    "semantic_hash": ""
-  },
-  "Framework-Design/gamification.js": {
-    "mtime": 1787653758.292705,
-    "ast_hash": "1f8b0eb511d06a80830d8e4358913f95",
-    "semantic_hash": ""
-  },
-  "Framework-Design/index.html": {
-    "mtime": 1786438408.9142554,
-    "ast_hash": "9995587901a088babffc2bf5c33bdaaf",
-    "semantic_hash": ""
-  },
-  "Framework-Design/style.css": {
-    "mtime": 1785595707.799167,
-    "ast_hash": "45b19912f537667ac8a8b2fe5970532d",
-    "semantic_hash": ""
-  },
-  "Modern-CLI-Tools/course.js": {
-    "mtime": 1787654219.0504959,
-    "ast_hash": "52a96bf2839f2ddaa1cd3df506f4f160",
-    "semantic_hash": ""
-  },
-  "Modern-CLI-Tools/editor-autocomplete.js": {
-    "mtime": 1787653758.0312805,
-    "ast_hash": "34d5eb9f3c67c32ce183a79885382ff6",
-    "semantic_hash": ""
-  },
-  "Modern-CLI-Tools/editor-enhancements.js": {
-    "mtime": 1787653758.0500245,
-    "ast_hash": "9519dd8325eb1fd1a344cd2bb6cb0392",
-    "semantic_hash": ""
-  },
-  "Modern-CLI-Tools/editor-highlight.js": {
-    "mtime": 1787653758.062529,
-    "ast_hash": "123b9057d626e2c53132bd6aaa006dab",
-    "semantic_hash": ""
-  },
-  "Modern-CLI-Tools/engine.js": {
-    "mtime": 1787653758.02155,
-    "ast_hash": "4a87032efb4493aaf3008fe6aba13e82",
-    "semantic_hash": ""
-  },
-  "Modern-CLI-Tools/gamification.js": {
-    "mtime": 1787653758.0429716,
-    "ast_hash": "1f8b0eb511d06a80830d8e4358913f95",
-    "semantic_hash": ""
-  },
-  "Modern-CLI-Tools/index.html": {
-    "mtime": 1787653734.7241297,
-    "ast_hash": "eeb46eeb54c05b4dedc0d95b58f26936",
-    "semantic_hash": ""
-  },
-  "Modern-CLI-Tools/style.css": {
-    "mtime": 1787653737.3465424,
-    "ast_hash": "45b19912f537667ac8a8b2fe5970532d",
-    "semantic_hash": ""
-  },
-  "OOP-Fundamentals/course.js": {
-    "mtime": 1785596712.4106495,
-    "ast_hash": "aeb1630361f1188ea74ecd78a87cff2e",
-    "semantic_hash": ""
-  },
-  "OOP-Fundamentals/editor-autocomplete.js": {
-    "mtime": 1787653758.3352647,
-    "ast_hash": "34d5eb9f3c67c32ce183a79885382ff6",
-    "semantic_hash": ""
-  },
-  "OOP-Fundamentals/editor-enhancements.js": {
-    "mtime": 1787653758.3559434,
-    "ast_hash": "9519dd8325eb1fd1a344cd2bb6cb0392",
-    "semantic_hash": ""
-  },
-  "OOP-Fundamentals/editor-highlight.js": {
-    "mtime": 1787653758.3626134,
-    "ast_hash": "123b9057d626e2c53132bd6aaa006dab",
-    "semantic_hash": ""
-  },
-  "OOP-Fundamentals/engine.js": {
-    "mtime": 1787653758.3265843,
-    "ast_hash": "4a87032efb4493aaf3008fe6aba13e82",
-    "semantic_hash": ""
-  },
-  "OOP-Fundamentals/gamification.js": {
-    "mtime": 1787653758.3451486,
-    "ast_hash": "1f8b0eb511d06a80830d8e4358913f95",
-    "semantic_hash": ""
-  },
-  "OOP-Fundamentals/index.html": {
-    "mtime": 1786438408.9283226,
-    "ast_hash": "f9083b34cb7cc515ca40de1b70511a00",
-    "semantic_hash": ""
-  },
-  "OOP-Fundamentals/style.css": {
-    "mtime": 1785596679.0740678,
-    "ast_hash": "45b19912f537667ac8a8b2fe5970532d",
-    "semantic_hash": ""
-  },
-  "Performance-Testing/course.js": {
-    "mtime": 1785510378.3386147,
-    "ast_hash": "db63f63753fb194d6a2fab3ec42de29d",
-    "semantic_hash": ""
-  },
-  "Performance-Testing/editor-autocomplete.js": {
-    "mtime": 1787653757.8878026,
-    "ast_hash": "34d5eb9f3c67c32ce183a79885382ff6",
-    "semantic_hash": ""
-  },
-  "Performance-Testing/editor-enhancements.js": {
-    "mtime": 1787653757.906074,
-    "ast_hash": "9519dd8325eb1fd1a344cd2bb6cb0392",
-    "semantic_hash": ""
-  },
-  "Performance-Testing/editor-highlight.js": {
-    "mtime": 1787653757.9149446,
-    "ast_hash": "123b9057d626e2c53132bd6aaa006dab",
-    "semantic_hash": ""
-  },
-  "Performance-Testing/engine.js": {
-    "mtime": 1787653757.880942,
-    "ast_hash": "4a87032efb4493aaf3008fe6aba13e82",
-    "semantic_hash": ""
-  },
-  "Performance-Testing/gamification.js": {
-    "mtime": 1787653757.897359,
-    "ast_hash": "1f8b0eb511d06a80830d8e4358913f95",
-    "semantic_hash": ""
-  },
-  "Performance-Testing/index.html": {
-    "mtime": 1786438408.8077252,
-    "ast_hash": "ecc4a629a3bb1c0500b09ecf7a7b7740",
-    "semantic_hash": ""
-  },
-  "Performance-Testing/style.css": {
-    "mtime": 1785595707.8070793,
-    "ast_hash": "45b19912f537667ac8a8b2fe5970532d",
-    "semantic_hash": ""
-  },
-  "Playwright/course.js": {
-    "mtime": 1785510391.4417272,
-    "ast_hash": "2979972091e79dd5016b3c963d0c10ee",
-    "semantic_hash": ""
-  },
-  "Playwright/editor-autocomplete.js": {
-    "mtime": 1787653757.8150704,
-    "ast_hash": "34d5eb9f3c67c32ce183a79885382ff6",
-    "semantic_hash": ""
-  },
-  "Playwright/editor-enhancements.js": {
-    "mtime": 1787653757.8287668,
-    "ast_hash": "9519dd8325eb1fd1a344cd2bb6cb0392",
-    "semantic_hash": ""
-  },
-  "Playwright/editor-highlight.js": {
-    "mtime": 1787653757.8380375,
-    "ast_hash": "123b9057d626e2c53132bd6aaa006dab",
-    "semantic_hash": ""
-  },
-  "Playwright/engine.js": {
-    "mtime": 1787653757.8064444,
-    "ast_hash": "4a87032efb4493aaf3008fe6aba13e82",
-    "semantic_hash": ""
-  },
-  "Playwright/gamification.js": {
-    "mtime": 1787653757.8227272,
-    "ast_hash": "1f8b0eb511d06a80830d8e4358913f95",
-    "semantic_hash": ""
-  },
-  "Playwright/index.html": {
-    "mtime": 1786438408.7692866,
-    "ast_hash": "912e85ff08e6b9194dfe7c09a50d72f7",
-    "semantic_hash": ""
-  },
-  "Playwright/style.css": {
-    "mtime": 1785595707.808192,
-    "ast_hash": "45b19912f537667ac8a8b2fe5970532d",
-    "semantic_hash": ""
-  },
-  "Programming-Paradigms/course.js": {
-    "mtime": 1785598833.8701808,
-    "ast_hash": "47c630c3099363ff24e055105d909b71",
-    "semantic_hash": ""
-  },
-  "Programming-Paradigms/editor-autocomplete.js": {
-    "mtime": 1787653758.380919,
-    "ast_hash": "34d5eb9f3c67c32ce183a79885382ff6",
-    "semantic_hash": ""
-  },
-  "Programming-Paradigms/editor-enhancements.js": {
-    "mtime": 1787653758.4046829,
-    "ast_hash": "9519dd8325eb1fd1a344cd2bb6cb0392",
-    "semantic_hash": ""
-  },
-  "Programming-Paradigms/editor-highlight.js": {
-    "mtime": 1787653758.4133258,
-    "ast_hash": "123b9057d626e2c53132bd6aaa006dab",
-    "semantic_hash": ""
-  },
-  "Programming-Paradigms/engine.js": {
-    "mtime": 1787653758.37225,
-    "ast_hash": "4a87032efb4493aaf3008fe6aba13e82",
-    "semantic_hash": ""
-  },
-  "Programming-Paradigms/gamification.js": {
-    "mtime": 1787653758.3936112,
-    "ast_hash": "1f8b0eb511d06a80830d8e4358913f95",
-    "semantic_hash": ""
-  },
-  "Programming-Paradigms/index.html": {
-    "mtime": 1786438408.9429023,
-    "ast_hash": "a2c81fd5d047ba973b26e0e42917ae86",
-    "semantic_hash": ""
-  },
-  "Programming-Paradigms/style.css": {
-    "mtime": 1785597752.6401324,
-    "ast_hash": "406faf1d3e84cad80d08166b2477c56c",
-    "semantic_hash": ""
-  },
-  "Robot-Framework/course.js": {
-    "mtime": 1785510468.6022758,
-    "ast_hash": "3c9ca0eda418fe675329ab1c39841f63",
-    "semantic_hash": ""
-  },
-  "Robot-Framework/editor-autocomplete.js": {
-    "mtime": 1787653757.8508317,
-    "ast_hash": "34d5eb9f3c67c32ce183a79885382ff6",
-    "semantic_hash": ""
-  },
-  "Robot-Framework/editor-enhancements.js": {
-    "mtime": 1787653757.8656957,
-    "ast_hash": "9519dd8325eb1fd1a344cd2bb6cb0392",
-    "semantic_hash": ""
-  },
-  "Robot-Framework/editor-highlight.js": {
-    "mtime": 1787653757.8726392,
-    "ast_hash": "123b9057d626e2c53132bd6aaa006dab",
-    "semantic_hash": ""
-  },
-  "Robot-Framework/engine.js": {
-    "mtime": 1787653757.8448317,
-    "ast_hash": "4a87032efb4493aaf3008fe6aba13e82",
-    "semantic_hash": ""
-  },
-  "Robot-Framework/gamification.js": {
-    "mtime": 1787653757.8574045,
-    "ast_hash": "1f8b0eb511d06a80830d8e4358913f95",
-    "semantic_hash": ""
-  },
-  "Robot-Framework/index.html": {
-    "mtime": 1786438408.7892764,
-    "ast_hash": "f3c1957497eb3f9e90d6482be7c28166",
-    "semantic_hash": ""
-  },
-  "Robot-Framework/style.css": {
-    "mtime": 1785595707.809775,
-    "ast_hash": "45b19912f537667ac8a8b2fe5970532d",
-    "semantic_hash": ""
-  },
-  "Security-Testing/course.js": {
-    "mtime": 1785510576.6499963,
-    "ast_hash": "84767e3eba36517549e3676308589717",
-    "semantic_hash": ""
-  },
-  "Security-Testing/editor-autocomplete.js": {
-    "mtime": 1787653758.080674,
-    "ast_hash": "34d5eb9f3c67c32ce183a79885382ff6",
-    "semantic_hash": ""
-  },
-  "Security-Testing/editor-enhancements.js": {
-    "mtime": 1787653758.1083486,
-    "ast_hash": "9519dd8325eb1fd1a344cd2bb6cb0392",
-    "semantic_hash": ""
-  },
-  "Security-Testing/editor-highlight.js": {
-    "mtime": 1787653758.1167908,
-    "ast_hash": "123b9057d626e2c53132bd6aaa006dab",
-    "semantic_hash": ""
-  },
-  "Security-Testing/engine.js": {
-    "mtime": 1787653758.0733647,
-    "ast_hash": "4a87032efb4493aaf3008fe6aba13e82",
-    "semantic_hash": ""
-  },
-  "Security-Testing/gamification.js": {
-    "mtime": 1787653758.0931027,
-    "ast_hash": "1f8b0eb511d06a80830d8e4358913f95",
-    "semantic_hash": ""
-  },
-  "Security-Testing/index.html": {
-    "mtime": 1786438408.8542142,
-    "ast_hash": "7e2f441c2d25774854431a6c9e38cb17",
-    "semantic_hash": ""
-  },
-  "Security-Testing/style.css": {
-    "mtime": 1785595707.8109226,
-    "ast_hash": "45b19912f537667ac8a8b2fe5970532d",
-    "semantic_hash": ""
-  },
-  "Visual-Regression-Testing/course.js": {
-    "mtime": 1785510560.913645,
-    "ast_hash": "0deda259eeb862f2d3372c976d2e7829",
-    "semantic_hash": ""
-  },
-  "Visual-Regression-Testing/editor-autocomplete.js": {
-    "mtime": 1787653758.1816432,
-    "ast_hash": "34d5eb9f3c67c32ce183a79885382ff6",
-    "semantic_hash": ""
-  },
-  "Visual-Regression-Testing/editor-enhancements.js": {
-    "mtime": 1787653758.1973696,
-    "ast_hash": "9519dd8325eb1fd1a344cd2bb6cb0392",
-    "semantic_hash": ""
-  },
-  "Visual-Regression-Testing/editor-highlight.js": {
-    "mtime": 1787653758.2075539,
-    "ast_hash": "123b9057d626e2c53132bd6aaa006dab",
-    "semantic_hash": ""
-  },
-  "Visual-Regression-Testing/engine.js": {
-    "mtime": 1787653758.1756418,
-    "ast_hash": "4a87032efb4493aaf3008fe6aba13e82",
-    "semantic_hash": ""
-  },
-  "Visual-Regression-Testing/gamification.js": {
-    "mtime": 1787653758.1897254,
-    "ast_hash": "1f8b0eb511d06a80830d8e4358913f95",
-    "semantic_hash": ""
-  },
-  "Visual-Regression-Testing/index.html": {
-    "mtime": 1786438408.8861566,
-    "ast_hash": "fdc766d42fcbc4d5b285b9ca1a7716e4",
-    "semantic_hash": ""
-  },
-  "Visual-Regression-Testing/style.css": {
-    "mtime": 1785595707.8118498,
-    "ast_hash": "45b19912f537667ac8a8b2fe5970532d",
-    "semantic_hash": ""
-  },
-  "certificate_preview.html": {
-    "mtime": 1785312915.5985432,
-    "ast_hash": "0a445045e4a17ee3aee651fddf88e844",
+    "mtime": 1790953786.084968,
+    "ast_hash": "084f360cbf10a8a32cb3bebcdc5f0b4d",
     "semantic_hash": ""
   },
   "cliff.toml": {
-    "mtime": 1784474040.8269951,
-    "ast_hash": "b5fbddc2cd835753588ed1b5c345f57d",
+    "mtime": 1790953786.0856135,
+    "ast_hash": "36ea0a18480cda9029abe9d94869fde3",
     "semantic_hash": ""
   },
   "exam/index.html": {
-    "mtime": 1787653854.7876484,
-    "ast_hash": "a9aeb1c1b4d7bd5ae842efeba97ab62d",
-    "semantic_hash": ""
-  },
-  "graphify.toml": {
-    "mtime": 1783149918.3115497,
-    "ast_hash": "463036a9e20dfba8be29d02ae8dcd232",
+    "mtime": 1790953786.088136,
+    "ast_hash": "9869c7180a77d91c313e30324ef12508",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1787654329.4556036,
-    "ast_hash": "d79d13ab2dd755e220fafc1e6d64b446",
+    "mtime": 1790953786.1087048,
+    "ast_hash": "03bffcf3b3675d38abea47abdf73cb72",
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1787654338.2189608,
-    "ast_hash": "38740aa589efdddb046885802a1628f1",
-    "semantic_hash": ""
-  },
-  "scripts/release-cycle.sh": {
-    "mtime": 1785048705.3899453,
-    "ast_hash": "94fd6eb740609f0bb5a108488748c368",
+    "mtime": 1790954118.40687,
+    "ast_hash": "ded5ad15e400188a6840c57f14960879",
     "semantic_hash": ""
   },
   "scripts/release.sh": {
-    "mtime": 1784474057.4440958,
-    "ast_hash": "447b45231a9af61e2d990180fe72794e",
-    "semantic_hash": ""
-  },
-  "shared/editor-autocomplete.js": {
-    "mtime": 1785423860.9165523,
-    "ast_hash": "34d5eb9f3c67c32ce183a79885382ff6",
-    "semantic_hash": ""
-  },
-  "shared/editor-enhancements.js": {
-    "mtime": 1785509000.9809036,
-    "ast_hash": "9519dd8325eb1fd1a344cd2bb6cb0392",
-    "semantic_hash": ""
-  },
-  "shared/editor-highlight.js": {
-    "mtime": 1785511292.189024,
-    "ast_hash": "123b9057d626e2c53132bd6aaa006dab",
+    "mtime": 1790953786.1089482,
+    "ast_hash": "3de76589db13466624ff26224d810cdd",
     "semantic_hash": ""
   },
   "shared/engine.js": {
-    "mtime": 1785595707.8181095,
-    "ast_hash": "4a87032efb4493aaf3008fe6aba13e82",
+    "mtime": 1790953786.1092176,
+    "ast_hash": "79dcea301e77f233876f7ac69ddd45c8",
     "semantic_hash": ""
   },
   "shared/exam-engine.js": {
-    "mtime": 1785511282.9299786,
-    "ast_hash": "4676f463a42206f6c4dda55cfb5f3c87",
+    "mtime": 1790953786.109332,
+    "ast_hash": "cefde7429c37bacd123731f0a1307832",
     "semantic_hash": ""
   },
   "shared/gamification.js": {
-    "mtime": 1786438431.44363,
-    "ast_hash": "1f8b0eb511d06a80830d8e4358913f95",
-    "semantic_hash": ""
-  },
-  "shared/selftest.mjs": {
-    "mtime": 1787653766.7823083,
-    "ast_hash": "66f2504cd7a6e8098067a10413c94dbc",
-    "semantic_hash": ""
-  },
-  "shared/sync-engine.sh": {
-    "mtime": 1787653742.693297,
-    "ast_hash": "6ac80a964f6f57cb27c7be9aa540b3b1",
-    "semantic_hash": ""
-  },
-  "shared/test-case-sensitivity-guard.mjs": {
-    "mtime": 1785423688.20922,
-    "ast_hash": "6887d71dc0cc3a1c6495bbe6b6c2f463",
-    "semantic_hash": ""
-  },
-  "shared/test-editor-autocomplete.mjs": {
-    "mtime": 1785423850.912248,
-    "ast_hash": "0c8ce7c06e2dd243bd59ff19b4e51252",
-    "semantic_hash": ""
-  },
-  "shared/test-editor-enhancements.mjs": {
-    "mtime": 1785509134.8867567,
-    "ast_hash": "6f0181ed4bfa7ee5c61e20438a582954",
-    "semantic_hash": ""
-  },
-  "shared/test-editor-highlight-sync.mjs": {
-    "mtime": 1785509611.5594184,
-    "ast_hash": "c2b7241f6d6aff6a3ec911d115439de3",
-    "semantic_hash": ""
-  },
-  "shared/test-editor-highlight.mjs": {
-    "mtime": 1785509194.7005448,
-    "ast_hash": "ddb00717a73a8080a9f1f6559b9eb5d6",
-    "semantic_hash": ""
-  },
-  "shared/test-editor-pairs.mjs": {
-    "mtime": 1785423444.6518347,
-    "ast_hash": "43068b00e1155c64963d30bfebeb5ec3",
-    "semantic_hash": ""
-  },
-  "shared/test-exam-editor-wiring.mjs": {
-    "mtime": 1785511443.5998375,
-    "ast_hash": "86899fbeb825d7aece5c99493200a0f4",
+    "mtime": 1790953786.1094334,
+    "ast_hash": "303df96ca5a6cc57fa7c88a13a7b1713",
     "semantic_hash": ""
   },
   "version.json": {
-    "mtime": 1787654326.3845968,
-    "ast_hash": "efda3b07fa0d62ce3828985016decf1e",
-    "semantic_hash": ""
-  },
-  ".claude/CLAUDE.md": {
-    "mtime": 1784434370.7485538,
-    "ast_hash": "9b31786b637be3c13978bec4c2330752",
-    "semantic_hash": ""
-  },
-  ".claude/skills/graphify/SKILL.md": {
-    "mtime": 1784434370.7481534,
-    "ast_hash": "3f174d22ffe091b3fa486d5ba18bb6af",
-    "semantic_hash": ""
-  },
-  ".claude/skills/graphify/references/add-watch.md": {
-    "mtime": 1784434114.8747022,
-    "ast_hash": "d59d027fe449f06aa03905a01184e779",
-    "semantic_hash": ""
-  },
-  ".claude/skills/graphify/references/exports.md": {
-    "mtime": 1784434114.8748014,
-    "ast_hash": "9da2a2152e60a22f07f05fed5158f287",
-    "semantic_hash": ""
-  },
-  ".claude/skills/graphify/references/extraction-spec.md": {
-    "mtime": 1784434114.876039,
-    "ast_hash": "42fef56a01698118f7fd722acdadea34",
-    "semantic_hash": ""
-  },
-  ".claude/skills/graphify/references/github-and-merge.md": {
-    "mtime": 1784434114.8765736,
-    "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
-    "semantic_hash": ""
-  },
-  ".claude/skills/graphify/references/hooks.md": {
-    "mtime": 1784434114.8770456,
-    "ast_hash": "3f545db6ce646650bb9de588f5512a27",
-    "semantic_hash": ""
-  },
-  ".claude/skills/graphify/references/query.md": {
-    "mtime": 1784434114.877216,
-    "ast_hash": "3c46f8ad006874260614ed8657d02307",
-    "semantic_hash": ""
-  },
-  ".claude/skills/graphify/references/transcribe.md": {
-    "mtime": 1784434114.8773293,
-    "ast_hash": "67b6a5fa6c0974e18f60db9f8932fbd8",
-    "semantic_hash": ""
-  },
-  ".claude/skills/graphify/references/update.md": {
-    "mtime": 1784434114.8774636,
-    "ast_hash": "c698309979460d0f02ba616417844399",
+    "mtime": 1790953786.110206,
+    "ast_hash": "7649ac9a5023585a322c58f285840838",
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787654340.4824262,
-    "ast_hash": "96653b0b921a99989013fba653534bd1",
+    "mtime": 1790953786.0844474,
+    "ast_hash": "7e065cf77f7f4a813d3416270d01927d",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1784434954.209989,
-    "ast_hash": "0458563de4b12e9006231cd465abface",
+    "mtime": 1790954118.4066498,
+    "ast_hash": "5c27369b226fcf2be8a6cfe52224e767",
     "semantic_hash": ""
   },
   "DESIGN.md": {
-    "mtime": 1785598104.111124,
-    "ast_hash": "fc27733c6ed11ec93db1430a8ec6b6a1",
-    "semantic_hash": ""
-  },
-  "GLOSSARY.md": {
-    "mtime": 1785421797.9132326,
-    "ast_hash": "67f541982325cad13b8a9aaa06a95787",
+    "mtime": 1790953786.0847225,
+    "ast_hash": "770a25a2d384aadd32b60a9fa5b7c3f0",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
-    "mtime": 1784648970.352447,
-    "ast_hash": "8a696fbf658594e55128ceb366fc5a51",
+    "mtime": 1790953786.0854325,
+    "ast_hash": "1fb252857a0aa8a6153bd50dd3134ff6",
     "semantic_hash": ""
   },
-  "docs/plans/nf-dsa-and-roadmap.md": {
-    "mtime": 1784646455.5560055,
-    "ast_hash": "f7448cc427ccc8b3a880ed62717f2679",
+  "01-financial-accounting-1/index.html": {
+    "mtime": 1790953786.0711408,
+    "ast_hash": "6c9980e2abcccabca02a827142e5673e",
     "semantic_hash": ""
   },
-  "assets/playwright-logo.svg": {
-    "mtime": 1782897537.4765704,
-    "ast_hash": "3a2e616a4c02faa220f078f403535bfa",
+  "01-financial-accounting-1/lessons.js": {
+    "mtime": 1790953786.0723557,
+    "ast_hash": "13663d28cfa9b8b3c8b1d54c6770fe6c",
     "semantic_hash": ""
   },
-  "assets/robotframework-logo.svg": {
-    "mtime": 1782897537.646121,
-    "ast_hash": "d6d6bf140b74e00fc091bd2fc9372bc5",
+  "02-financial-accounting-2/index.html": {
+    "mtime": 1790953786.0729165,
+    "ast_hash": "eddc3bc817e7646c4d93e0e1482f30f6",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/lessons.js": {
+    "mtime": 1790953786.073027,
+    "ast_hash": "abfb5cb22ccfb3864662821edb2f1d60",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/lessons/accounting-policies-tas8.js": {
+    "mtime": 1790953786.0732458,
+    "ast_hash": "7dde0f1fab3bd2e71dc21f81a573eb74",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/lessons/bonds-and-tas32-instruments.js": {
+    "mtime": 1790953786.0734549,
+    "ast_hash": "a74fb10fef6c178428b33dc9f24c556d",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/lessons/cash-flow-tas7.js": {
+    "mtime": 1790953786.0736275,
+    "ast_hash": "740330a023421aabbd07ae446219d16a",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/lessons/consolidation-and-joint-arrangements.js": {
+    "mtime": 1790953786.0738084,
+    "ast_hash": "abb84e08fe6250fc7547b8b3132a2eca",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/lessons/employee-benefits-tas19.js": {
+    "mtime": 1790953786.0739574,
+    "ast_hash": "81f4c0f7a4363a6f55b13b75d15c7185",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/lessons/equity-and-eps.js": {
+    "mtime": 1790953786.074126,
+    "ast_hash": "f03e5758396da949f2a8c52e0d659597",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/lessons/fair-value-disclosure-standards.js": {
+    "mtime": 1790953786.0742786,
+    "ast_hash": "702c86777a60cd4a7b2857edd0544839",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/lessons/financial-instruments-tfrs9.js": {
+    "mtime": 1790953786.0744107,
+    "ast_hash": "ea65c3592029ad03d50456c992d3eae8",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/lessons/foreign-currency-tas21.js": {
+    "mtime": 1790953786.074536,
+    "ast_hash": "1fc1fc7b59e822af510a801bc4ddfccd",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/lessons/fs-presentation-tas1.js": {
+    "mtime": 1790953786.0746553,
+    "ast_hash": "945f6d3edac5302176717d1214c5bf33",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/lessons/government-grants-tas20.js": {
+    "mtime": 1790953786.0747848,
+    "ast_hash": "2f9c178a56ec3b471b1cb6adeaa9cf34",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/lessons/insurance-tfrs17.js": {
+    "mtime": 1790953786.0749273,
+    "ast_hash": "c558dc4d29fc3d6a4cdee95376b4b6a1",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/lessons/leases-tfrs16.js": {
+    "mtime": 1790953786.0750897,
+    "ast_hash": "c7c483f55c78292bfd31171e5d402e90",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/lessons/misc-standards-and-niche-topics.js": {
+    "mtime": 1790953786.075407,
+    "ast_hash": "e5280d2837d58fb19f5fe9023a5060db",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/lessons/partnership.js": {
+    "mtime": 1790953786.07555,
+    "ast_hash": "ed64d78d10fa363e2ed19c4435c106a3",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/lessons/ppe-impairment-investment-property.js": {
+    "mtime": 1790953786.0757325,
+    "ast_hash": "3cc1a2487b2da1befff334fd0ad38e43",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/lessons/revenue-tfrs15.js": {
+    "mtime": 1790953786.0758555,
+    "ast_hash": "eedff63df852f03365b2da2b00041f2a",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/lessons/share-based-payment-tfrs2.js": {
+    "mtime": 1790953786.0759866,
+    "ast_hash": "8012b255d2c7d781446f2076597b49b8",
+    "semantic_hash": ""
+  },
+  "03-auditing-1/index.html": {
+    "mtime": 1790953786.076525,
+    "ast_hash": "db7b354c82a41c297f7d8fb81bbbe9cf",
+    "semantic_hash": ""
+  },
+  "03-auditing-1/lessons.js": {
+    "mtime": 1790953786.0776927,
+    "ast_hash": "170c5d204284084408c173a80868012a",
+    "semantic_hash": ""
+  },
+  "04-auditing-2/index.html": {
+    "mtime": 1790953786.0780613,
+    "ast_hash": "11817e7b964f088da2411bcdd62b7115",
+    "semantic_hash": ""
+  },
+  "04-auditing-2/lessons.js": {
+    "mtime": 1790953786.078594,
+    "ast_hash": "b115c36cc749b0c20db0ec5813ce7dff",
+    "semantic_hash": ""
+  },
+  "05-law/index.html": {
+    "mtime": 1790953786.0789683,
+    "ast_hash": "94aa5890ec2d20c870414e2a3b538495",
+    "semantic_hash": ""
+  },
+  "05-law/lessons.js": {
+    "mtime": 1790953786.079809,
+    "ast_hash": "f5c56405121d20d323df8dfebe9560d5",
+    "semantic_hash": ""
+  },
+  "06-taxation/index.html": {
+    "mtime": 1790953786.0814035,
+    "ast_hash": "945bd4f04a6024cb8185f9f0b96d8fb7",
+    "semantic_hash": ""
+  },
+  "06-taxation/lessons.js": {
+    "mtime": 1790953786.082364,
+    "ast_hash": "cfddc21d06f91794d0a0f656d08a9c20",
+    "semantic_hash": ""
+  },
+  "07-cost-accounting/index.html": {
+    "mtime": 1790953786.0828466,
+    "ast_hash": "21484fb32b1448328a3c7ee871d6681d",
+    "semantic_hash": ""
+  },
+  "07-cost-accounting/lessons.js": {
+    "mtime": 1790953786.083176,
+    "ast_hash": "09ed8b23324001105b5d3f4aee85155a",
+    "semantic_hash": ""
+  },
+  "08-financial-management/index.html": {
+    "mtime": 1790953786.0838258,
+    "ast_hash": "8f6d78ccd98e75f5b5363ab801502990",
+    "semantic_hash": ""
+  },
+  "08-financial-management/lessons.js": {
+    "mtime": 1790953786.084121,
+    "ast_hash": "c06a8f10947f38987f583322476aa339",
+    "semantic_hash": ""
+  },
+  "Final-Project/audit-signoff.js": {
+    "mtime": 1790953786.0848765,
+    "ast_hash": "fa4eb752fb1ec81c22403808d63b1b31",
+    "semantic_hash": ""
+  },
+  "Final-Project/lessons.js": {
+    "mtime": 1790953786.0851555,
+    "ast_hash": "e4605284d746cfeb31082c766cc1e4bb",
+    "semantic_hash": ""
+  },
+  "exam/subjective.html": {
+    "mtime": 1790953786.088279,
+    "ast_hash": "f10d0df0bb8a9dc35a181ef1e662a3bb",
+    "semantic_hash": ""
+  },
+  "shared/checkin.js": {
+    "mtime": 1790953786.109083,
+    "ast_hash": "f085d414570d5a3794d087e2a8817c0c",
+    "semantic_hash": ""
+  },
+  "shared/style.css": {
+    "mtime": 1790953786.109674,
+    "ast_hash": "a678c1a349dce1aa0f2f94224fb40c12",
+    "semantic_hash": ""
+  },
+  "tests/selftest.mjs": {
+    "mtime": 1790954118.4071386,
+    "ast_hash": "6722eb58cada27fdf8c0c13246a1cfd0",
+    "semantic_hash": ""
+  },
+  "01-financial-accounting-1/SUMMARY-DEEP.md": {
+    "mtime": 1790953786.0709507,
+    "ast_hash": "052cb43106ad62943d42a3e90828560b",
+    "semantic_hash": ""
+  },
+  "02-financial-accounting-2/SUMMARY-DEEP.md": {
+    "mtime": 1790953786.072627,
+    "ast_hash": "2afe897a8ffc49119dd76487d07dddae",
+    "semantic_hash": ""
+  },
+  "03-auditing-1/SUMMARY-DEEP.md": {
+    "mtime": 1790953786.0764036,
+    "ast_hash": "bb645eea047c3565040767ea118051dc",
+    "semantic_hash": ""
+  },
+  "04-auditing-2/SUMMARY-DEEP.md": {
+    "mtime": 1790953786.0779524,
+    "ast_hash": "30817ca8216ae573bb7c721e09feeaab",
+    "semantic_hash": ""
+  },
+  "05-law/SUMMARY-DEEP.md": {
+    "mtime": 1790953786.0788474,
+    "ast_hash": "46e37e623f6b81fcdc05349c7807fcdc",
+    "semantic_hash": ""
+  },
+  "06-taxation/SUMMARY-DEEP.md": {
+    "mtime": 1790953786.0810635,
+    "ast_hash": "ef180c32f53099017a186ad0529c3b82",
+    "semantic_hash": ""
+  },
+  "07-cost-accounting/SUMMARY-DEEP.md": {
+    "mtime": 1790953786.082719,
+    "ast_hash": "9b9e88f407f442cdd6085d179bcc4b61",
+    "semantic_hash": ""
+  },
+  "08-financial-management/SUMMARY-DEEP.md": {
+    "mtime": 1790953786.083725,
+    "ast_hash": "4d0e914f771130d6aff6b0d58221ee4c",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1790954118.4055803,
+    "ast_hash": "4562e687d955c1f6f0e75584ba804543",
+    "semantic_hash": ""
+  },
+  "ARCHITECTURE.md": {
+    "mtime": 1790954118.406394,
+    "ast_hash": "7793621a6b7944215fbf9b508f445295",
+    "semantic_hash": ""
+  },
+  "CONTEXT.md": {
+    "mtime": 1790953786.0846295,
+    "ast_hash": "1244dd6394f65558aa97b8dc56049cb5",
+    "semantic_hash": ""
+  },
+  "docs/adr/README.md": {
+    "mtime": 1790953786.0857797,
+    "ast_hash": "9950a74f8dd05fa50507228e4f12147d",
+    "semantic_hash": ""
+  },
+  "docs/agents/domain.md": {
+    "mtime": 1790953786.0859003,
+    "ast_hash": "ad638ae3d3f6d6e5f984be83430da398",
+    "semantic_hash": ""
+  },
+  "docs/agents/issue-tracker.md": {
+    "mtime": 1790953786.0859826,
+    "ast_hash": "eeff3e153dfdd43b3a6c2a134cd601dc",
+    "semantic_hash": ""
+  },
+  "docs/agents/triage-labels.md": {
+    "mtime": 1790953786.0860646,
+    "ast_hash": "ce6a06ad53eab2f0bc55838ecef86fbe",
+    "semantic_hash": ""
+  },
+  "exam/CPA_MOCK_EXAM_SET1.md": {
+    "mtime": 1790953786.086264,
+    "ast_hash": "7ec5b66ff36dcc38a1c4f9de5ea2e5a1",
+    "semantic_hash": ""
+  },
+  "exam/CPA_MOCK_EXAM_SET2.md": {
+    "mtime": 1790953786.0863683,
+    "ast_hash": "b4193d7e2d7f51d1b3ed3259ddda0997",
+    "semantic_hash": ""
+  },
+  "exam/CPA_MOCK_EXAM_SET3.md": {
+    "mtime": 1790953786.0865397,
+    "ast_hash": "48f89cfa6603b2a52cf078663a74a86e",
+    "semantic_hash": ""
+  },
+  "exam/CPA_MOCK_EXAM_SET4.md": {
+    "mtime": 1790953786.0866444,
+    "ast_hash": "ccfae8d29b0a3493bc2e8374f1f82c85",
+    "semantic_hash": ""
+  },
+  "exam/CPA_MOCK_EXAM_SET5.md": {
+    "mtime": 1790953786.087328,
+    "ast_hash": "7cc0e1443afb907c94fa44b5c35154d7",
+    "semantic_hash": ""
+  },
+  "exam/CPA_MOCK_EXAM_SET6.md": {
+    "mtime": 1790953786.0876455,
+    "ast_hash": "1ecd545c7b9545553860af8df196e6e6",
+    "semantic_hash": ""
+  },
+  "exam/CPA_MOCK_EXAM_SET7.md": {
+    "mtime": 1790953786.0879834,
+    "ast_hash": "e44d21e23ee07966236416816e26d8a0",
     "semantic_hash": ""
   }
 }

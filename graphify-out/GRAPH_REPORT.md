@@ -1,16 +1,16 @@
-# Graph Report - Accountant-Learning  (2026-08-28)
+# Graph Report - Accountant-Course  (2026-10-03)
 
 ## Corpus Check
-- 70 files · ~140,802 words
+- 77 files · ~141,772 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1588 nodes · 1564 edges · 153 communities (143 shown, 10 thin omitted)
+- 1600 nodes · 1587 edges · 158 communities (145 shown, 13 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `06722fff`
+- Built from commit: `3a105706`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -51,7 +51,7 @@ node's neighbors span, not by raw edge count.
 ## Hyperedges (group relationships)
 - **Project Documentation Set (Vision + Design System + Overview)** — readme, product, design [INFERRED 0.75]
 
-## Communities (153 total, 10 thin omitted)
+## Communities (158 total, 13 thin omitted)
 
 ### Community 0 - "Shared Style Tokens"
 Cohesion: 0.02
@@ -83,19 +83,19 @@ Nodes (39): 1.1 นิยามคนต่างด้าว (ม.4) และ�
 
 ### Community 7 - "Exam Engine Logic"
 Cohesion: 0.10
-Nodes (31): addJournalRow(), autoSaveEssay(), buildQuestionPool(), calculateBalance(), clearEssayWorkspace(), confirmSubmitExam(), ESSAY_CASES, เคสที่ 1: [การบัญชี 1 & 2] การปันส่วนรายได้ TFRS 15 และรายการปรับปรุงงบการเงิน (25 คะแนน) (+23 more)
+Nodes (32): addJournalRow(), autoSaveEssay(), buildQuestionPool(), calculateBalance(), clearEssayWorkspace(), confirmSubmitExam(), escapeHtmlExam(), ESSAY_CASES (+24 more)
 
 ### Community 8 - "Lesson Runner Engine"
-Cohesion: 0.19
-Nodes (18): applySolution(), escapeHtml(), getFirstIncompleteIndex(), handleTextareaKeydown(), initApp(), isLessonCompleted(), loadLesson(), renderLessonList() (+10 more)
+Cohesion: 0.23
+Nodes (20): applySolution(), closeDialog(), escapeHtml(), getFirstIncompleteIndex(), handleTextareaKeydown(), initApp(), isLessonCompleted(), loadLesson() (+12 more)
 
 ### Community 9 - "Exam Screen UI"
 Cohesion: 0.05
 Nodes (37): 1.1 TAS 36 — การคำนวณมูลค่าจากการใช้ (VIU) และผลขาดทุนจากการด้อยค่า, 1.2 TAS 36 — การกลับรายการผลขาดทุนจากการด้อยค่าภายใต้กฎเพดาน (Ceiling Rule), 1.3 TAS 16 — การแลกเปลี่ยนสินทรัพย์ที่มีเนื้อหาเชิงพาณิชย์, 2.1 TFRS 9 — การวัดมูลค่า ECL 3-Stage Model และการรับรู้รายได้ดอกเบี้ย, 2.2 TFRS 9 — การบัญชีป้องกันความเสี่ยงมูลค่ายุติธรรม (Fair Value Hedge), 2.3 TAS 32 — การจัดประเภทตราสารทางการเงิน, 3.1 TFRS 3 — การรวมธุรกิจแบบเป็นขั้นตอน (Step Acquisition), 3.2 TFRS 10 — การสูญเสียอำนาจควบคุมในบริษัทย่อย (Disposal with Loss of Control) (+29 more)
 
 ### Community 10 - "Product & Design Docs"
-Cohesion: 0.25
-Nodes (7): Core Features, Core Problems, Out of Scope, Product, Success Metrics, Target Users, Vision
+Cohesion: 0.12
+Nodes (16): 1.1 คำนวณรายได้จากการขายเครื่องจักรตาม TFRS 15, 1.2 คำนวณค่าเสื่อมราคารถยนต์นั่งบวกกลับทางภาษี (มาตรา 65 ตรี), 1.3 คำนวณดอกเบี้ยค้างจ่าย ณ วันสิ้นปี, 📌 ข้อที่ 1: [การบัญชี 1 & 2] การปันส่วนรายได้ TFRS 15 และรายการปรับปรุงงบการเงิน (25 คะแนน), 📌 ข้อที่ 2: [การสอบบัญชี 1 & 2] การประเมินความเสี่ยงและตัดสินใจเลือกประเภทรายงานผู้สอบบัญชี (25 คะแนน), 📌 ข้อที่ 3: [กฎหมายวิชาชีพบัญชี] องค์ประชุม มติพิเศษ และการลดทุนบริษัท (25 คะแนน), 📌 ข้อที่ 4: [ภาษีอากร] การคำนวณกำไรสุทธิเพื่อเสียภาษีเงินได้นิติบุคคล (25 คะแนน), 📝 ชุดข้อสอบจำลองและเฉลยละเอียดเตรียมสอบ CPA (CPA Mock Exam Set 1) (+8 more)
 
 ### Community 11 - "Responsive Layout Breakpoints"
 Cohesion: 0.06
@@ -142,8 +142,8 @@ Cohesion: 0.22
 Nodes (6): checkForUpdates(), #checkin-banner, #footer-version, #import-progress-input, showUpdateBanner(), #update-banner-slot
 
 ### Community 23 - "Design System"
-Cohesion: 0.12
-Nodes (16): 1.1 คำนวณรายได้จากการขายเครื่องจักรตาม TFRS 15, 1.2 คำนวณค่าเสื่อมราคารถยนต์นั่งบวกกลับทางภาษี (มาตรา 65 ตรี), 1.3 คำนวณดอกเบี้ยค้างจ่าย ณ วันสิ้นปี, 📌 ข้อที่ 1: [การบัญชี 1 & 2] การปันส่วนรายได้ TFRS 15 และรายการปรับปรุงงบการเงิน (25 คะแนน), 📌 ข้อที่ 2: [การสอบบัญชี 1 & 2] การประเมินความเสี่ยงและตัดสินใจเลือกประเภทรายงานผู้สอบบัญชี (25 คะแนน), 📌 ข้อที่ 3: [กฎหมายวิชาชีพบัญชี] องค์ประชุม มติพิเศษ และการลดทุนบริษัท (25 คะแนน), 📌 ข้อที่ 4: [ภาษีอากร] การคำนวณกำไรสุทธิเพื่อเสียภาษีเงินได้นิติบุคคล (25 คะแนน), 📝 ชุดข้อสอบจำลองและเฉลยละเอียดเตรียมสอบ CPA (CPA Mock Exam Set 1) (+8 more)
+Cohesion: 0.18
+Nodes (10): Accountant Learning (CPA prep portal) — Claude Instructions, Agent memory, Agent skills, Before changing lesson/engine logic, Domain docs, graphify, Issue tracker, Structure (+2 more)
 
 ### Community 24 - "เตรียมสอบ CPA — Accountant Learning Portal"
 Cohesion: 0.40
@@ -174,8 +174,8 @@ Cohesion: 0.25
 Nodes (7): description, name, private, scripts, start, test, version
 
 ### Community 38 - "Design System"
-Cohesion: 0.29
-Nodes (6): Avoid, Colors, Components, Design Direction, Design System, Typography
+Cohesion: 0.40
+Nodes (4): Accountant Learning — System Architecture, Architecture & File Organization, Constraints, Core Engines
 
 ### Community 39 - "เตรียมสอบ CPA — Accountant Learning Portal"
 Cohesion: 0.29
@@ -183,7 +183,7 @@ Nodes (6): License, ข้อจำกัด (ตรงไปตรงมา), �
 
 ### Community 40 - "selftest.mjs"
 Cohesion: 0.40
-Nodes (4): __dirname, failures, ROOT, TRACKS
+Nodes (4): Before exploring, read these, Domain Docs, Flag ADR conflicts, Use the glossary's vocabulary
 
 ### Community 41 - "checkin.js"
 Cohesion: 0.60
@@ -194,8 +194,8 @@ Cohesion: 0.09
 Nodes (22): #active-filename, #checkin-mini, #current-lesson-title, #dialog-action-btn, #dialog-content, #dialog-overlay, #dialog-title, #editor-gutter (+14 more)
 
 ### Community 43 - "gamification.js"
-Cohesion: 0.33
-Nodes (3): checkGrandCertificate(), MILESTONES, showGrandCertificate()
+Cohesion: 0.43
+Nodes (5): checkGrandCertificate(), downloadElementAsImage(), MILESTONES, showGrandCertificate(), showTrackCertificate()
 
 ### Community 45 - "index.html"
 Cohesion: 0.09
@@ -223,7 +223,7 @@ Nodes (17): 📌 ข้อที่ 1: [ภาษีอากร] ภาษี�
 
 ### Community 51 - "สรุปเจาะลึก: การสอบบัญชี 2 (Auditing 2) — ระดับข้อสอบ CPA"
 Cohesion: 0.18
-Nodes (10): จุดที่ข้อสอบชอบออก / กับดัก, จุดที่ข้อสอบชอบออก / กับดัก, ตารางเปรียบเทียบภาพรวม: กับดักที่ข้อสอบ CPA ออกซ้ำบ่อยที่สุดในวิชานี้, บทที่ 11 — TSA 520: วิธีการวิเคราะห์เปรียบเทียบ (Analytical Procedures), สรุปเจาะลึก: การสอบบัญชี 2 (Auditing 2) — ระดับข้อสอบ CPA, สารบัญ, ⚠️ หมายเหตุความน่าเชื่อถือของการอ้างอิงกฎหมาย/มาตรฐานในเอกสารนี้, หลักการ/มาตรฐาน (+2 more)
+Nodes (10): จุดที่ข้อสอบชอบออก / กับดัก, จุดที่ข้อสอบชอบออก / กับดัก, ตารางเปรียบเทียบภาพรวม: กับดักที่ข้อสอบ CPA ออกซ้ำบ่อยที่สุดในวิชานี้, สรุปเจาะลึก: การสอบบัญชี 2 (Auditing 2) — ระดับข้อสอบ CPA, สารบัญ, ⚠️ หมายเหตุความน่าเชื่อถือของการอ้างอิงกฎหมาย/มาตรฐานในเอกสารนี้, หลักการ/มาตรฐาน, หลักการ/มาตรฐาน: TSA 620 (+2 more)
 
 ### Community 52 - "สรุปเจาะลึก การบัญชี 1 (Financial Accounting 1) — ระดับข้อสอบ CPA"
 Cohesion: 0.20
@@ -534,21 +534,25 @@ Cohesion: 0.67
 Nodes (3): จุดที่ข้อสอบชอบออก / กับดัก, หลักการ/มาตรฐาน, เพิ่มเติม 2 — ลูกหนี้การค้า: Positive vs Negative Confirmation
 
 ### Community 136 - "เพิ่มเติม 5 — TSA 620: การใช้ผลงานของผู้เชี่ยวชาญของผู้สอบบัญชี"
-Cohesion: 0.67
-Nodes (3): จุดที่ข้อสอบชอบออก / กับดัก, หลักการ/มาตรฐาน: TSA 620, เพิ่มเติม 5 — TSA 620: การใช้ผลงานของผู้เชี่ยวชาญของผู้สอบบัญชี
-
-### Community 151 - "Accountant Learning (CPA prep portal) — Claude Instructions"
-Cohesion: 0.29
-Nodes (6): Accountant Learning (CPA prep portal) — Claude Instructions, Agent memory, Before changing lesson/engine logic, graphify, Structure, What this is
+Cohesion: 0.40
+Nodes (4): Conventions, Issue tracker: GitHub, When a skill says "fetch the relevant ticket", When a skill says "publish to the issue tracker"
 
 ### Community 152 - "บทที่ 9 — ความรับผิดชอบของผู้บริหาร vs ผู้สอบบัญชี"
 Cohesion: 0.67
 Nodes (3): จุดที่ข้อสอบชอบออก / กับดัก, บทที่ 9 — ความรับผิดชอบของผู้บริหาร vs ผู้สอบบัญชี, หลักการ/มาตรฐาน
 
+### Community 153 - "selftest.mjs"
+Cohesion: 0.40
+Nodes (4): __dirname, failures, ROOT, TRACKS
+
+### Community 154 - "บทที่ 11 — TSA 520: วิธีการวิเคราะห์เปรียบเทียบ (Analytical Procedures)"
+Cohesion: 0.67
+Nodes (3): จุดที่ข้อสอบชอบออก / กับดัก, บทที่ 11 — TSA 520: วิธีการวิเคราะห์เปรียบเทียบ (Analytical Procedures), หลักการ/มาตรฐาน
+
 ## Knowledge Gaps
-- **1211 isolated node(s):** `#sidebar`, `#lesson-list`, `#progress-label`, `#progress-bar-fill`, `#checkin-mini` (+1206 more)
+- **1215 isolated node(s):** `#sidebar`, `#lesson-list`, `#progress-label`, `#progress-bar-fill`, `#checkin-mini` (+1210 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 - **1 possibly unreachable function(s):** `__dirname`
   Not reached from any recognized entry point - could be dead code, or dynamically dispatched/decorator-registered.
 
@@ -562,7 +566,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `สรุปเจาะลึก: การสอบบัญชี 1 (Auditing 1) — ระดับข้อสอบ CPA` connect `สรุปเจาะลึก: การสอบบัญชี 1 (Auditing 1) — ระดับข้อสอบ CPA` to `เพิ่มเติม 3: TSA 300 — การวางแผนงานสอบบัญชีโดยรวม`, `บทที่ 4: การควบคุมภายใน — กรอบ COSO 5 องค์ประกอบ`, `บทที่ 2: ความมีสาระสำคัญ (Materiality)`, `บทที่ 1: แบบจำลองความเสี่ยงจากการสอบบัญชี (Audit Risk Model)`, `บทที่ 5: หลักฐานการสอบบัญชี — วิธีการตรวจสอบ (Audit Procedures)`, `บทที่ 6: การสุ่มตัวอย่างทางการสอบบัญชี (Audit Sampling)`, `บทที่ 10: TSA 330 — วิธีการตรวจสอบเพิ่มเติมเพื่อตอบสนองต่อความเสี่ยงที่ประเมินไว้`, `บทที่ 11: TSA 265 — การสื่อสารข้อบกพร่องในการควบคุมภายใน`, `บทที่ 12: TSA 550 — บุคคลหรือกิจการที่เกี่ยวข้องกัน (Related Parties)`, `เพิ่มเติม 1: TSA 210 — การตกลงเงื่อนไขงานสอบบัญชี (Engagement Letter)`, `เพิ่มเติม 2: การควบคุมคุณภาพงานสอบบัญชี — ระดับสำนักงาน (ISQM 1) กับระดับงาน (TSA 220)`, `ขั้นสูง 3 (CPA Case Study): TSA 530 — Upper Misstatement Limit (UML) จาก MUS`, `บทที่ 8: TSA 240 — ความรับผิดชอบของผู้สอบบัญชีเกี่ยวกับการทุจริต`, `บทที่ 3: จรรยาบรรณผู้ประกอบวิชาชีพบัญชี (Code of Ethics)`, `บทที่ 7: TSA 315 — การระบุและประเมินความเสี่ยงที่สำคัญ (Significant Risk)`, `บทที่ 9: ทัศนคติความสงสัยเยี่ยงผู้ประกอบวิชาชีพ (Professional Skepticism)`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `#sidebar`, `#lesson-list`, `#progress-label` to the rest of the system?**
-  _1213 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1217 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Shared Style Tokens` be split into smaller, more focused modules?**
   _Cohesion score 0.021052631578947368 - nodes in this community are weakly interconnected._
 - **Should `Financial Accounting 1 UI` be split into smaller, more focused modules?**

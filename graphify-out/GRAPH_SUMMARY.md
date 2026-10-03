@@ -1,15 +1,15 @@
-# Graph Summary — Accountant-Learning
+# Graph Summary — Accountant-Course
 _Auto-generated from GRAPH_REPORT.md · do not edit manually_
 _Regen: `graphify update .`_
 
 ## Summary
-- 1588 nodes · 1564 edges · 153 communities (143 shown, 10 thin omitted)
+- 1600 nodes · 1587 edges · 158 communities (145 shown, 13 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 
 ## Graph Freshness
-- Built from commit: `06722fff`
+- Built from commit: `3a105706`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
