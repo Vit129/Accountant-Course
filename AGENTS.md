@@ -17,9 +17,9 @@ Static site (HTML/CSS/vanilla JS, no build step, no backend) — Thai CPA exam p
 
 Run `npm test` (`tests/selftest.mjs`) — it verifies every lesson has both a passing `solution` and a non-passing `template`, catching silently-broken answer regexes. Don't skip this after editing `lessons.js` in any subject folder.
 
-## Agent memory
+## Agent Memory
 
-`agent-memory/` is gitignored and mirrored centrally to a private repo (`knowledge/`, `PLAYBOOK.md`, `INDEX.md`). Check `PLAYBOOK.md` for accumulated lessons before starting non-trivial work.
+Per-project memory lives centrally in `~/Git/Personal/agent-memory-private/agent-memory/Accountant-Course/` (never in this repo). Resolve path via `python3 ~/.claude/scripts/lib/memory_root.py .` or search via `python3 ~/.claude/scripts/recall.py "<query>"`.
 
 ## graphify
 
