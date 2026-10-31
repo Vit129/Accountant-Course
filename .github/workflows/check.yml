@@ -19,5 +19,4 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: npm test
-      - run: npm run build
+      - run: npm run release:check

@@ -11,13 +11,17 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 
+[[ "$(git branch --show-current)" == "main" ]] || { echo "Release must run from main." >&2; exit 1; }
+git fetch origin main --tags
+[[ -z "$(git status --porcelain)" ]] || { echo "Release requires a clean working tree." >&2; exit 1; }
+[[ "$(git rev-parse HEAD)" == "$(git rev-parse origin/main)" ]] || { echo "Local main differs from origin/main; synchronize before release." >&2; exit 1; }
+
 if ! command -v git-cliff &>/dev/null; then
   echo "git-cliff not found. Install with: brew install git-cliff" >&2
   exit 1
 fi
 
-CURRENT_VERSION="$(git tag --sort=-v:refname | grep -E "^v[0-9]" | head -1 | sed "s/^v//")"
-[[ -z "$CURRENT_VERSION" ]] && CURRENT_VERSION="0.0.0"
+CURRENT_VERSION="$(node -p "require('./package.json').version")"
 
 if [[ "${1:-}" == "--version" ]]; then
   NEW_VERSION="$2"
@@ -31,15 +35,15 @@ else
 fi
 TAG="v${NEW_VERSION}"
 echo "Releasing $TAG (was $CURRENT_VERSION)..."
+node scripts/set-release-version.mjs "$NEW_VERSION"
 
 git-cliff --tag "$TAG" --output CHANGELOG.md
 git add CHANGELOG.md
+git add package.json version.json index.html
 git commit -m "chore(release): ${TAG}"
-npm test
-npm run build
+npm run release:check
 git tag "$TAG" -m "$TAG"
-git push origin HEAD
-git push origin "refs/tags/$TAG"
+git push origin main "refs/tags/$TAG"
 
 PREV_TAG="$(git tag --sort=-v:refname | grep -v "^${TAG}$" | head -1)"
 if [[ -n "$PREV_TAG" ]]; then
