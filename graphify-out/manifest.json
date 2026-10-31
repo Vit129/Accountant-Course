@@ -25,8 +25,8 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1793424204.653342,
-    "ast_hash": "53143b8e8f65dc7649d0237d6795983b",
+    "mtime": 1793424244.3183167,
+    "ast_hash": "4a9649bc2837f02c67adbf1d4acce654",
     "semantic_hash": ""
   },
   "scripts/release.sh": {
