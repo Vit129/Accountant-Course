@@ -1,4 +1,4 @@
-# Graph Report - Accountant-Course  (2026-10-03)
+# Graph Report - delivery-setup  (2026-10-31)
 
 ## Corpus Check
 - 77 files · ~141,772 words
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3a105706`
+- Built from commit: `63c4221e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -143,7 +143,7 @@ Nodes (6): checkForUpdates(), #checkin-banner, #footer-version, #import-progress
 
 ### Community 23 - "Design System"
 Cohesion: 0.18
-Nodes (10): Accountant Learning (CPA prep portal) — Claude Instructions, Agent memory, Agent skills, Before changing lesson/engine logic, Domain docs, graphify, Issue tracker, Structure (+2 more)
+Nodes (10): Accountant Learning (CPA prep portal) — Claude Instructions, Agent Memory, Agent skills, Before changing lesson/engine logic, Domain docs, graphify, Issue tracker, Structure (+2 more)
 
 ### Community 24 - "เตรียมสอบ CPA — Accountant Learning Portal"
 Cohesion: 0.40
@@ -223,11 +223,11 @@ Nodes (17): 📌 ข้อที่ 1: [ภาษีอากร] ภาษี�
 
 ### Community 51 - "สรุปเจาะลึก: การสอบบัญชี 2 (Auditing 2) — ระดับข้อสอบ CPA"
 Cohesion: 0.18
-Nodes (10): จุดที่ข้อสอบชอบออก / กับดัก, จุดที่ข้อสอบชอบออก / กับดัก, ตารางเปรียบเทียบภาพรวม: กับดักที่ข้อสอบ CPA ออกซ้ำบ่อยที่สุดในวิชานี้, สรุปเจาะลึก: การสอบบัญชี 2 (Auditing 2) — ระดับข้อสอบ CPA, สารบัญ, ⚠️ หมายเหตุความน่าเชื่อถือของการอ้างอิงกฎหมาย/มาตรฐานในเอกสารนี้, หลักการ/มาตรฐาน, หลักการ/มาตรฐาน: TSA 620 (+2 more)
+Nodes (10): จุดที่ข้อสอบชอบออก / กับดัก, จุดที่ข้อสอบชอบออก / กับดัก, ตารางเปรียบเทียบภาพรวม: กับดักที่ข้อสอบ CPA ออกซ้ำบ่อยที่สุดในวิชานี้, บทที่ 11 — TSA 520: วิธีการวิเคราะห์เปรียบเทียบ (Analytical Procedures), สรุปเจาะลึก: การสอบบัญชี 2 (Auditing 2) — ระดับข้อสอบ CPA, สารบัญ, ⚠️ หมายเหตุความน่าเชื่อถือของการอ้างอิงกฎหมาย/มาตรฐานในเอกสารนี้, หลักการ/มาตรฐาน (+2 more)
 
 ### Community 52 - "สรุปเจาะลึก การบัญชี 1 (Financial Accounting 1) — ระดับข้อสอบ CPA"
 Cohesion: 0.20
-Nodes (9): จุดที่ข้อสอบชอบออก / กับดัก, จุดที่ข้อสอบชอบออก / กับดัก, ตารางสรุปสูตรสำคัญทั้งหมด (Quick Reference), บทที่ 1: กฎเดบิต-เครดิต (Debit / Credit Rules), บทที่ 7: การปิดบัญชี (Closing Entries), รายการอ้างอิงมาตรฐานที่กล่าวถึงในเอกสารนี้, สรุปเจาะลึก การบัญชี 1 (Financial Accounting 1) — ระดับข้อสอบ CPA, หลักการ (+1 more)
+Nodes (9): จุดที่ข้อสอบชอบออก / กับดัก, จุดที่ข้อสอบชอบออก / กับดัก, ตารางสรุปสูตรสำคัญทั้งหมด (Quick Reference), บทที่ 2: สมุดรายวันทั่วไป (General Journal), บทที่ 7: การปิดบัญชี (Closing Entries), รายการอ้างอิงมาตรฐานที่กล่าวถึงในเอกสารนี้, สรุปเจาะลึก การบัญชี 1 (Financial Accounting 1) — ระดับข้อสอบ CPA, หลักการ — 4 ขั้นตอนตามลำดับ (+1 more)
 
 ### Community 53 - "สรุปเจาะลึก: การสอบบัญชี 1 (Auditing 1) — ระดับข้อสอบ CPA"
 Cohesion: 0.22
@@ -511,7 +511,7 @@ Nodes (4): จุดที่ข้อสอบชอบออก / กับด
 
 ### Community 123 - "บทที่ 2: สมุดรายวันทั่วไป (General Journal)"
 Cohesion: 0.67
-Nodes (3): จุดที่ข้อสอบชอบออก / กับดัก, บทที่ 2: สมุดรายวันทั่วไป (General Journal), หลักการ
+Nodes (3): จุดที่ข้อสอบชอบออก / กับดัก, บทที่ 1: กฎเดบิต-เครดิต (Debit / Credit Rules), หลักการ
 
 ### Community 131 - "ขั้นสูง 4 (CPA Case Study) — TSA 560: การลงวันที่แบบสองวัน (Dual Dating)"
 Cohesion: 0.67
@@ -547,7 +547,7 @@ Nodes (4): __dirname, failures, ROOT, TRACKS
 
 ### Community 154 - "บทที่ 11 — TSA 520: วิธีการวิเคราะห์เปรียบเทียบ (Analytical Procedures)"
 Cohesion: 0.67
-Nodes (3): จุดที่ข้อสอบชอบออก / กับดัก, บทที่ 11 — TSA 520: วิธีการวิเคราะห์เปรียบเทียบ (Analytical Procedures), หลักการ/มาตรฐาน
+Nodes (3): จุดที่ข้อสอบชอบออก / กับดัก, หลักการ/มาตรฐาน: TSA 620, เพิ่มเติม 5 — TSA 620: การใช้ผลงานของผู้เชี่ยวชาญของผู้สอบบัญชี
 
 ## Knowledge Gaps
 - **1215 isolated node(s):** `#sidebar`, `#lesson-list`, `#progress-label`, `#progress-bar-fill`, `#checkin-mini` (+1210 more)
