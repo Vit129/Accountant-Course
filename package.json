@@ -4,7 +4,11 @@
   "description": "Dev-only tooling for maintaining this CPA course (self-test harness). End users never need this - open index.html directly, no install required.",
   "scripts": {
     "test": "node tests/selftest.mjs",
-    "start": "bash scripts/release.sh"
+    "dev": "python3 -m http.server 8000 --bind 127.0.0.1",
+    "preview": "npm run build && python3 -m http.server 4173 --directory dist",
+    "build": "node scripts/build.mjs",
+    "start": "npm run dev",
+    "release": "bash scripts/release.sh"
   },
   "version": "0.9.6"
 }

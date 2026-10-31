@@ -35,6 +35,8 @@ echo "Releasing $TAG (was $CURRENT_VERSION)..."
 git-cliff --tag "$TAG" --output CHANGELOG.md
 git add CHANGELOG.md
 git commit -m "chore(release): ${TAG}"
+npm test
+npm run build
 git tag "$TAG" -m "$TAG"
 git push origin HEAD
 git push origin "refs/tags/$TAG"

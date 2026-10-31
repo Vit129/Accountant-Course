@@ -36,7 +36,7 @@ Final-Project เป็นกรณีศึกษาต่อเนื่อง
 
 ## เทคโนโลยี
 
-Static site — HTML, CSS, Vanilla JS ล้วน ไม่มี build step ทดสอบแล้วบน Chrome เปิด `index.html` ได้ตรงๆ (browser อื่นบางตัวอาจบล็อค script ข้ามโฟลเดอร์เมื่อเปิดผ่าน `file://` — ถ้าไม่ขึ้นเนื้อหา ให้ clone แล้วเปิดผ่าน local server แทน)
+Static site — HTML, CSS, Vanilla JS. `npm run build` copies the course files into `dist/` for an isolated preview; production hosting serves the source tree directly. `npm start` / `make start` starts a local development server. Run `npm test` and `npm run build` before release; CI runs both on pull requests and pushes to `main`.
 
 ## License
 

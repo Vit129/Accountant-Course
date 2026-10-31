@@ -1,4 +1,16 @@
-.PHONY: start
+.PHONY: start dev preview test build
 
 start:
-	bash scripts/release.sh
+	npm run dev
+
+dev:
+	npm run dev
+
+preview:
+	npm run preview
+
+test:
+	npm test
+
+build:
+	npm run build
