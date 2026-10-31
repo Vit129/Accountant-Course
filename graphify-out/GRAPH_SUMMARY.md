@@ -1,4 +1,4 @@
-# Graph Summary — Accountant-Course
+# Graph Summary — delivery-setup
 _Auto-generated from GRAPH_REPORT.md · do not edit manually_
 _Regen: `graphify update .`_
 
@@ -9,7 +9,7 @@ _Regen: `graphify update .`_
 
 
 ## Graph Freshness
-- Built from commit: `3a105706`
+- Built from commit: `63c4221e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

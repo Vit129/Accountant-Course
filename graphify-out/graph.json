@@ -8361,7 +8361,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "01_financial_accounting_1_summary_deep_\u0e1a\u0e17\u0e17_1_\u0e01\u0e0e\u0e40\u0e14\u0e1a_\u0e15_\u0e40\u0e04\u0e23\u0e14_\u0e15_debit_credit_rules",
-      "community": 52,
+      "community": 123,
       "norm_label": "\u0e1a\u0e17\u0e17\u0e35 1: \u0e01\u0e0e\u0e40\u0e14\u0e1a\u0e34\u0e15-\u0e40\u0e04\u0e23\u0e14\u0e34\u0e15 (debit / credit rules)"
     },
     {
@@ -8371,7 +8371,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "01_financial_accounting_1_summary_deep_\u0e2b\u0e25_\u0e01\u0e01\u0e32\u0e23",
-      "community": 52,
+      "community": 123,
       "norm_label": "\u0e2b\u0e25\u0e31\u0e01\u0e01\u0e32\u0e23"
     },
     {
@@ -8381,7 +8381,7 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "01_financial_accounting_1_summary_deep_\u0e08_\u0e14\u0e17_\u0e02_\u0e2d\u0e2a\u0e2d\u0e1a\u0e0a\u0e2d\u0e1a\u0e2d\u0e2d\u0e01_\u0e01_\u0e1a\u0e14_\u0e01",
-      "community": 52,
+      "community": 123,
       "norm_label": "\u0e08\u0e14\u0e17\u0e35\u0e02\u0e2d\u0e2a\u0e2d\u0e1a\u0e0a\u0e2d\u0e1a\u0e2d\u0e2d\u0e01 / \u0e01\u0e31\u0e1a\u0e14\u0e31\u0e01"
     },
     {
@@ -8391,7 +8391,7 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "01_financial_accounting_1_summary_deep_\u0e1a\u0e17\u0e17_2_\u0e2a\u0e21_\u0e14\u0e23\u0e32\u0e22\u0e27_\u0e19\u0e17_\u0e27\u0e44\u0e1b_general_journal",
-      "community": 123,
+      "community": 52,
       "norm_label": "\u0e1a\u0e17\u0e17\u0e35 2: \u0e2a\u0e21\u0e14\u0e23\u0e32\u0e22\u0e27\u0e31\u0e19\u0e17\u0e31\u0e27\u0e44\u0e1b (general journal)"
     },
     {
@@ -8401,7 +8401,7 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "01_financial_accounting_1_summary_deep_\u0e2b\u0e25_\u0e01\u0e01\u0e32\u0e23_55",
-      "community": 123,
+      "community": 52,
       "norm_label": "\u0e2b\u0e25\u0e31\u0e01\u0e01\u0e32\u0e23"
     },
     {
@@ -8411,7 +8411,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "01_financial_accounting_1_summary_deep_\u0e08_\u0e14\u0e17_\u0e02_\u0e2d\u0e2a\u0e2d\u0e1a\u0e0a\u0e2d\u0e1a\u0e2d\u0e2d\u0e01_\u0e01_\u0e1a\u0e14_\u0e01_58",
-      "community": 123,
+      "community": 52,
       "norm_label": "\u0e08\u0e14\u0e17\u0e35\u0e02\u0e2d\u0e2a\u0e2d\u0e1a\u0e0a\u0e2d\u0e1a\u0e2d\u0e2d\u0e01 / \u0e01\u0e31\u0e1a\u0e14\u0e31\u0e01"
     },
     {
@@ -10841,7 +10841,7 @@
       "source_location": "L256",
       "_origin": "ast",
       "id": "04_auditing_2_summary_deep_\u0e1a\u0e17\u0e17_11_tsa_520_\u0e27_\u0e18_\u0e01\u0e32\u0e23\u0e27_\u0e40\u0e04\u0e23\u0e32\u0e30\u0e2b_\u0e40\u0e1b\u0e23_\u0e22\u0e1a\u0e40\u0e17_\u0e22\u0e1a_analytical_procedures",
-      "community": 154,
+      "community": 51,
       "norm_label": "\u0e1a\u0e17\u0e17\u0e35 11 \u2014 tsa 520: \u0e27\u0e34\u0e18\u0e35\u0e01\u0e32\u0e23\u0e27\u0e34\u0e40\u0e04\u0e23\u0e32\u0e30\u0e2b\u0e4c\u0e40\u0e1b\u0e23\u0e35\u0e22\u0e1a\u0e40\u0e17\u0e35\u0e22\u0e1a (analytical procedures)"
     },
     {
@@ -10851,7 +10851,7 @@
       "source_location": "L258",
       "_origin": "ast",
       "id": "04_auditing_2_summary_deep_\u0e2b\u0e25_\u0e01\u0e01\u0e32\u0e23_\u0e21\u0e32\u0e15\u0e23\u0e10\u0e32\u0e19_258",
-      "community": 154,
+      "community": 51,
       "norm_label": "\u0e2b\u0e25\u0e31\u0e01\u0e01\u0e32\u0e23/\u0e21\u0e32\u0e15\u0e23\u0e10\u0e32\u0e19"
     },
     {
@@ -10861,7 +10861,7 @@
       "source_location": "L267",
       "_origin": "ast",
       "id": "04_auditing_2_summary_deep_\u0e08_\u0e14\u0e17_\u0e02_\u0e2d\u0e2a\u0e2d\u0e1a\u0e0a\u0e2d\u0e1a\u0e2d\u0e2d\u0e01_\u0e01_\u0e1a\u0e14_\u0e01_267",
-      "community": 154,
+      "community": 51,
       "norm_label": "\u0e08\u0e14\u0e17\u0e35\u0e02\u0e2d\u0e2a\u0e2d\u0e1a\u0e0a\u0e2d\u0e1a\u0e2d\u0e2d\u0e01 / \u0e01\u0e31\u0e1a\u0e14\u0e31\u0e01"
     },
     {
@@ -11231,7 +11231,7 @@
       "source_location": "L435",
       "_origin": "ast",
       "id": "04_auditing_2_summary_deep_\u0e40\u0e1e_\u0e21\u0e40\u0e15_\u0e21_5_tsa_620_\u0e01\u0e32\u0e23\u0e43\u0e0a_\u0e1c\u0e25\u0e07\u0e32\u0e19\u0e02\u0e2d\u0e07\u0e1c_\u0e40\u0e0a_\u0e22\u0e27\u0e0a\u0e32\u0e0d\u0e02\u0e2d\u0e07\u0e1c_\u0e2a\u0e2d\u0e1a\u0e1a_\u0e0d\u0e0a",
-      "community": 51,
+      "community": 154,
       "norm_label": "\u0e40\u0e1e\u0e34\u0e21\u0e40\u0e15\u0e34\u0e21 5 \u2014 tsa 620: \u0e01\u0e32\u0e23\u0e43\u0e0a\u0e1c\u0e25\u0e07\u0e32\u0e19\u0e02\u0e2d\u0e07\u0e1c\u0e40\u0e0a\u0e35\u0e22\u0e27\u0e0a\u0e32\u0e0d\u0e02\u0e2d\u0e07\u0e1c\u0e2a\u0e2d\u0e1a\u0e1a\u0e31\u0e0d\u0e0a\u0e35"
     },
     {
@@ -11241,7 +11241,7 @@
       "source_location": "L437",
       "_origin": "ast",
       "id": "04_auditing_2_summary_deep_\u0e2b\u0e25_\u0e01\u0e01\u0e32\u0e23_\u0e21\u0e32\u0e15\u0e23\u0e10\u0e32\u0e19_tsa_620",
-      "community": 51,
+      "community": 154,
       "norm_label": "\u0e2b\u0e25\u0e31\u0e01\u0e01\u0e32\u0e23/\u0e21\u0e32\u0e15\u0e23\u0e10\u0e32\u0e19: tsa 620"
     },
     {
@@ -11251,7 +11251,7 @@
       "source_location": "L447",
       "_origin": "ast",
       "id": "04_auditing_2_summary_deep_\u0e08_\u0e14\u0e17_\u0e02_\u0e2d\u0e2a\u0e2d\u0e1a\u0e0a\u0e2d\u0e1a\u0e2d\u0e2d\u0e01_\u0e01_\u0e1a\u0e14_\u0e01_447",
-      "community": 51,
+      "community": 154,
       "norm_label": "\u0e08\u0e14\u0e17\u0e35\u0e02\u0e2d\u0e2a\u0e2d\u0e1a\u0e0a\u0e2d\u0e1a\u0e2d\u0e2d\u0e01 / \u0e01\u0e31\u0e1a\u0e14\u0e31\u0e01"
     },
     {
@@ -13535,7 +13535,7 @@
       "norm_label": "before changing lesson/engine logic"
     },
     {
-      "label": "Agent memory",
+      "label": "Agent Memory",
       "file_type": "document",
       "source_file": "AGENTS.md",
       "source_location": "L20",
@@ -34001,5 +34001,5 @@
       "source_file": "README.md"
     }
   ],
-  "built_at_commit": "3a10570606623baa0c3fb4fe1dae13ac5732d79a"
+  "built_at_commit": "63c4221e4d6646d9811a9590c6a5e5c8cf29c2a6"
 }
