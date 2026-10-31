@@ -20,6 +20,96 @@
   },
   "nodes": [
     {
+      "label": "check.yml",
+      "file_type": "code",
+      "source_file": ".github/workflows/check.yml",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "github_workflows_check",
+      "community": 152,
+      "norm_label": "check.yml"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": ".github/workflows/check.yml",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "github_workflows_check_name",
+      "community": 152,
+      "norm_label": "name"
+    },
+    {
+      "label": "on",
+      "file_type": "code",
+      "source_file": ".github/workflows/check.yml",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "github_workflows_check_on",
+      "community": 152,
+      "norm_label": "on"
+    },
+    {
+      "label": "pull_request",
+      "file_type": "code",
+      "source_file": ".github/workflows/check.yml",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "github_workflows_check_on_pull_request",
+      "community": 152,
+      "norm_label": "pull_request"
+    },
+    {
+      "label": "push",
+      "file_type": "code",
+      "source_file": ".github/workflows/check.yml",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "github_workflows_check_on_push",
+      "community": 152,
+      "norm_label": "push"
+    },
+    {
+      "label": "permissions",
+      "file_type": "code",
+      "source_file": ".github/workflows/check.yml",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "github_workflows_check_permissions",
+      "community": 152,
+      "norm_label": "permissions"
+    },
+    {
+      "label": "contents",
+      "file_type": "code",
+      "source_file": ".github/workflows/check.yml",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "github_workflows_check_permissions_contents",
+      "community": 152,
+      "norm_label": "contents"
+    },
+    {
+      "label": "jobs",
+      "file_type": "code",
+      "source_file": ".github/workflows/check.yml",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "github_workflows_check_jobs",
+      "community": 152,
+      "norm_label": "jobs"
+    },
+    {
+      "label": "check",
+      "file_type": "code",
+      "source_file": ".github/workflows/check.yml",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "github_workflows_check_jobs_check",
+      "community": 152,
+      "norm_label": "check"
+    },
+    {
       "label": "index.html",
       "file_type": "code",
       "source_file": "01-financial-accounting-1/index.html",
@@ -6399,24 +6489,95 @@
       "norm_label": "test"
     },
     {
-      "label": "start",
+      "label": "dev",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L7",
+      "_origin": "ast",
+      "id": "package_scripts_dev",
+      "community": 37,
+      "norm_label": "dev"
+    },
+    {
+      "label": "preview",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "package_scripts_preview",
+      "community": 37,
+      "norm_label": "preview"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "package_scripts_build",
+      "community": 37,
+      "norm_label": "build"
+    },
+    {
+      "label": "start",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
       "_origin": "ast",
       "id": "package_scripts_start",
       "community": 37,
       "norm_label": "start"
     },
     {
+      "label": "release",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "package_scripts_release",
+      "community": 37,
+      "norm_label": "release"
+    },
+    {
       "label": "version",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L9",
+      "source_location": "L13",
       "_origin": "ast",
       "id": "package_version",
       "community": 37,
       "norm_label": "version"
+    },
+    {
+      "label": "build.mjs",
+      "file_type": "code",
+      "source_file": "scripts/build.mjs",
+      "source_location": "L1",
+      "end_line": 25,
+      "_origin": "ast",
+      "id": "scripts_build",
+      "community": 159,
+      "norm_label": "build.mjs"
+    },
+    {
+      "label": "output",
+      "file_type": "code",
+      "source_file": "scripts/build.mjs",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "scripts_build_output",
+      "community": 159,
+      "norm_label": "output"
+    },
+    {
+      "label": "roots",
+      "file_type": "code",
+      "source_file": "scripts/build.mjs",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "scripts_build_roots",
+      "community": 159,
+      "norm_label": "roots"
     },
     {
       "label": "release.sh",
@@ -10771,7 +10932,7 @@
       "source_location": "L219",
       "_origin": "ast",
       "id": "04_auditing_2_summary_deep_\u0e1a\u0e17\u0e17_9_\u0e04\u0e27\u0e32\u0e21\u0e23_\u0e1a\u0e1c_\u0e14\u0e0a\u0e2d\u0e1a\u0e02\u0e2d\u0e07\u0e1c_\u0e1a\u0e23_\u0e2b\u0e32\u0e23_vs_\u0e1c_\u0e2a\u0e2d\u0e1a\u0e1a_\u0e0d\u0e0a",
-      "community": 152,
+      "community": 51,
       "norm_label": "\u0e1a\u0e17\u0e17\u0e35 9 \u2014 \u0e04\u0e27\u0e32\u0e21\u0e23\u0e31\u0e1a\u0e1c\u0e34\u0e14\u0e0a\u0e2d\u0e1a\u0e02\u0e2d\u0e07\u0e1c\u0e1a\u0e23\u0e34\u0e2b\u0e32\u0e23 vs \u0e1c\u0e2a\u0e2d\u0e1a\u0e1a\u0e31\u0e0d\u0e0a\u0e35"
     },
     {
@@ -10781,7 +10942,7 @@
       "source_location": "L221",
       "_origin": "ast",
       "id": "04_auditing_2_summary_deep_\u0e2b\u0e25_\u0e01\u0e01\u0e32\u0e23_\u0e21\u0e32\u0e15\u0e23\u0e10\u0e32\u0e19_221",
-      "community": 152,
+      "community": 51,
       "norm_label": "\u0e2b\u0e25\u0e31\u0e01\u0e01\u0e32\u0e23/\u0e21\u0e32\u0e15\u0e23\u0e10\u0e32\u0e19"
     },
     {
@@ -10791,7 +10952,7 @@
       "source_location": "L232",
       "_origin": "ast",
       "id": "04_auditing_2_summary_deep_\u0e08_\u0e14\u0e17_\u0e02_\u0e2d\u0e2a\u0e2d\u0e1a\u0e0a\u0e2d\u0e1a\u0e2d\u0e2d\u0e01_\u0e01_\u0e1a\u0e14_\u0e01_232",
-      "community": 152,
+      "community": 51,
       "norm_label": "\u0e08\u0e14\u0e17\u0e35\u0e02\u0e2d\u0e2a\u0e2d\u0e1a\u0e0a\u0e2d\u0e1a\u0e2d\u0e2d\u0e01 / \u0e01\u0e31\u0e1a\u0e14\u0e31\u0e01"
     },
     {
@@ -10841,7 +11002,7 @@
       "source_location": "L256",
       "_origin": "ast",
       "id": "04_auditing_2_summary_deep_\u0e1a\u0e17\u0e17_11_tsa_520_\u0e27_\u0e18_\u0e01\u0e32\u0e23\u0e27_\u0e40\u0e04\u0e23\u0e32\u0e30\u0e2b_\u0e40\u0e1b\u0e23_\u0e22\u0e1a\u0e40\u0e17_\u0e22\u0e1a_analytical_procedures",
-      "community": 51,
+      "community": 158,
       "norm_label": "\u0e1a\u0e17\u0e17\u0e35 11 \u2014 tsa 520: \u0e27\u0e34\u0e18\u0e35\u0e01\u0e32\u0e23\u0e27\u0e34\u0e40\u0e04\u0e23\u0e32\u0e30\u0e2b\u0e4c\u0e40\u0e1b\u0e23\u0e35\u0e22\u0e1a\u0e40\u0e17\u0e35\u0e22\u0e1a (analytical procedures)"
     },
     {
@@ -10851,7 +11012,7 @@
       "source_location": "L258",
       "_origin": "ast",
       "id": "04_auditing_2_summary_deep_\u0e2b\u0e25_\u0e01\u0e01\u0e32\u0e23_\u0e21\u0e32\u0e15\u0e23\u0e10\u0e32\u0e19_258",
-      "community": 51,
+      "community": 158,
       "norm_label": "\u0e2b\u0e25\u0e31\u0e01\u0e01\u0e32\u0e23/\u0e21\u0e32\u0e15\u0e23\u0e10\u0e32\u0e19"
     },
     {
@@ -10861,7 +11022,7 @@
       "source_location": "L267",
       "_origin": "ast",
       "id": "04_auditing_2_summary_deep_\u0e08_\u0e14\u0e17_\u0e02_\u0e2d\u0e2a\u0e2d\u0e1a\u0e0a\u0e2d\u0e1a\u0e2d\u0e2d\u0e01_\u0e01_\u0e1a\u0e14_\u0e01_267",
-      "community": 51,
+      "community": 158,
       "norm_label": "\u0e08\u0e14\u0e17\u0e35\u0e02\u0e2d\u0e2a\u0e2d\u0e1a\u0e0a\u0e2d\u0e1a\u0e2d\u0e2d\u0e01 / \u0e01\u0e31\u0e1a\u0e14\u0e31\u0e01"
     },
     {
@@ -16460,6 +16621,94 @@
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/check.yml",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "github_workflows_check",
+      "target": "github_workflows_check_jobs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/check.yml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "github_workflows_check",
+      "target": "github_workflows_check_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/check.yml",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "github_workflows_check",
+      "target": "github_workflows_check_on",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/check.yml",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "github_workflows_check",
+      "target": "github_workflows_check_permissions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/check.yml",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "github_workflows_check_on",
+      "target": "github_workflows_check_on_pull_request",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/check.yml",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "github_workflows_check_on",
+      "target": "github_workflows_check_on_push",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/check.yml",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "github_workflows_check_permissions",
+      "target": "github_workflows_check_permissions_contents",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/workflows/check.yml",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "github_workflows_check_jobs",
+      "target": "github_workflows_check_jobs_check",
+      "confidence_score": 1.0
+    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -22647,7 +22896,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L9",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package",
@@ -22658,7 +22907,51 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "package_scripts",
+      "target": "package_scripts_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
       "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "package_scripts",
+      "target": "package_scripts_dev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "package_scripts",
+      "target": "package_scripts_preview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "package_scripts",
+      "target": "package_scripts_release",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_scripts",
@@ -22674,6 +22967,28 @@
       "_origin": "ast",
       "source": "package_scripts",
       "target": "package_scripts_test",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_build",
+      "target": "scripts_build_output",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build.mjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_build",
+      "target": "scripts_build_roots",
       "confidence_score": 1.0
     },
     {
@@ -34001,5 +34316,5 @@
       "source_file": "README.md"
     }
   ],
-  "built_at_commit": "63c4221e4d6646d9811a9590c6a5e5c8cf29c2a6"
+  "built_at_commit": "91f2e2aa74092a4f73959e3d1c51cd0c2e51a86a"
 }
