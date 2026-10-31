@@ -1,16 +1,16 @@
 # Graph Report - delivery-workflow-completion  (2026-10-31)
 
 ## Corpus Check
-- 79 files · ~141,937 words
+- 81 files · ~142,315 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1616 nodes · 1601 edges · 160 communities (146 shown, 14 thin omitted)
+- 1625 nodes · 1608 edges · 162 communities (147 shown, 15 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `91f2e2aa`
+- Built from commit: `d6d510b9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -51,7 +51,7 @@ node's neighbors span, not by raw edge count.
 ## Hyperedges (group relationships)
 - **Project Documentation Set (Vision + Design System + Overview)** — readme, product, design [INFERRED 0.75]
 
-## Communities (160 total, 14 thin omitted)
+## Communities (162 total, 15 thin omitted)
 
 ### Community 0 - "Shared Style Tokens"
 Cohesion: 0.02
@@ -170,8 +170,8 @@ Cohesion: 0.67
 Nodes (3): @media (max-width: 1100px), .workspace, .panel-left
 
 ### Community 37 - "package.json"
-Cohesion: 0.17
-Nodes (11): description, name, private, scripts, build, dev, preview, release (+3 more)
+Cohesion: 0.15
+Nodes (12): description, name, private, scripts, build, dev, preview, release (+4 more)
 
 ### Community 38 - "Design System"
 Cohesion: 0.40
@@ -223,7 +223,7 @@ Nodes (17): 📌 ข้อที่ 1: [ภาษีอากร] ภาษี�
 
 ### Community 51 - "สรุปเจาะลึก: การสอบบัญชี 2 (Auditing 2) — ระดับข้อสอบ CPA"
 Cohesion: 0.18
-Nodes (10): จุดที่ข้อสอบชอบออก / กับดัก, จุดที่ข้อสอบชอบออก / กับดัก, ตารางเปรียบเทียบภาพรวม: กับดักที่ข้อสอบ CPA ออกซ้ำบ่อยที่สุดในวิชานี้, บทที่ 9 — ความรับผิดชอบของผู้บริหาร vs ผู้สอบบัญชี, สรุปเจาะลึก: การสอบบัญชี 2 (Auditing 2) — ระดับข้อสอบ CPA, สารบัญ, ⚠️ หมายเหตุความน่าเชื่อถือของการอ้างอิงกฎหมาย/มาตรฐานในเอกสารนี้, หลักการ/มาตรฐาน (+2 more)
+Nodes (10): จุดที่ข้อสอบชอบออก / กับดัก, จุดที่ข้อสอบชอบออก / กับดัก, ตารางเปรียบเทียบภาพรวม: กับดักที่ข้อสอบ CPA ออกซ้ำบ่อยที่สุดในวิชานี้, บทที่ 11 — TSA 520: วิธีการวิเคราะห์เปรียบเทียบ (Analytical Procedures), สรุปเจาะลึก: การสอบบัญชี 2 (Auditing 2) — ระดับข้อสอบ CPA, สารบัญ, ⚠️ หมายเหตุความน่าเชื่อถือของการอ้างอิงกฎหมาย/มาตรฐานในเอกสารนี้, หลักการ/มาตรฐาน (+2 more)
 
 ### Community 52 - "สรุปเจาะลึก การบัญชี 1 (Financial Accounting 1) — ระดับข้อสอบ CPA"
 Cohesion: 0.20
@@ -550,13 +550,17 @@ Cohesion: 0.67
 Nodes (3): จุดที่ข้อสอบชอบออก / กับดัก, หลักการ/มาตรฐาน: TSA 620, เพิ่มเติม 5 — TSA 620: การใช้ผลงานของผู้เชี่ยวชาญของผู้สอบบัญชี
 
 ### Community 158 - "บทที่ 11 — TSA 520: วิธีการวิเคราะห์เปรียบเทียบ (Analytical Procedures)"
+Cohesion: 0.40
+Nodes (4): changelog, html, release, root
+
+### Community 160 - "บทที่ 9 — ความรับผิดชอบของผู้บริหาร vs ผู้สอบบัญชี"
 Cohesion: 0.67
-Nodes (3): จุดที่ข้อสอบชอบออก / กับดัก, บทที่ 11 — TSA 520: วิธีการวิเคราะห์เปรียบเทียบ (Analytical Procedures), หลักการ/มาตรฐาน
+Nodes (3): จุดที่ข้อสอบชอบออก / กับดัก, บทที่ 9 — ความรับผิดชอบของผู้บริหาร vs ผู้สอบบัญชี, หลักการ/มาตรฐาน
 
 ## Knowledge Gaps
-- **1226 isolated node(s):** `name`, `pull_request`, `push`, `contents`, `check` (+1221 more)
+- **1232 isolated node(s):** `name`, `pull_request`, `push`, `contents`, `check` (+1227 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **14 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **15 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 - **1 possibly unreachable function(s):** `__dirname`
   Not reached from any recognized entry point - could be dead code, or dynamically dispatched/decorator-registered.
 
@@ -567,10 +571,10 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **Why does `LESSONS` connect `Number Parsing Variant D` to `lessons.js`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **Why does `สรุปเจาะลึก: การสอบบัญชี 2 (Auditing 2) — ระดับข้อสอบ CPA` connect `สรุปเจาะลึก: การสอบบัญชี 2 (Auditing 2) — ระดับข้อสอบ CPA` to `ขั้นสูง 4 (CPA Case Study) — TSA 560: การลงวันที่แบบสองวัน (Dual Dating)`, `บทที่ 12 — วงจรสินค้าคงเหลือ: Existence และ Cut-off`, `เพิ่มเติม 1 — วงจรเงินสด: Bank Confirmation และ Cash Count`, `เพิ่มเติม 2 — ลูกหนี้การค้า: Positive vs Negative Confirmation`, `บทที่ 11 — TSA 520: วิธีการวิเคราะห์เปรียบเทียบ (Analytical Procedures)`, `บทที่ 11 — TSA 520: วิธีการวิเคราะห์เปรียบเทียบ (Analytical Procedures)`, `ขั้นสูง 3 (CPA Case Study) — TSA 705: Material & Pervasive Misstatement`, `บทที่ 1 — ประเภทความเห็นของผู้สอบบัญชี (Audit Opinion)`, `บทที่ 7 — วงจรจัดซื้อ-เจ้าหนี้: การค้นหาหนี้สินที่ยังไม่ได้บันทึก`, `บทที่ 2 — เหตุการณ์ภายหลังวันที่ในงบการเงิน (Subsequent Events)`, `CPA Mock Exam Set 1 — เพลิงไหม้คลังสินค้า 30 ล้านบาท`, `ขั้นสูง 1 — TSA 705: ข้อจำกัดขอบเขตที่แพร่หลาย (Pervasive Scope Limitation)`, `ขั้นสูง 2 — Type I vs Type II Subsequent Events (กรณีซับซ้อน)`, `บทที่ 3 — การดำเนินงานต่อเนื่อง (Going Concern)`, `บทที่ 4 — ข้อกล่าวอ้างของผู้บริหาร (Management Assertions)`, `เพิ่มเติม 3 — สินทรัพย์ถาวร (PP&E Audit)`, `บทที่ 5 — กระดาษทำการและการเก็บรักษาเอกสารหลักฐาน (Working Papers)`, `บทที่ 6 — ความรับผิดชอบของผู้สอบบัญชี (Legal & Professional Liability)`, `บทที่ 8 — โครงสร้างรายงานผู้สอบบัญชี และ Key Audit Matters`, `บทที่ 10 — TSA 580: หนังสือรับรองการจัดการ (Written Representations)`, `เพิ่มเติม 6 — วงจรรายได้/ค่าใช้จ่าย: Cutoff Testing`?**
+- **Why does `สรุปเจาะลึก: การสอบบัญชี 2 (Auditing 2) — ระดับข้อสอบ CPA` connect `สรุปเจาะลึก: การสอบบัญชี 2 (Auditing 2) — ระดับข้อสอบ CPA` to `ขั้นสูง 4 (CPA Case Study) — TSA 560: การลงวันที่แบบสองวัน (Dual Dating)`, `บทที่ 12 — วงจรสินค้าคงเหลือ: Existence และ Cut-off`, `เพิ่มเติม 1 — วงจรเงินสด: Bank Confirmation และ Cash Count`, `เพิ่มเติม 2 — ลูกหนี้การค้า: Positive vs Negative Confirmation`, `บทที่ 11 — TSA 520: วิธีการวิเคราะห์เปรียบเทียบ (Analytical Procedures)`, `บทที่ 9 — ความรับผิดชอบของผู้บริหาร vs ผู้สอบบัญชี`, `ขั้นสูง 3 (CPA Case Study) — TSA 705: Material & Pervasive Misstatement`, `บทที่ 1 — ประเภทความเห็นของผู้สอบบัญชี (Audit Opinion)`, `บทที่ 7 — วงจรจัดซื้อ-เจ้าหนี้: การค้นหาหนี้สินที่ยังไม่ได้บันทึก`, `บทที่ 2 — เหตุการณ์ภายหลังวันที่ในงบการเงิน (Subsequent Events)`, `CPA Mock Exam Set 1 — เพลิงไหม้คลังสินค้า 30 ล้านบาท`, `ขั้นสูง 1 — TSA 705: ข้อจำกัดขอบเขตที่แพร่หลาย (Pervasive Scope Limitation)`, `ขั้นสูง 2 — Type I vs Type II Subsequent Events (กรณีซับซ้อน)`, `บทที่ 3 — การดำเนินงานต่อเนื่อง (Going Concern)`, `บทที่ 4 — ข้อกล่าวอ้างของผู้บริหาร (Management Assertions)`, `เพิ่มเติม 3 — สินทรัพย์ถาวร (PP&E Audit)`, `บทที่ 5 — กระดาษทำการและการเก็บรักษาเอกสารหลักฐาน (Working Papers)`, `บทที่ 6 — ความรับผิดชอบของผู้สอบบัญชี (Legal & Professional Liability)`, `บทที่ 8 — โครงสร้างรายงานผู้สอบบัญชี และ Key Audit Matters`, `บทที่ 10 — TSA 580: หนังสือรับรองการจัดการ (Written Representations)`, `เพิ่มเติม 6 — วงจรรายได้/ค่าใช้จ่าย: Cutoff Testing`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `name`, `pull_request`, `push` to the rest of the system?**
-  _1228 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1234 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Shared Style Tokens` be split into smaller, more focused modules?**
   _Cohesion score 0.021052631578947368 - nodes in this community are weakly interconnected._
 - **Should `Financial Accounting 1 UI` be split into smaller, more focused modules?**

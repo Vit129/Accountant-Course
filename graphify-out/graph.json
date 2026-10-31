@@ -6489,10 +6489,20 @@
       "norm_label": "test"
     },
     {
-      "label": "dev",
+      "label": "release:check",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L7",
+      "_origin": "ast",
+      "id": "package_scripts_release_check",
+      "community": 37,
+      "norm_label": "release:check"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "package_scripts_dev",
       "community": 37,
@@ -6502,7 +6512,7 @@
       "label": "preview",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L8",
+      "source_location": "L9",
       "_origin": "ast",
       "id": "package_scripts_preview",
       "community": 37,
@@ -6512,7 +6522,7 @@
       "label": "build",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L9",
+      "source_location": "L10",
       "_origin": "ast",
       "id": "package_scripts_build",
       "community": 37,
@@ -6522,7 +6532,7 @@
       "label": "start",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L10",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "package_scripts_start",
       "community": 37,
@@ -6532,7 +6542,7 @@
       "label": "release",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L11",
+      "source_location": "L12",
       "_origin": "ast",
       "id": "package_scripts_release",
       "community": 37,
@@ -6542,7 +6552,7 @@
       "label": "version",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L13",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "package_version",
       "community": 37,
@@ -6580,6 +6590,57 @@
       "norm_label": "roots"
     },
     {
+      "label": "check-version.mjs",
+      "file_type": "code",
+      "source_file": "scripts/check-version.mjs",
+      "source_location": "L1",
+      "end_line": 24,
+      "_origin": "ast",
+      "id": "scripts_check_version",
+      "community": 158,
+      "norm_label": "check-version.mjs"
+    },
+    {
+      "label": "root",
+      "file_type": "code",
+      "source_file": "scripts/check-version.mjs",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "scripts_check_version_root",
+      "community": 158,
+      "norm_label": "root"
+    },
+    {
+      "label": "release",
+      "file_type": "code",
+      "source_file": "scripts/check-version.mjs",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "scripts_check_version_release",
+      "community": 158,
+      "norm_label": "release"
+    },
+    {
+      "label": "html",
+      "file_type": "code",
+      "source_file": "scripts/check-version.mjs",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "scripts_check_version_html",
+      "community": 158,
+      "norm_label": "html"
+    },
+    {
+      "label": "changelog",
+      "file_type": "code",
+      "source_file": "scripts/check-version.mjs",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "scripts_check_version_changelog",
+      "community": 158,
+      "norm_label": "changelog"
+    },
+    {
       "label": "release.sh",
       "file_type": "code",
       "source_file": "scripts/release.sh",
@@ -6606,6 +6667,38 @@
       "id": "scripts_release_sh__entry",
       "community": 44,
       "norm_label": "release.sh script"
+    },
+    {
+      "label": "set-release-version.mjs",
+      "file_type": "code",
+      "source_file": "scripts/set-release-version.mjs",
+      "source_location": "L1",
+      "end_line": 31,
+      "_origin": "ast",
+      "id": "scripts_set_release_version",
+      "community": 161,
+      "norm_label": "set-release-version.mjs"
+    },
+    {
+      "label": "updateReleaseVersion()",
+      "file_type": "code",
+      "source_file": "scripts/set-release-version.mjs",
+      "source_location": "L5",
+      "end_line": 25,
+      "_origin": "ast",
+      "id": "scripts_set_release_version_updatereleaseversion",
+      "community": 161,
+      "norm_label": "updatereleaseversion()"
+    },
+    {
+      "label": "scriptPath",
+      "file_type": "code",
+      "source_file": "scripts/set-release-version.mjs",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "scripts_set_release_version_scriptpath",
+      "community": 161,
+      "norm_label": "scriptpath"
     },
     {
       "label": "checkin.js",
@@ -10932,7 +11025,7 @@
       "source_location": "L219",
       "_origin": "ast",
       "id": "04_auditing_2_summary_deep_\u0e1a\u0e17\u0e17_9_\u0e04\u0e27\u0e32\u0e21\u0e23_\u0e1a\u0e1c_\u0e14\u0e0a\u0e2d\u0e1a\u0e02\u0e2d\u0e07\u0e1c_\u0e1a\u0e23_\u0e2b\u0e32\u0e23_vs_\u0e1c_\u0e2a\u0e2d\u0e1a\u0e1a_\u0e0d\u0e0a",
-      "community": 51,
+      "community": 160,
       "norm_label": "\u0e1a\u0e17\u0e17\u0e35 9 \u2014 \u0e04\u0e27\u0e32\u0e21\u0e23\u0e31\u0e1a\u0e1c\u0e34\u0e14\u0e0a\u0e2d\u0e1a\u0e02\u0e2d\u0e07\u0e1c\u0e1a\u0e23\u0e34\u0e2b\u0e32\u0e23 vs \u0e1c\u0e2a\u0e2d\u0e1a\u0e1a\u0e31\u0e0d\u0e0a\u0e35"
     },
     {
@@ -10942,7 +11035,7 @@
       "source_location": "L221",
       "_origin": "ast",
       "id": "04_auditing_2_summary_deep_\u0e2b\u0e25_\u0e01\u0e01\u0e32\u0e23_\u0e21\u0e32\u0e15\u0e23\u0e10\u0e32\u0e19_221",
-      "community": 51,
+      "community": 160,
       "norm_label": "\u0e2b\u0e25\u0e31\u0e01\u0e01\u0e32\u0e23/\u0e21\u0e32\u0e15\u0e23\u0e10\u0e32\u0e19"
     },
     {
@@ -10952,7 +11045,7 @@
       "source_location": "L232",
       "_origin": "ast",
       "id": "04_auditing_2_summary_deep_\u0e08_\u0e14\u0e17_\u0e02_\u0e2d\u0e2a\u0e2d\u0e1a\u0e0a\u0e2d\u0e1a\u0e2d\u0e2d\u0e01_\u0e01_\u0e1a\u0e14_\u0e01_232",
-      "community": 51,
+      "community": 160,
       "norm_label": "\u0e08\u0e14\u0e17\u0e35\u0e02\u0e2d\u0e2a\u0e2d\u0e1a\u0e0a\u0e2d\u0e1a\u0e2d\u0e2d\u0e01 / \u0e01\u0e31\u0e1a\u0e14\u0e31\u0e01"
     },
     {
@@ -11002,7 +11095,7 @@
       "source_location": "L256",
       "_origin": "ast",
       "id": "04_auditing_2_summary_deep_\u0e1a\u0e17\u0e17_11_tsa_520_\u0e27_\u0e18_\u0e01\u0e32\u0e23\u0e27_\u0e40\u0e04\u0e23\u0e32\u0e30\u0e2b_\u0e40\u0e1b\u0e23_\u0e22\u0e1a\u0e40\u0e17_\u0e22\u0e1a_analytical_procedures",
-      "community": 158,
+      "community": 51,
       "norm_label": "\u0e1a\u0e17\u0e17\u0e35 11 \u2014 tsa 520: \u0e27\u0e34\u0e18\u0e35\u0e01\u0e32\u0e23\u0e27\u0e34\u0e40\u0e04\u0e23\u0e32\u0e30\u0e2b\u0e4c\u0e40\u0e1b\u0e23\u0e35\u0e22\u0e1a\u0e40\u0e17\u0e35\u0e22\u0e1a (analytical procedures)"
     },
     {
@@ -11012,7 +11105,7 @@
       "source_location": "L258",
       "_origin": "ast",
       "id": "04_auditing_2_summary_deep_\u0e2b\u0e25_\u0e01\u0e01\u0e32\u0e23_\u0e21\u0e32\u0e15\u0e23\u0e10\u0e32\u0e19_258",
-      "community": 158,
+      "community": 51,
       "norm_label": "\u0e2b\u0e25\u0e31\u0e01\u0e01\u0e32\u0e23/\u0e21\u0e32\u0e15\u0e23\u0e10\u0e32\u0e19"
     },
     {
@@ -11022,7 +11115,7 @@
       "source_location": "L267",
       "_origin": "ast",
       "id": "04_auditing_2_summary_deep_\u0e08_\u0e14\u0e17_\u0e02_\u0e2d\u0e2a\u0e2d\u0e1a\u0e0a\u0e2d\u0e1a\u0e2d\u0e2d\u0e01_\u0e01_\u0e1a\u0e14_\u0e01_267",
-      "community": 158,
+      "community": 51,
       "norm_label": "\u0e08\u0e14\u0e17\u0e35\u0e02\u0e2d\u0e2a\u0e2d\u0e1a\u0e0a\u0e2d\u0e1a\u0e2d\u0e2d\u0e01 / \u0e01\u0e31\u0e1a\u0e14\u0e31\u0e01"
     },
     {
@@ -22896,7 +22989,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package",
@@ -22907,7 +23000,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_scripts",
@@ -22918,7 +23011,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L7",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_scripts",
@@ -22929,7 +23022,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_scripts",
@@ -22940,7 +23033,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_scripts",
@@ -22951,7 +23044,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L10",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "package_scripts",
+      "target": "package_scripts_release_check",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_scripts",
@@ -22994,12 +23098,78 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/check-version.mjs",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_check_version",
+      "target": "scripts_check_version_changelog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check-version.mjs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_check_version",
+      "target": "scripts_check_version_html",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check-version.mjs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_check_version",
+      "target": "scripts_check_version_release",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check-version.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_check_version",
+      "target": "scripts_check_version_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/release.sh",
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_release",
       "target": "scripts_release_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/set-release-version.mjs",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_set_release_version",
+      "target": "scripts_set_release_version_scriptpath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/set-release-version.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_set_release_version",
+      "target": "scripts_set_release_version_updatereleaseversion",
       "confidence_score": 1.0
     },
     {
@@ -34316,5 +34486,5 @@
       "source_file": "README.md"
     }
   ],
-  "built_at_commit": "91f2e2aa74092a4f73959e3d1c51cd0c2e51a86a"
+  "built_at_commit": "d6d510b96397329715c3e0099f0cacfadacb8d3d"
 }
