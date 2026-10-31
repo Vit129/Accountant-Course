@@ -1,0 +1,32 @@
+Makefile
+  s_53ad839a68fb1c::t_89a7f793b86d67 1,4-16
+package.json
+  s_53ad839a68fb1c::t_89a7f793b86d67 8-11
+  s_53ad839a68fb1c::t_1903a4a6ddeac7 7
+scripts/release.sh
+  s_53ad839a68fb1c::t_89a7f793b86d67 38-39
+.gitignore
+  s_53ad839a68fb1c::t_89a7f793b86d67 3
+.github/workflows/check.yml
+  s_53ad839a68fb1c::t_89a7f793b86d67 1-23
+README.md
+  s_53ad839a68fb1c::t_89a7f793b86d67 39
+scripts/build.mjs
+  s_53ad839a68fb1c::t_89a7f793b86d67 1-24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.3",
+  "base_commit_sha": "d6d510b96397329715c3e0099f0cacfadacb8d3d",
+  "prompts": {},
+  "sessions": {
+    "s_53ad839a68fb1c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a18fb7-5316-7db2-acef-76f7f2031027",
+        "model": "gpt-6-luna"
+      },
+      "human_author": "Vit129 <vitosk129@gmail.com>"
+    }
+  }
+}
