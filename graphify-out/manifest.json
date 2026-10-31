@@ -1,386 +1,386 @@
 {
   "README.md": {
-    "mtime": 1793412652.3862064,
+    "mtime": 1793423208.8906229,
     "ast_hash": "0f2e4afe3ee856640be5319f2a5e4b34",
     "semantic_hash": ""
   },
   "Final-Project/index.html": {
-    "mtime": 1793412652.3850534,
+    "mtime": 1793423208.889505,
     "ast_hash": "084f360cbf10a8a32cb3bebcdc5f0b4d",
     "semantic_hash": ""
   },
   "cliff.toml": {
-    "mtime": 1793412652.3862984,
+    "mtime": 1793423208.8907497,
     "ast_hash": "36ea0a18480cda9029abe9d94869fde3",
     "semantic_hash": ""
   },
   "exam/index.html": {
-    "mtime": 1793412652.3893776,
+    "mtime": 1793423208.8943746,
     "ast_hash": "9869c7180a77d91c313e30324ef12508",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1793412652.4326465,
-    "ast_hash": "03bffcf3b3675d38abea47abdf73cb72",
+    "mtime": 1793423208.9192986,
+    "ast_hash": "d0de625dc60647339fde89c051aa6247",
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1793412652.4342608,
-    "ast_hash": "ded5ad15e400188a6840c57f14960879",
+    "mtime": 1793423208.919666,
+    "ast_hash": "f90de0450979ac4e8697d34c5e4d0674",
     "semantic_hash": ""
   },
   "scripts/release.sh": {
-    "mtime": 1793412652.4344893,
+    "mtime": 1793423208.9199018,
     "ast_hash": "3de76589db13466624ff26224d810cdd",
     "semantic_hash": ""
   },
   "shared/engine.js": {
-    "mtime": 1793412652.4353068,
+    "mtime": 1793423208.9203029,
     "ast_hash": "79dcea301e77f233876f7ac69ddd45c8",
     "semantic_hash": ""
   },
   "shared/exam-engine.js": {
-    "mtime": 1793412652.4356568,
+    "mtime": 1793423208.920486,
     "ast_hash": "cefde7429c37bacd123731f0a1307832",
     "semantic_hash": ""
   },
   "shared/gamification.js": {
-    "mtime": 1793412652.4362507,
+    "mtime": 1793423208.9206383,
     "ast_hash": "303df96ca5a6cc57fa7c88a13a7b1713",
     "semantic_hash": ""
   },
   "version.json": {
-    "mtime": 1793412652.4387364,
+    "mtime": 1793423208.9214993,
     "ast_hash": "7649ac9a5023585a322c58f285840838",
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1793412652.3834202,
+    "mtime": 1793423208.8884106,
     "ast_hash": "7e065cf77f7f4a813d3416270d01927d",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1793412652.3838987,
+    "mtime": 1793423208.888736,
     "ast_hash": "5c27369b226fcf2be8a6cfe52224e767",
     "semantic_hash": ""
   },
   "DESIGN.md": {
-    "mtime": 1793412652.3841481,
+    "mtime": 1793423208.8890162,
     "ast_hash": "770a25a2d384aadd32b60a9fa5b7c3f0",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
-    "mtime": 1793412652.3861053,
+    "mtime": 1793423208.8904674,
     "ast_hash": "1fb252857a0aa8a6153bd50dd3134ff6",
     "semantic_hash": ""
   },
   "01-financial-accounting-1/index.html": {
-    "mtime": 1793412652.3593743,
+    "mtime": 1793423208.8666134,
     "ast_hash": "6c9980e2abcccabca02a827142e5673e",
     "semantic_hash": ""
   },
   "01-financial-accounting-1/lessons.js": {
-    "mtime": 1793412652.3621244,
+    "mtime": 1793423208.868901,
     "ast_hash": "13663d28cfa9b8b3c8b1d54c6770fe6c",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/index.html": {
-    "mtime": 1793412652.3627052,
+    "mtime": 1793423208.8694584,
     "ast_hash": "eddc3bc817e7646c4d93e0e1482f30f6",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons.js": {
-    "mtime": 1793412652.3628657,
+    "mtime": 1793423208.8696275,
     "ast_hash": "abfb5cb22ccfb3864662821edb2f1d60",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons/accounting-policies-tas8.js": {
-    "mtime": 1793412652.3635101,
+    "mtime": 1793423208.8698769,
     "ast_hash": "7dde0f1fab3bd2e71dc21f81a573eb74",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons/bonds-and-tas32-instruments.js": {
-    "mtime": 1793412652.3637068,
+    "mtime": 1793423208.870273,
     "ast_hash": "a74fb10fef6c178428b33dc9f24c556d",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons/cash-flow-tas7.js": {
-    "mtime": 1793412652.3638527,
+    "mtime": 1793423208.8705342,
     "ast_hash": "740330a023421aabbd07ae446219d16a",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons/consolidation-and-joint-arrangements.js": {
-    "mtime": 1793412652.3641648,
+    "mtime": 1793423208.870887,
     "ast_hash": "abb84e08fe6250fc7547b8b3132a2eca",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons/employee-benefits-tas19.js": {
-    "mtime": 1793412652.3643353,
+    "mtime": 1793423208.8711145,
     "ast_hash": "81f4c0f7a4363a6f55b13b75d15c7185",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons/equity-and-eps.js": {
-    "mtime": 1793412652.3644953,
+    "mtime": 1793423208.871334,
     "ast_hash": "f03e5758396da949f2a8c52e0d659597",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons/fair-value-disclosure-standards.js": {
-    "mtime": 1793412652.3656387,
+    "mtime": 1793423208.8715458,
     "ast_hash": "702c86777a60cd4a7b2857edd0544839",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons/financial-instruments-tfrs9.js": {
-    "mtime": 1793412652.3658023,
+    "mtime": 1793423208.8717468,
     "ast_hash": "ea65c3592029ad03d50456c992d3eae8",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons/foreign-currency-tas21.js": {
-    "mtime": 1793412652.3659518,
+    "mtime": 1793423208.8719306,
     "ast_hash": "1fc1fc7b59e822af510a801bc4ddfccd",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons/fs-presentation-tas1.js": {
-    "mtime": 1793412652.366237,
+    "mtime": 1793423208.8721015,
     "ast_hash": "945f6d3edac5302176717d1214c5bf33",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons/government-grants-tas20.js": {
-    "mtime": 1793412652.366396,
+    "mtime": 1793423208.8722756,
     "ast_hash": "2f9c178a56ec3b471b1cb6adeaa9cf34",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons/insurance-tfrs17.js": {
-    "mtime": 1793412652.3665617,
+    "mtime": 1793423208.872465,
     "ast_hash": "c558dc4d29fc3d6a4cdee95376b4b6a1",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons/leases-tfrs16.js": {
-    "mtime": 1793412652.3667686,
+    "mtime": 1793423208.8726747,
     "ast_hash": "c7c483f55c78292bfd31171e5d402e90",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons/misc-standards-and-niche-topics.js": {
-    "mtime": 1793412652.3671315,
+    "mtime": 1793423208.8731656,
     "ast_hash": "e5280d2837d58fb19f5fe9023a5060db",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons/partnership.js": {
-    "mtime": 1793412652.3672836,
+    "mtime": 1793423208.873362,
     "ast_hash": "ed64d78d10fa363e2ed19c4435c106a3",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons/ppe-impairment-investment-property.js": {
-    "mtime": 1793412652.3674517,
+    "mtime": 1793423208.8736072,
     "ast_hash": "3cc1a2487b2da1befff334fd0ad38e43",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons/revenue-tfrs15.js": {
-    "mtime": 1793412652.3675928,
+    "mtime": 1793423208.8737874,
     "ast_hash": "eedff63df852f03365b2da2b00041f2a",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/lessons/share-based-payment-tfrs2.js": {
-    "mtime": 1793412652.3679075,
+    "mtime": 1793423208.8739622,
     "ast_hash": "8012b255d2c7d781446f2076597b49b8",
     "semantic_hash": ""
   },
   "03-auditing-1/index.html": {
-    "mtime": 1793412652.368761,
+    "mtime": 1793423208.87447,
     "ast_hash": "db7b354c82a41c297f7d8fb81bbbe9cf",
     "semantic_hash": ""
   },
   "03-auditing-1/lessons.js": {
-    "mtime": 1793412652.3718636,
+    "mtime": 1793423208.8778353,
     "ast_hash": "170c5d204284084408c173a80868012a",
     "semantic_hash": ""
   },
   "04-auditing-2/index.html": {
-    "mtime": 1793412652.3726673,
+    "mtime": 1793423208.8783934,
     "ast_hash": "11817e7b964f088da2411bcdd62b7115",
     "semantic_hash": ""
   },
   "04-auditing-2/lessons.js": {
-    "mtime": 1793412652.3741677,
+    "mtime": 1793423208.8796382,
     "ast_hash": "b115c36cc749b0c20db0ec5813ce7dff",
     "semantic_hash": ""
   },
   "05-law/index.html": {
-    "mtime": 1793412652.375258,
+    "mtime": 1793423208.880106,
     "ast_hash": "94aa5890ec2d20c870414e2a3b538495",
     "semantic_hash": ""
   },
   "05-law/lessons.js": {
-    "mtime": 1793412652.3765612,
+    "mtime": 1793423208.881907,
     "ast_hash": "f5c56405121d20d323df8dfebe9560d5",
     "semantic_hash": ""
   },
   "06-taxation/index.html": {
-    "mtime": 1793412652.3772259,
+    "mtime": 1793423208.8827295,
     "ast_hash": "945bd4f04a6024cb8185f9f0b96d8fb7",
     "semantic_hash": ""
   },
   "06-taxation/lessons.js": {
-    "mtime": 1793412652.3782656,
+    "mtime": 1793423208.883804,
     "ast_hash": "cfddc21d06f91794d0a0f656d08a9c20",
     "semantic_hash": ""
   },
   "07-cost-accounting/index.html": {
-    "mtime": 1793412652.3796687,
+    "mtime": 1793423208.8849187,
     "ast_hash": "21484fb32b1448328a3c7ee871d6681d",
     "semantic_hash": ""
   },
   "07-cost-accounting/lessons.js": {
-    "mtime": 1793412652.3804781,
+    "mtime": 1793423208.8854718,
     "ast_hash": "09ed8b23324001105b5d3f4aee85155a",
     "semantic_hash": ""
   },
   "08-financial-management/index.html": {
-    "mtime": 1793412652.3811746,
+    "mtime": 1793423208.8859725,
     "ast_hash": "8f6d78ccd98e75f5b5363ab801502990",
     "semantic_hash": ""
   },
   "08-financial-management/lessons.js": {
-    "mtime": 1793412652.3818753,
+    "mtime": 1793423208.8864443,
     "ast_hash": "c06a8f10947f38987f583322476aa339",
     "semantic_hash": ""
   },
   "Final-Project/audit-signoff.js": {
-    "mtime": 1793412652.384794,
+    "mtime": 1793423208.8892539,
     "ast_hash": "fa4eb752fb1ec81c22403808d63b1b31",
     "semantic_hash": ""
   },
   "Final-Project/lessons.js": {
-    "mtime": 1793412652.385419,
+    "mtime": 1793423208.8898466,
     "ast_hash": "e4605284d746cfeb31082c766cc1e4bb",
     "semantic_hash": ""
   },
   "exam/subjective.html": {
-    "mtime": 1793412652.3894854,
+    "mtime": 1793423208.8945103,
     "ast_hash": "f10d0df0bb8a9dc35a181ef1e662a3bb",
     "semantic_hash": ""
   },
   "shared/checkin.js": {
-    "mtime": 1793412652.4349387,
+    "mtime": 1793423208.9201097,
     "ast_hash": "f085d414570d5a3794d087e2a8817c0c",
     "semantic_hash": ""
   },
   "shared/style.css": {
-    "mtime": 1793412652.4378288,
+    "mtime": 1793423208.920943,
     "ast_hash": "a678c1a349dce1aa0f2f94224fb40c12",
     "semantic_hash": ""
   },
   "tests/selftest.mjs": {
-    "mtime": 1793412652.4383838,
+    "mtime": 1793423208.9213498,
     "ast_hash": "6722eb58cada27fdf8c0c13246a1cfd0",
     "semantic_hash": ""
   },
   "01-financial-accounting-1/SUMMARY-DEEP.md": {
-    "mtime": 1793412652.3588629,
+    "mtime": 1793423208.8662431,
     "ast_hash": "052cb43106ad62943d42a3e90828560b",
     "semantic_hash": ""
   },
   "02-financial-accounting-2/SUMMARY-DEEP.md": {
-    "mtime": 1793412652.3625386,
+    "mtime": 1793423208.8692956,
     "ast_hash": "2afe897a8ffc49119dd76487d07dddae",
     "semantic_hash": ""
   },
   "03-auditing-1/SUMMARY-DEEP.md": {
-    "mtime": 1793412652.368459,
+    "mtime": 1793423208.87432,
     "ast_hash": "bb645eea047c3565040767ea118051dc",
     "semantic_hash": ""
   },
   "04-auditing-2/SUMMARY-DEEP.md": {
-    "mtime": 1793412652.3722525,
+    "mtime": 1793423208.878245,
     "ast_hash": "30817ca8216ae573bb7c721e09feeaab",
     "semantic_hash": ""
   },
   "05-law/SUMMARY-DEEP.md": {
-    "mtime": 1793412652.3749394,
+    "mtime": 1793423208.8799682,
     "ast_hash": "46e37e623f6b81fcdc05349c7807fcdc",
     "semantic_hash": ""
   },
   "06-taxation/SUMMARY-DEEP.md": {
-    "mtime": 1793412652.3770227,
+    "mtime": 1793423208.882565,
     "ast_hash": "ef180c32f53099017a186ad0529c3b82",
     "semantic_hash": ""
   },
   "07-cost-accounting/SUMMARY-DEEP.md": {
-    "mtime": 1793412652.3791895,
+    "mtime": 1793423208.8845875,
     "ast_hash": "9b9e88f407f442cdd6085d179bcc4b61",
     "semantic_hash": ""
   },
   "08-financial-management/SUMMARY-DEEP.md": {
-    "mtime": 1793412652.3810225,
+    "mtime": 1793423208.885816,
     "ast_hash": "4d0e914f771130d6aff6b0d58221ee4c",
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1793412652.3824315,
+    "mtime": 1793423208.8877673,
     "ast_hash": "2ebb04a0539c4877a76b69c57687040b",
     "semantic_hash": ""
   },
   "ARCHITECTURE.md": {
-    "mtime": 1793412652.3830512,
+    "mtime": 1793423208.8881588,
     "ast_hash": "7793621a6b7944215fbf9b508f445295",
     "semantic_hash": ""
   },
   "CONTEXT.md": {
-    "mtime": 1793412652.3840275,
+    "mtime": 1793423208.888873,
     "ast_hash": "1244dd6394f65558aa97b8dc56049cb5",
     "semantic_hash": ""
   },
   "docs/adr/README.md": {
-    "mtime": 1793412652.3865361,
+    "mtime": 1793423208.8910334,
     "ast_hash": "9950a74f8dd05fa50507228e4f12147d",
     "semantic_hash": ""
   },
   "docs/agents/domain.md": {
-    "mtime": 1793412652.3869193,
+    "mtime": 1793423208.8914394,
     "ast_hash": "ad638ae3d3f6d6e5f984be83430da398",
     "semantic_hash": ""
   },
   "docs/agents/issue-tracker.md": {
-    "mtime": 1793412652.387019,
+    "mtime": 1793423208.8917375,
     "ast_hash": "eeff3e153dfdd43b3a6c2a134cd601dc",
     "semantic_hash": ""
   },
   "docs/agents/triage-labels.md": {
-    "mtime": 1793412652.3870997,
+    "mtime": 1793423208.891867,
     "ast_hash": "ce6a06ad53eab2f0bc55838ecef86fbe",
     "semantic_hash": ""
   },
   "exam/CPA_MOCK_EXAM_SET1.md": {
-    "mtime": 1793412652.3874705,
+    "mtime": 1793423208.892247,
     "ast_hash": "7ec5b66ff36dcc38a1c4f9de5ea2e5a1",
     "semantic_hash": ""
   },
   "exam/CPA_MOCK_EXAM_SET2.md": {
-    "mtime": 1793412652.3877337,
+    "mtime": 1793423208.892416,
     "ast_hash": "b4193d7e2d7f51d1b3ed3259ddda0997",
     "semantic_hash": ""
   },
   "exam/CPA_MOCK_EXAM_SET3.md": {
-    "mtime": 1793412652.3879056,
+    "mtime": 1793423208.8926113,
     "ast_hash": "48f89cfa6603b2a52cf078663a74a86e",
     "semantic_hash": ""
   },
   "exam/CPA_MOCK_EXAM_SET4.md": {
-    "mtime": 1793412652.3880615,
+    "mtime": 1793423208.8929393,
     "ast_hash": "ccfae8d29b0a3493bc2e8374f1f82c85",
     "semantic_hash": ""
   },
   "exam/CPA_MOCK_EXAM_SET5.md": {
-    "mtime": 1793412652.3882475,
+    "mtime": 1793423208.8931918,
     "ast_hash": "7cc0e1443afb907c94fa44b5c35154d7",
     "semantic_hash": ""
   },
   "exam/CPA_MOCK_EXAM_SET6.md": {
-    "mtime": 1793412652.3884656,
+    "mtime": 1793423208.893645,
     "ast_hash": "1ecd545c7b9545553860af8df196e6e6",
     "semantic_hash": ""
   },
   "exam/CPA_MOCK_EXAM_SET7.md": {
-    "mtime": 1793412652.3892124,
+    "mtime": 1793423208.8941214,
     "ast_hash": "e44d21e23ee07966236416816e26d8a0",
     "semantic_hash": ""
   }
