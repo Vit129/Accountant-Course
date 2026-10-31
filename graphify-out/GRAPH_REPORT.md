@@ -1,16 +1,16 @@
-# Graph Report - delivery-setup  (2026-10-31)
+# Graph Report - delivery-workflow-completion  (2026-10-31)
 
 ## Corpus Check
-- 77 files · ~141,772 words
+- 81 files · ~142,315 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1600 nodes · 1587 edges · 158 communities (145 shown, 13 thin omitted)
+- 1625 nodes · 1608 edges · 162 communities (147 shown, 15 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `63c4221e`
+- Built from commit: `d6d510b9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -51,7 +51,7 @@ node's neighbors span, not by raw edge count.
 ## Hyperedges (group relationships)
 - **Project Documentation Set (Vision + Design System + Overview)** — readme, product, design [INFERRED 0.75]
 
-## Communities (158 total, 13 thin omitted)
+## Communities (162 total, 15 thin omitted)
 
 ### Community 0 - "Shared Style Tokens"
 Cohesion: 0.02
@@ -170,8 +170,8 @@ Cohesion: 0.67
 Nodes (3): @media (max-width: 1100px), .workspace, .panel-left
 
 ### Community 37 - "package.json"
-Cohesion: 0.25
-Nodes (7): description, name, private, scripts, start, test, version
+Cohesion: 0.15
+Nodes (12): description, name, private, scripts, build, dev, preview, release (+4 more)
 
 ### Community 38 - "Design System"
 Cohesion: 0.40
@@ -538,8 +538,8 @@ Cohesion: 0.40
 Nodes (4): Conventions, Issue tracker: GitHub, When a skill says "fetch the relevant ticket", When a skill says "publish to the issue tracker"
 
 ### Community 152 - "บทที่ 9 — ความรับผิดชอบของผู้บริหาร vs ผู้สอบบัญชี"
-Cohesion: 0.67
-Nodes (3): จุดที่ข้อสอบชอบออก / กับดัก, บทที่ 9 — ความรับผิดชอบของผู้บริหาร vs ผู้สอบบัญชี, หลักการ/มาตรฐาน
+Cohesion: 0.22
+Nodes (8): jobs, check, name, on, pull_request, push, permissions, contents
 
 ### Community 153 - "selftest.mjs"
 Cohesion: 0.40
@@ -549,10 +549,18 @@ Nodes (4): __dirname, failures, ROOT, TRACKS
 Cohesion: 0.67
 Nodes (3): จุดที่ข้อสอบชอบออก / กับดัก, หลักการ/มาตรฐาน: TSA 620, เพิ่มเติม 5 — TSA 620: การใช้ผลงานของผู้เชี่ยวชาญของผู้สอบบัญชี
 
+### Community 158 - "บทที่ 11 — TSA 520: วิธีการวิเคราะห์เปรียบเทียบ (Analytical Procedures)"
+Cohesion: 0.40
+Nodes (4): changelog, html, release, root
+
+### Community 160 - "บทที่ 9 — ความรับผิดชอบของผู้บริหาร vs ผู้สอบบัญชี"
+Cohesion: 0.67
+Nodes (3): จุดที่ข้อสอบชอบออก / กับดัก, บทที่ 9 — ความรับผิดชอบของผู้บริหาร vs ผู้สอบบัญชี, หลักการ/มาตรฐาน
+
 ## Knowledge Gaps
-- **1215 isolated node(s):** `#sidebar`, `#lesson-list`, `#progress-label`, `#progress-bar-fill`, `#checkin-mini` (+1210 more)
+- **1232 isolated node(s):** `name`, `pull_request`, `push`, `contents`, `check` (+1227 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **15 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 - **1 possibly unreachable function(s):** `__dirname`
   Not reached from any recognized entry point - could be dead code, or dynamically dispatched/decorator-registered.
 
@@ -560,13 +568,13 @@ Nodes (3): จุดที่ข้อสอบชอบออก / กับด
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `สรุปเจาะลึก บัญชีต้นทุน/บัญชีบริหาร (Cost & Managerial Accounting) — ระดับข้อสอบ CPA` connect `สรุปเจาะลึก บัญชีต้นทุน/บัญชีบริหาร (Cost & Managerial Accounting) — ระดับข้อสอบ CPA` to `บทที่ 1: การจำแนกต้นทุน (Cost Classification)`, `บทที่ 3: ระบบต้นทุนงานสั่งทำ (Job Order Costing)`, `บทที่ 4: อัตราค่าใช้จ่ายการผลิตล่วงหน้า (Predetermined Overhead Rate)`, `บทที่ 5: ต้นทุนช่วงการผลิต — EUP วิธีถัวเฉลี่ยถ่วงน้ำหนัก (Weighted Average)`, `บทที่ 6: งบต้นทุนการผลิต (Cost of Goods Manufactured - COGM)`, `บทที่ 7: CVP — จุดคุ้มทุน (Break-Even Point)`, `บทที่ 8: CVP — CM Ratio และกำไรเป้าหมาย (Target Profit)`, `บทที่ 9: ต้นทุนผันแปร vs ต้นทุนเต็ม (Variable vs Absorption Costing)`, `บทที่ 10-13: ต้นทุนมาตรฐานและผลต่าง (Standard Costing & Variance Analysis)`, `บทที่ 14: ระบบต้นทุนฐานกิจกรรม (Activity-Based Costing - ABC)`, `บทที่ 15: EUP วิธี FIFO เทียบกับถัวเฉลี่ยถ่วงน้ำหนัก`, `บทที่ 16: ของเสียปกติและของเสียผิดปกติ (Normal vs Abnormal Spoilage)`, `บทที่ 17: การปันส่วนต้นทุนร่วม — วิธี NRV (Joint Cost Allocation)`, `บทที่ 18-19: ผลต่างค่าใช้จ่ายการผลิต (Overhead Variance — Variable & Fixed)`, `บทที่ 20: ต้นทุนที่เกี่ยวข้อง — คำสั่งซื้อพิเศษ (Relevant Costing: Special Order)`, `บทที่ 21: การบันทึกบัญชีการไหลของต้นทุน (Cost Flow Journal Entries)`, `บทที่ 22: ตัดสินใจผลิตเองหรือซื้อ (Make-or-Buy Decision)`, `บทที่ 23: ตัดสินใจภายใต้ทรัพยากรจำกัด (Constrained Resource / Bottleneck)`, `บทที่ 24: การปันส่วนต้นทุนแผนกบริการ — วิธีขั้นบันได (Step-Down Method)`, `บทที่ 25: การปันส่วนผลต่างต้นทุนมาตรฐาน ณ สิ้นงวด (Standard Cost Variance Proration)`, `บทที่ 26: ต้นทุนคุณภาพ (Cost of Quality - COQ)`, `บทที่ 27: ราคาโอนระหว่างแผนก (Transfer Pricing)`, `บทที่ 2: พฤติกรรมต้นทุน — High-Low Method`?**
-  _High betweenness centrality (0.003) - this node is a cross-community bridge._
+  _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **Why does `LESSONS` connect `Number Parsing Variant D` to `lessons.js`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **Why does `สรุปเจาะลึก: การสอบบัญชี 1 (Auditing 1) — ระดับข้อสอบ CPA` connect `สรุปเจาะลึก: การสอบบัญชี 1 (Auditing 1) — ระดับข้อสอบ CPA` to `เพิ่มเติม 3: TSA 300 — การวางแผนงานสอบบัญชีโดยรวม`, `บทที่ 4: การควบคุมภายใน — กรอบ COSO 5 องค์ประกอบ`, `บทที่ 2: ความมีสาระสำคัญ (Materiality)`, `บทที่ 1: แบบจำลองความเสี่ยงจากการสอบบัญชี (Audit Risk Model)`, `บทที่ 5: หลักฐานการสอบบัญชี — วิธีการตรวจสอบ (Audit Procedures)`, `บทที่ 6: การสุ่มตัวอย่างทางการสอบบัญชี (Audit Sampling)`, `บทที่ 10: TSA 330 — วิธีการตรวจสอบเพิ่มเติมเพื่อตอบสนองต่อความเสี่ยงที่ประเมินไว้`, `บทที่ 11: TSA 265 — การสื่อสารข้อบกพร่องในการควบคุมภายใน`, `บทที่ 12: TSA 550 — บุคคลหรือกิจการที่เกี่ยวข้องกัน (Related Parties)`, `เพิ่มเติม 1: TSA 210 — การตกลงเงื่อนไขงานสอบบัญชี (Engagement Letter)`, `เพิ่มเติม 2: การควบคุมคุณภาพงานสอบบัญชี — ระดับสำนักงาน (ISQM 1) กับระดับงาน (TSA 220)`, `ขั้นสูง 3 (CPA Case Study): TSA 530 — Upper Misstatement Limit (UML) จาก MUS`, `บทที่ 8: TSA 240 — ความรับผิดชอบของผู้สอบบัญชีเกี่ยวกับการทุจริต`, `บทที่ 3: จรรยาบรรณผู้ประกอบวิชาชีพบัญชี (Code of Ethics)`, `บทที่ 7: TSA 315 — การระบุและประเมินความเสี่ยงที่สำคัญ (Significant Risk)`, `บทที่ 9: ทัศนคติความสงสัยเยี่ยงผู้ประกอบวิชาชีพ (Professional Skepticism)`?**
+- **Why does `สรุปเจาะลึก: การสอบบัญชี 2 (Auditing 2) — ระดับข้อสอบ CPA` connect `สรุปเจาะลึก: การสอบบัญชี 2 (Auditing 2) — ระดับข้อสอบ CPA` to `ขั้นสูง 4 (CPA Case Study) — TSA 560: การลงวันที่แบบสองวัน (Dual Dating)`, `บทที่ 12 — วงจรสินค้าคงเหลือ: Existence และ Cut-off`, `เพิ่มเติม 1 — วงจรเงินสด: Bank Confirmation และ Cash Count`, `เพิ่มเติม 2 — ลูกหนี้การค้า: Positive vs Negative Confirmation`, `บทที่ 11 — TSA 520: วิธีการวิเคราะห์เปรียบเทียบ (Analytical Procedures)`, `บทที่ 9 — ความรับผิดชอบของผู้บริหาร vs ผู้สอบบัญชี`, `ขั้นสูง 3 (CPA Case Study) — TSA 705: Material & Pervasive Misstatement`, `บทที่ 1 — ประเภทความเห็นของผู้สอบบัญชี (Audit Opinion)`, `บทที่ 7 — วงจรจัดซื้อ-เจ้าหนี้: การค้นหาหนี้สินที่ยังไม่ได้บันทึก`, `บทที่ 2 — เหตุการณ์ภายหลังวันที่ในงบการเงิน (Subsequent Events)`, `CPA Mock Exam Set 1 — เพลิงไหม้คลังสินค้า 30 ล้านบาท`, `ขั้นสูง 1 — TSA 705: ข้อจำกัดขอบเขตที่แพร่หลาย (Pervasive Scope Limitation)`, `ขั้นสูง 2 — Type I vs Type II Subsequent Events (กรณีซับซ้อน)`, `บทที่ 3 — การดำเนินงานต่อเนื่อง (Going Concern)`, `บทที่ 4 — ข้อกล่าวอ้างของผู้บริหาร (Management Assertions)`, `เพิ่มเติม 3 — สินทรัพย์ถาวร (PP&E Audit)`, `บทที่ 5 — กระดาษทำการและการเก็บรักษาเอกสารหลักฐาน (Working Papers)`, `บทที่ 6 — ความรับผิดชอบของผู้สอบบัญชี (Legal & Professional Liability)`, `บทที่ 8 — โครงสร้างรายงานผู้สอบบัญชี และ Key Audit Matters`, `บทที่ 10 — TSA 580: หนังสือรับรองการจัดการ (Written Representations)`, `เพิ่มเติม 6 — วงจรรายได้/ค่าใช้จ่าย: Cutoff Testing`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **What connects `#sidebar`, `#lesson-list`, `#progress-label` to the rest of the system?**
-  _1217 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `name`, `pull_request`, `push` to the rest of the system?**
+  _1234 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Shared Style Tokens` be split into smaller, more focused modules?**
   _Cohesion score 0.021052631578947368 - nodes in this community are weakly interconnected._
 - **Should `Financial Accounting 1 UI` be split into smaller, more focused modules?**
