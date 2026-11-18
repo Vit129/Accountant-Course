@@ -12,7 +12,5 @@ agent-memory/
 
 .env
 
-# Code-index output (local only, never committed)
-graphify-out/
 
 .tmp/
