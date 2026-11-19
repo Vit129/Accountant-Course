@@ -19,7 +19,7 @@ Run `npm test` (`tests/selftest.mjs`) — it verifies every lesson has both a pa
 
 ## Agent Memory
 
-Per-project memory lives centrally in `~/Git/Personal/agent-memory-private/agent-memory/Accountant-Course/` (never in this repo). Resolve path via `python3 ~/.claude/scripts/lib/memory_root.py .` or search via `python3 ~/.claude/scripts/recall.py "<query>"`.
+Per-project memory lives centrally in `~/Git/Personal/unified-memory-vault/agent-memory/Accountant-Course/` (never in this repo). Resolve path via `python3 ~/.claude/scripts/lib/memory_root.py .` or search via `python3 ~/.claude/scripts/recall.py "<query>"`.
 
 ## Code search
 
