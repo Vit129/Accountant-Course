@@ -1,0 +1,19 @@
+AGENTS.md
+  s_8f021ef8660c43::t_7f8ee1b412e353 22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.3",
+  "base_commit_sha": "a3395ea3deac846b101af0026d83265c7868095f",
+  "prompts": {},
+  "sessions": {
+    "s_8f021ef8660c43": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4aec23af-d6dc-4972-a180-08cb6042c38b",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Vit129 <vitosk129@gmail.com>"
+    }
+  }
+}
